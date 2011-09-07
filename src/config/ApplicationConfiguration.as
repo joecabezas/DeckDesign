@@ -34,6 +34,8 @@ package config
 		public static const MAIN_CONTENT_WIDTH:Number = 950;
 		public static const MAIN_CONTENT_HEIGHT:Number = 560;
 		
+		public static const PHOTO_GRID_NODE_SIZE:Number = 60;
+		
 		public function ApplicationConfiguration()
 		{
 			throw new Error('La clase ApplicationConfiguration no debe ser instanciada');

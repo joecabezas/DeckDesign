@@ -77,7 +77,7 @@ package
 		private function onDataLoaderComplete(e:LoaderEvent):void
 		{			
 			//parsear el JSON y darselo al singleton
-			Singleton.getInstance().data = {json: JSON.decode(DataLoader(e.target).content)};
+			Singleton.getInstance().data = {json: JSON.decode(DataLoader(e.target).content, false)};
 			
 			this.setup();
 			this.agregarLisneters();
@@ -112,9 +112,6 @@ package
 		
 		private function onClickSection(e:Event):void 
 		{
-			trace('Main.onClickSection');
-			
-			//OJO: el target puede ser una ins
 			trace(ICanChangeSection(e.target).seccion);
 			
 			var seccion:String = ICanChangeSection(e.target).seccion;
@@ -123,6 +120,9 @@ package
 					this.menu_izquierda.switchTo(seccion);
 					break;
 				case Main.SECCION_QUIENES_SOMOS:
+					this.menu_izquierda.switchTo(seccion);
+					break;
+				case Main.SECCION_NUESTROS_PROYECTOS:
 					this.menu_izquierda.switchTo(seccion);
 					break;
 			}
