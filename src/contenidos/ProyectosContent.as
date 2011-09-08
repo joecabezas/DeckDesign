@@ -1,5 +1,6 @@
 package contenidos
 {
+	import com.as3joelib.utils.Singleton;
 	import com.greensock.loading.ImageLoader;
 	import config.ApplicationConfiguration;
 	import flash.display.Sprite;
@@ -27,7 +28,9 @@ package contenidos
 			this.fondo.graphics.drawRect(0, 0, ApplicationConfiguration.MAIN_CONTENT_WIDTH, ApplicationConfiguration.MAIN_CONTENT_HEIGHT);
 			this.fondo.graphics.endFill();
 			
-			this.image_loader = new ImageLoader('',{width: ApplicationConfiguration.MAIN_CONTENT_WIDTH, height:ApplicationConfiguration.MAIN_CONTENT_HEIGHT});
+			var url:String = Singleton.getInstance().data.json.data.secciones.nuestros_proyectos.items[0].imagen_grande;
+			this.image_loader = new ImageLoader(url, { width: ApplicationConfiguration.MAIN_CONTENT_WIDTH, height:ApplicationConfiguration.MAIN_CONTENT_HEIGHT } );
+			this.image_loader.load();
 		}
 		
 		private function agregarListeners():void

@@ -4,6 +4,7 @@ package menus.izquierda
 	import com.as3joelib.utils.Singleton;
 	import config.ApplicationConfiguration;
 	import contenidos.ProyectosContent;
+	import contenidos.SlidePanel;
 	import flash.events.Event;
 	import menus.izquierda.photogrid.PhotoGrid;
 	import menus.izquierda.photogrid.PhotoGridNode;
@@ -17,6 +18,7 @@ package menus.izquierda
 		//ui
 		private var grid:PhotoGrid;
 		private var proyectos_content:ProyectosContent;
+		private var slide_panel:SlidePanel;
 		
 		public function MenuIzquierdaNuestrosProyectos()
 		{
@@ -28,23 +30,27 @@ package menus.izquierda
 		private function setup():void
 		{
 			this.grid = new PhotoGrid();
+			
 			this.proyectos_content = new ProyectosContent();
+			
+			
+			this.slide_panel = new SlidePanel();
+			this.slide_panel.setData(Singleton.getInstance().data.json.data.secciones.nuestros_proyectos.items[0]);
 		}
 		
 		private function agregarListeners():void
 		{
-			//this.addEventListener(PhotoGrid.SELECT_NODE, onSelectNode);
 			this.addEventListener(PhotoGridNode.CLICK_PHOTO_GRID_NODE, onClickPhotoGridNode);
 		}
 		
 		private function onClickPhotoGridNode(e:Event):void
 		{
 			this.proyectos_content.loadImageUrl(PhotoGridNode(e.target).data.imagen_grande);
+			this.slide_panel.setData(PhotoGridNode(e.target).data);
 		}
 		
 		private function onSelectNode(e:Event):void
 		{
-		
 		}
 		
 		private function dibujar():void
@@ -56,6 +62,10 @@ package menus.izquierda
 			
 			this.addChild(this.proyectos_content);
 			this.proyectos_content.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH + 5;
+			
+			this.addChild(this.slide_panel);
+			this.slide_panel.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH + 5;
+			this.slide_panel.y = ApplicationConfiguration.MAIN_CONTENT_HEIGHT - 150;
 		}
 	
 	}
