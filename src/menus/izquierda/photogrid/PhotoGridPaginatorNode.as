@@ -25,8 +25,12 @@ package menus.izquierda.photogrid
 		
 		private var switcher:UISwitcher;
 		
-		public function PhotoGridPaginatorNode()
+		private var _page_number:uint;
+		
+		public function PhotoGridPaginatorNode(page_number:uint)
 		{
+			this._page_number = page_number;
+			
 			this.setup();
 			this.agregarListeners();
 			this.dibujar();
@@ -50,8 +54,15 @@ package menus.izquierda.photogrid
 			this.switcher.hideAllItems();
 			this.switcher.switchTo(this.asset_default);
 			
+			this.switcher.animation_in_object = { duration:0.3, alpha:1 };
+			this.switcher.animation_out_object = { duration:0.3, alpha:0 };
+			
 			//toggle ON
 			this.toggle = true;
+			
+			//dejar seleccionado si es el primero
+			if (this.page_number == 0)
+				this.selected = true;
 		}
 		
 		private function agregarListeners():void
@@ -85,6 +96,11 @@ package menus.izquierda.photogrid
 			} else {
 				this.switcher.switchTo(this.asset_default);
 			}
+		}
+		
+		public function get page_number():uint
+		{
+			return this._page_number;
 		}
 	}
 

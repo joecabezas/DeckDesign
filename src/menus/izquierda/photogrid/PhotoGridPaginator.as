@@ -3,6 +3,7 @@ package menus.izquierda.photogrid
 	import com.somerandomdude.coordy.layouts.twodee.HorizontalLine;
 	import com.somerandomdude.coordy.layouts.twodee.ILayout2d;
 	import flash.display.Sprite;
+	import flash.events.Event;
 	
 	/**
 	 * ...
@@ -36,7 +37,7 @@ package menus.izquierda.photogrid
 		private function setupItems():void
 		{
 			for (var i:int = 0; i < this.n_pages; i++) {
-				var pn:PhotoGridPaginatorNode = new PhotoGridPaginatorNode();
+				var pn:PhotoGridPaginatorNode = new PhotoGridPaginatorNode(i);
 				
 				this.items.push(pn);
 			}
@@ -44,6 +45,19 @@ package menus.izquierda.photogrid
 		
 		private function agregarListeners():void
 		{
+			this.addEventListener(PhotoGridPaginatorNode.CLICK_PAGINATOR_NODE, onClickNode);
+		}
+		
+		private function onClickNode(e:Event):void 
+		{
+			this.deseleccionarTodosExcepto(PhotoGridPaginatorNode(e.target));
+		}
+		
+		private function deseleccionarTodosExcepto(n:PhotoGridPaginatorNode):void {
+			for each(var i:PhotoGridPaginatorNode in this.items) {
+				if(n != i)
+					i.selected = false;
+			}
 		}
 		
 		private function dibujar():void
