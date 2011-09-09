@@ -26,6 +26,7 @@ package config
 		public static const STR_NUESTRA_DIFERENCIA:String = 'Nuestra Diferencia';
 		public static const STR_GALERIA:String = 'Galería de Imágenes';
 		public static const STR_CONTACTO:String = 'Contacto';
+		public static const STR_COTIZA:String = 'Cotiza';
 		
 		//constantes de diseño
 		public static const MENU_IZQUIERDA_WIDTH:Number = 250;

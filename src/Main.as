@@ -125,6 +125,9 @@ package
 				case Main.SECCION_NUESTROS_PROYECTOS:
 					this.menu_izquierda.switchTo(seccion);
 					break;
+				case Main.SECCION_CONTACTO:
+					this.menu_izquierda.switchTo(seccion);
+					break;
 			}
 		}
 		
