@@ -8,7 +8,7 @@ package form.components
 	 * ...
 	 * @author Joe Cabezas
 	 */
-	public class TextComponent extends Sprite
+	public class TextAreaComponent extends Sprite
 	{
 		private var fondo:Sprite;
 		
@@ -20,7 +20,7 @@ package form.components
 		private var desired_height:Number;
 		private var desired_width:Number;
 		
-		public function TextComponent(label:String = '', dw:Number = 300, dh:Number = 30)
+		public function TextAreaComponent(label:String = '', dw:Number = 300, dh:Number = 100)
 		{
 			this.desired_width = dw;
 			this.desired_height = dh;
@@ -38,7 +38,7 @@ package form.components
 			this.fondo.graphics.drawRect(0, 0, this.desired_width, this.desired_height);
 			this.fondo.graphics.endFill();
 			
-			this.textfield_input = TextFieldGenerator.crearTextField('', {size: 14, border: false, autosize: TextFieldGenerator.AUTOSIZE_NONE, type: TextFieldGenerator.TEXTFIELD_TYPE_INPUT, selectable: true,
+			this.textfield_input = TextFieldGenerator.crearTextField('', {size: 14, border: false, autosize: TextFieldGenerator.AUTOSIZE_NONE, type: TextFieldGenerator.TEXTFIELD_TYPE_INPUT, selectable: true, multiline: true,
 				
 					width: this.desired_width, height: this.desired_height});
 			
@@ -58,7 +58,7 @@ package form.components
 			
 			this.addChild(this.textfield_label);
 			this.textfield_label.x = -this.textfield_label.width - 10;
-			this.textfield_label.y = (this.fondo.height - this.textfield_label.height) / 2;
+			this.textfield_label.y = 3;
 		
 		}
 		
