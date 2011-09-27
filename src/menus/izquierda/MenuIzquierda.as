@@ -3,6 +3,7 @@ package menus.izquierda
 	import com.as3joelib.ui.UISwitcher;
 	import flash.display.Sprite;
 	import menus.izquierda.contacto.MenuIzquierdaContacto;
+	import menus.izquierda.galeria.MenuIzquierdaGaleria;
 	
 	/**
 	 * ...
@@ -17,6 +18,7 @@ package menus.izquierda
 		private var menu_home:MenuIzquierdaHome;
 		private var menu_quienes_somos:MenuIzquierdaQuienesSomos;
 		private var menu_nuestros_proyectos:MenuIzquierdaNuestrosProyectos;
+		private var menu_galeria:MenuIzquierdaGaleria;
 		private var menu_contacto:MenuIzquierdaContacto;
 		
 		public function MenuIzquierda()
@@ -38,12 +40,14 @@ package menus.izquierda
 			this.menu_home = new MenuIzquierdaHome();
 			this.menu_quienes_somos = new MenuIzquierdaQuienesSomos();
 			this.menu_nuestros_proyectos = new MenuIzquierdaNuestrosProyectos();
+			this.menu_galeria = new MenuIzquierdaGaleria();
 			this.menu_contacto = new MenuIzquierdaContacto();
 			
 			//agregar menus
 			this.items.push(this.menu_home);
 			this.items.push(this.menu_quienes_somos);
 			this.items.push(this.menu_nuestros_proyectos);
+			this.items.push(this.menu_galeria);
 			this.items.push(this.menu_contacto);
 		}
 		
@@ -79,6 +83,9 @@ package menus.izquierda
 					break;
 				case Main.SECCION_NUESTROS_PROYECTOS: 
 					this.switcher.switchTo(this.menu_nuestros_proyectos);
+					break;
+				case Main.SECCION_GALERIA: 
+					this.switcher.switchTo(this.menu_galeria);
 					break;
 				case Main.SECCION_CONTACTO: 
 					this.switcher.switchTo(this.menu_contacto);

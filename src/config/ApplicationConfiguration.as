@@ -12,6 +12,7 @@ package config
 		
 		//colores de los botones superiores
 		public static const COLOR_INICIO:uint = 0x01AC4E;
+		public static const COLOR_BOTON_SUPERIOR:uint = 0x336600;
 		public static const COLOR_QUIENES_SOMOS:uint = 0xFE7C00;
 		public static const COLOR_IMAGINA_TUS_ESPACIOS:uint = 0x069FDB;
 		public static const COLOR_NUESTROS_PROYECTOS:uint = 0xFECC00;
