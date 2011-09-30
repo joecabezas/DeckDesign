@@ -48,12 +48,12 @@ package menus.izquierda.imagina
 		
 		private function clickOkButton(e:Event):void
 		{
-			this.switcher.switchTo(this.photo_grid);
+			//this.switcher.switchTo(this.photo_grid);
 		}
 		
 		private function clickPhotoGridNode(e:Event):void
 		{
-			this.switcher.switchTo(this.btn_ok);
+			//this.switcher.switchTo(this.btn_ok);
 		}
 		
 		private function dibujar():void

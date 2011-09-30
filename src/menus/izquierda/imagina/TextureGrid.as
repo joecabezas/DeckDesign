@@ -55,9 +55,19 @@ package menus.izquierda.imagina
 		private function setupItems():void
 		{
 			trace('PhotoGrid.setupItems');
-			for each (var i:Object in this._data)
+			var index:uint = 0;
+			for each (var h:Object in this._data)
 			{
-				this.items.push(i);
+				for each (var t:Object in h.textures)
+				{
+					t.index = index;
+					t.tl = h.tl;
+					t.tr = h.tr;
+					t.bl = h.bl;
+					t.br = h.br;
+					this.items.push(t);
+					index++;
+				}
 			}
 			
 			//determinar cuantas paginas tengo

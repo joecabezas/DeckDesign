@@ -1,5 +1,6 @@
 package menus.izquierda.imagina
 {
+	import com.as3joelib.utils.ObjectUtil;
 	import config.ApplicationConfiguration;
 	import flash.display.Sprite;
 	import flash.events.Event;
@@ -47,8 +48,10 @@ package menus.izquierda.imagina
 		}
 		
 		private function onClickPhotoGridNode(e:Event):void 
-		{			
-			this.content_ambientes.addTex(PhotoGridNode(e.target).data.imagen_grande)
+		{
+			//determinar a que hotspot
+			var h:uint = PhotoGridNode(e.target).data.index / 3;
+			this.content_ambientes.addTex(PhotoGridNode(e.target).data)
 		}
 		
 		private function onClickRoomNode(e:Event):void {
@@ -62,7 +65,7 @@ package menus.izquierda.imagina
 			if (this.textures_grid && this.contains(this.textures_grid)) {
 				this.removeChild(this.textures_grid);
 			}
-			this.textures_grid = new TextureSelector(RoomNode(e.target).getData().textures);
+			this.textures_grid = new TextureSelector(RoomNode(e.target).getData().hotspots);
 			this.addChild(this.textures_grid);
 		}
 		

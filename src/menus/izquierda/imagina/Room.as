@@ -1,5 +1,7 @@
 package menus.izquierda.imagina
 {
+	import com.as3joelib.generators.TextFieldGenerator;
+	import com.as3joelib.utils.Singleton;
 	import com.greensock.events.LoaderEvent;
 	import com.greensock.layout.ScaleMode;
 	import com.greensock.loading.ImageLoader;
@@ -9,7 +11,9 @@ package menus.izquierda.imagina
 	import flash.display.BitmapData;
 	import flash.display.Sprite;
 	import flash.events.Event;
+	import flash.events.MouseEvent;
 	import flash.geom.Point;
+	import flash.text.TextField;
 	import menus.izquierda.photogrid.PhotoGridNode;
 	import org.flashsandy.display.DistortImage;
 	
@@ -37,6 +41,12 @@ package menus.izquierda.imagina
 		private var btn_tr:DragPoint;
 		private var btn_bl:DragPoint;
 		private var btn_br:DragPoint;
+		
+		//data del hotspot que se esta editando
+		private var hotspot:Object;
+		
+		//debug
+		private var debug:TextField;
 		
 		private var distorsion:DistortImage;
 		
@@ -99,6 +109,23 @@ package menus.izquierda.imagina
 		private function agregarListeners():void
 		{
 			this.addEventListener(DragPoint.DRAG_POINT_MOVE, onDragPointMove);
+			
+			//debug
+			this.addEventListener(MouseEvent.CLICK, onClick);
+		}
+		
+		private function onClick(e:MouseEvent):void
+		{
+			trace(e);
+			
+			if (Singleton.getInstance().data.json.data.secciones.imagina_tus_espacios.debug)
+			{
+				if (this.debug && this.contains(this.debug))
+					this.removeChild(this.debug);
+				
+				this.debug = TextFieldGenerator.crearTextField('{"x":' + MouseEvent(e).localX + ',"y":' + MouseEvent(e).localX + '}', {color: 0xffffff, selectable: true});
+				this.addChild(this.debug);
+			}
 		}
 		
 		private function onDragPointMove(e:Event):void
@@ -119,9 +146,12 @@ package menus.izquierda.imagina
 		{
 		}
 		
-		public function addTex(url:String):void
+		public function addTex(data:Object):void
 		{
-			this.imgl_texture = new ImageLoader(url, {x: ApplicationConfiguration.MAIN_CONTENT_WIDTH / 2 - 100, y: ApplicationConfiguration.MAIN_CONTENT_HEIGHT / 2 - 100, onComplete: onTexLoaded});
+			//actualizar datos del hotspot
+			this.hotspot = data;
+			
+			this.imgl_texture = new ImageLoader(this.hotspot.imagen_grande, {x: ApplicationConfiguration.MAIN_CONTENT_WIDTH / 2 - 100, y: ApplicationConfiguration.MAIN_CONTENT_HEIGHT / 2 - 100, onComplete: onTexLoaded});
 			//width: 200, height: 200, scaleMode: ScaleMode.STRETCH, 
 			this.imgl_texture.load();
 			
@@ -145,13 +175,13 @@ package menus.izquierda.imagina
 			
 			if (this.btn_br && this.contains(this.btn_br))
 				this.removeChild(this.btn_br);
-				
+			
 			if (this.sprite_texture && this.contains(this.sprite_texture))
 				this.removeChild(this.sprite_texture);
 		}
 		
 		private function onTexLoaded(e:LoaderEvent):void
-		{			
+		{
 			//sacar bitmapdata
 			var s:Sprite = new Sprite();
 			s.addChild(imgl_texture.content);
@@ -160,10 +190,15 @@ package menus.izquierda.imagina
 			this.bmpd_texture.draw(imgl_texture.content);
 			
 			//puntos
-			var tl:Point = new Point(ApplicationConfiguration.MAIN_CONTENT_WIDTH / 2 - 100, ApplicationConfiguration.MAIN_CONTENT_HEIGHT / 2 - 100);
-			var tr:Point = new Point(ApplicationConfiguration.MAIN_CONTENT_WIDTH / 2 + 100, ApplicationConfiguration.MAIN_CONTENT_HEIGHT / 2 - 100);
-			var bl:Point = new Point(ApplicationConfiguration.MAIN_CONTENT_WIDTH / 2 - 100, ApplicationConfiguration.MAIN_CONTENT_HEIGHT / 2 + 100);
-			var br:Point = new Point(ApplicationConfiguration.MAIN_CONTENT_WIDTH / 2 + 100, ApplicationConfiguration.MAIN_CONTENT_HEIGHT / 2 + 100);
+			//var tl:Point = new Point(ApplicationConfiguration.MAIN_CONTENT_WIDTH / 2 - 100, ApplicationConfiguration.MAIN_CONTENT_HEIGHT / 2 - 100);
+			//var tr:Point = new Point(ApplicationConfiguration.MAIN_CONTENT_WIDTH / 2 + 100, ApplicationConfiguration.MAIN_CONTENT_HEIGHT / 2 - 100);
+			//var bl:Point = new Point(ApplicationConfiguration.MAIN_CONTENT_WIDTH / 2 - 100, ApplicationConfiguration.MAIN_CONTENT_HEIGHT / 2 + 100);
+			//var br:Point = new Point(ApplicationConfiguration.MAIN_CONTENT_WIDTH / 2 + 100, ApplicationConfiguration.MAIN_CONTENT_HEIGHT / 2 + 100);
+			
+			var tl:Point = new Point(this.hotspot.tl.x, this.hotspot.tl.y);
+			var tr:Point = new Point(this.hotspot.tr.x, this.hotspot.tr.y);
+			var bl:Point = new Point(this.hotspot.bl.x, this.hotspot.bl.y);
+			var br:Point = new Point(this.hotspot.br.x, this.hotspot.br.y);
 			
 			//textura
 			var t:Sprite = new Sprite();
@@ -189,6 +224,8 @@ package menus.izquierda.imagina
 			
 			this.distorsion = new DistortImage(this.imgl_texture.content.width, this.imgl_texture.content.height, 25, 25);
 			this.distorsion.setTransform(this.sprite_texture.graphics, this.bmpd_texture, tl, tr, br, bl);
+			
+			this.merge();
 		}
 	}
 
