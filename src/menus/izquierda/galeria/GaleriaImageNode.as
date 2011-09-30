@@ -19,11 +19,15 @@ package menus.izquierda.galeria
 		private var imgl:ImageLoader;
 		private var url_chica:String;
 		private var url_grande:String;
+		private var content_title:String;
+		private var content_text:String;
 		
-		public function GaleriaImageNode(url_chica:String, url_grande:String)
+		public function GaleriaImageNode(url_chica:String, url_grande:String, content_title:String, content_text:String)
 		{
 			this.url_chica = url_chica;
 			this.url_grande = url_grande;
+			this.content_title = content_title;
+			this.content_text = content_text;
 			
 			this.setup();
 			this.agregarListeners();
@@ -47,6 +51,14 @@ package menus.izquierda.galeria
 		
 		public function getUrlBig():String {
 			return this.url_grande;
+		}
+		
+		public function getTitle():String {
+			return this.content_title;
+		}
+		
+		public function getText():String {
+			return this.content_text;
 		}
 		
 		override protected function onClick(e:MouseEvent):void {

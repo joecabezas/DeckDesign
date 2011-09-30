@@ -4,6 +4,7 @@ package menus.izquierda
 	import flash.display.Sprite;
 	import menus.izquierda.contacto.MenuIzquierdaContacto;
 	import menus.izquierda.galeria.MenuIzquierdaGaleria;
+	import menus.izquierda.imagina.MenuIzquierdaImaginaTusEspacios;
 	
 	/**
 	 * ...
@@ -17,6 +18,7 @@ package menus.izquierda
 		//items
 		private var menu_home:MenuIzquierdaHome;
 		private var menu_quienes_somos:MenuIzquierdaQuienesSomos;
+		private var menu_imagina_tus_espacios:MenuIzquierdaImaginaTusEspacios;
 		private var menu_nuestros_proyectos:MenuIzquierdaNuestrosProyectos;
 		private var menu_galeria:MenuIzquierdaGaleria;
 		private var menu_contacto:MenuIzquierdaContacto;
@@ -39,6 +41,7 @@ package menus.izquierda
 			//menus
 			this.menu_home = new MenuIzquierdaHome();
 			this.menu_quienes_somos = new MenuIzquierdaQuienesSomos();
+			this.menu_imagina_tus_espacios = new MenuIzquierdaImaginaTusEspacios();
 			this.menu_nuestros_proyectos = new MenuIzquierdaNuestrosProyectos();
 			this.menu_galeria = new MenuIzquierdaGaleria();
 			this.menu_contacto = new MenuIzquierdaContacto();
@@ -46,6 +49,7 @@ package menus.izquierda
 			//agregar menus
 			this.items.push(this.menu_home);
 			this.items.push(this.menu_quienes_somos);
+			this.items.push(this.menu_imagina_tus_espacios);
 			this.items.push(this.menu_nuestros_proyectos);
 			this.items.push(this.menu_galeria);
 			this.items.push(this.menu_contacto);
@@ -80,6 +84,9 @@ package menus.izquierda
 					break;
 				case Main.SECCION_QUIENES_SOMOS: 
 					this.switcher.switchTo(this.menu_quienes_somos);
+					break;
+				case Main.SECCION_IMAGINA_TUS_ESPACIOS: 
+					this.switcher.switchTo(this.menu_imagina_tus_espacios);
 					break;
 				case Main.SECCION_NUESTROS_PROYECTOS: 
 					this.switcher.switchTo(this.menu_nuestros_proyectos);

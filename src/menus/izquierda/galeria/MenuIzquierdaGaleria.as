@@ -67,14 +67,13 @@ package menus.izquierda.galeria
 		
 		private function addModalView(e:Event):void
 		{
-			var imgl:ImageLoader = new ImageLoader(GaleriaImageNode(e.target).getUrlBig(), {width: 500, height: 500, scaleMode: ScaleMode.PROPORTIONAL_INSIDE, centerRegistration: false});
-			imgl.load();
+			var window:NodeWindow = new NodeWindow(GaleriaImageNode(e.target).getUrlBig(), GaleriaImageNode(e.target).getTitle(), GaleriaImageNode(e.target).getText());
 			
-			this.modal_window = new ModalWindow(imgl.content, 0x000000);
+			this.modal_window = new ModalWindow(window, 0x000000);
 			
 			this.modal_window.animation_window_duration = 0.4;
-			this.modal_window.animation_window_in = {y: this.stage.stageHeight / 2 - imgl.content.height / 2, alpha: 1, rotation: 0};
-			this.modal_window.animation_window_out = {y: this.stage.stageHeight / 2 - imgl.content.height / 2 + 100, alpha: 0, rotation: 0};
+			this.modal_window.animation_window_in = {y: this.stage.stageHeight / 2 - window.height / 2, alpha: 1, rotation: 0};
+			this.modal_window.animation_window_out = {y: this.stage.stageHeight / 2 - window.height / 2 + 100, alpha: 0, rotation: 0};
 			
 			this.addChild(this.modal_window);
 			this.modal_window.y = -110;

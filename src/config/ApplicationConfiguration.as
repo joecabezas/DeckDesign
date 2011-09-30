@@ -37,6 +37,8 @@ package config
 		public static const MAIN_CONTENT_HEIGHT:Number = 560;
 		
 		public static const PHOTO_GRID_NODE_SIZE:Number = 60;
+
+		public static const ROOM_NODE_SIZE:Number = 25;
 		
 		public function ApplicationConfiguration()
 		{

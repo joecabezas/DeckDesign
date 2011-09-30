@@ -29,7 +29,7 @@ package menus.izquierda
 		
 		private function setup():void
 		{
-			this.grid = new PhotoGrid();
+			this.grid = new PhotoGrid(Singleton.getInstance().data.json.data.secciones.nuestros_proyectos.items);
 			
 			this.proyectos_content = new ProyectosContent();
 			

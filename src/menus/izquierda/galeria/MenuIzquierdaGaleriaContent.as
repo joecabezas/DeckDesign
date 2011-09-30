@@ -52,7 +52,7 @@ package menus.izquierda.galeria
 			
 			for each(var i:Object in this.data.items) {
 				//trace(i.imagen_grande);
-				this.items.push(new GaleriaImageNode(i.imagen_chica, i.imagen_grande));
+				this.items.push(new GaleriaImageNode(i.imagen_chica, i.imagen_grande, i.content_title, i.content_text));
 			}
 		}
 		

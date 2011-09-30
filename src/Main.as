@@ -122,6 +122,9 @@ package
 				case Main.SECCION_QUIENES_SOMOS:
 					this.menu_izquierda.switchTo(seccion);
 					break;
+				case Main.SECCION_IMAGINA_TUS_ESPACIOS:
+					this.menu_izquierda.switchTo(seccion);
+					break;
 				case Main.SECCION_NUESTROS_PROYECTOS:
 					this.menu_izquierda.switchTo(seccion);
 					break;

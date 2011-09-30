@@ -1,4 +1,4 @@
-package menus.izquierda.photogrid
+package menus.izquierda.imagina
 {
 	import com.as3joelib.ui.UISwitcher;
 	import com.as3joelib.utils.ObjectUtil;
@@ -6,18 +6,21 @@ package menus.izquierda.photogrid
 	import config.ApplicationConfiguration;
 	import flash.display.Sprite;
 	import flash.events.Event;
+	import menus.izquierda.photogrid.PhotoGridPage;
+	import menus.izquierda.photogrid.PhotoGridPaginator;
+	import menus.izquierda.photogrid.PhotoGridPaginatorNode;
 	
 	/**
 	 * ...
 	 * @author Joe Cabezas
 	 */
-	public class PhotoGrid extends Sprite
+	public class TextureGrid extends Sprite
 	{
 		//constantes de diseño
 		public static const SELECT_NODE:String = 'selectNode';
 		
 		//constantes de diseño
-		private const ELEMENTOS_POR_PAGINA:uint = 12;
+		private const ELEMENTOS_POR_PAGINA:uint = 9;
 		
 		private var _data:Object;
 		private var items:Vector.<Object>;
@@ -28,7 +31,7 @@ package menus.izquierda.photogrid
 		
 		private var paginator:PhotoGridPaginator;
 		
-		public function PhotoGrid(data:Object)
+		public function TextureGrid(data:Object)
 		{
 			this._data = data;
 			
@@ -90,7 +93,7 @@ package menus.izquierda.photogrid
 				this.pages_switcher.addItem(p);
 				
 				p.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH * 0.07;
-				p.y = ApplicationConfiguration.MENU_IZQUIERDA_HEIGHT * 0.2;
+				p.y = ApplicationConfiguration.MENU_IZQUIERDA_HEIGHT * 0.55;
 			}
 			this.pages_switcher.hideAllItems();
 			this.pages_switcher.switchToIndex(0);
