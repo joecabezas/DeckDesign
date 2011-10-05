@@ -35,7 +35,12 @@ package menus.izquierda.imagina
 		//private var textures:Vector.<Sprite>;
 		private var imgl_texture:ImageLoader;
 		private var sprite_texture:Sprite;
+		
 		private var bmpd_texture:BitmapData;
+		private var bmpd_room:BitmapData;
+		private var bmpd_mask:BitmapData;
+		
+		private var composite:Bitmap;
 		
 		private var btn_tl:DragPoint;
 		private var btn_tr:DragPoint;
@@ -79,6 +84,12 @@ package menus.izquierda.imagina
 		
 		private function onLoaderMaxComplete(e:LoaderEvent):void
 		{
+			//aplicar fondo
+			this.addChild(this.imgl_room.content);
+			
+			this.bmpd_room = Bitmap(imgl_room.rawContent).bitmapData.clone();
+			this.bmpd_mask = Bitmap(imgl_mask.rawContent).bitmapData;
+			
 			this.compose();
 			
 			//event dispatch
@@ -87,23 +98,26 @@ package menus.izquierda.imagina
 		
 		private function compose():void
 		{
-			var composite:BitmapData = new BitmapData(ApplicationConfiguration.MAIN_CONTENT_WIDTH, ApplicationConfiguration.MAIN_CONTENT_HEIGHT, true);
-			
-			var bmpd_room:BitmapData = Bitmap(imgl_room.rawContent).bitmapData.clone();
-			var bmpd_mask:BitmapData = Bitmap(imgl_mask.rawContent).bitmapData;
-			
+			//remover anterior cmposite
+			if (this.composite && this.contains(this.composite))
+				this.removeChild(this.composite);
+				
+			//generar nuevo
+			var bmpd_composite:BitmapData = new BitmapData(ApplicationConfiguration.MAIN_CONTENT_WIDTH, ApplicationConfiguration.MAIN_CONTENT_HEIGHT, true);
+		
 			if (this.bmpd_texture)
 			{
-				trace('Room.compose');
-				bmpd_room.draw(this.sprite_texture);
-					//composite.copyPixels(bmpd_room, bmpd_room.rect, new Point(), bmpd_mask, new Point());
+				this.bmpd_room.draw(this.sprite_texture);
 			}
 			
-			composite.copyPixels(bmpd_room, bmpd_room.rect, new Point(), bmpd_mask, new Point());
+			bmpd_composite.copyPixels(this.bmpd_room, this.bmpd_room.rect, new Point(), this.bmpd_mask, new Point());
 			
-			var r:Bitmap = new Bitmap(composite);
-			this.addChild(this.imgl_room.content);
-			this.addChild(r);
+			
+			this.composite = new Bitmap(bmpd_composite);
+
+			this.addChild(this.composite);
+			
+			trace(this.numChildren);
 		}
 		
 		private function agregarListeners():void
@@ -157,7 +171,7 @@ package menus.izquierda.imagina
 			
 			//agregar el texture sprite
 			this.sprite_texture.graphics.clear();
-			this.addChild(this.sprite_texture);
+			//this.addChild(this.sprite_texture);
 		}
 		
 		public function merge():void
@@ -182,10 +196,6 @@ package menus.izquierda.imagina
 		
 		private function onTexLoaded(e:LoaderEvent):void
 		{
-			//sacar bitmapdata
-			var s:Sprite = new Sprite();
-			s.addChild(imgl_texture.content);
-			
 			this.bmpd_texture = new BitmapData(this.imgl_texture.content.width, this.imgl_texture.content.height);
 			this.bmpd_texture.draw(imgl_texture.content);
 			
@@ -200,15 +210,11 @@ package menus.izquierda.imagina
 			var bl:Point = new Point(this.hotspot.bl.x, this.hotspot.bl.y);
 			var br:Point = new Point(this.hotspot.br.x, this.hotspot.br.y);
 			
-			//textura
-			var t:Sprite = new Sprite();
-			this.addChild(t);
-			
 			//agregar dragpoints
-			this.addChild(btn_tl);
-			this.addChild(btn_tr);
-			this.addChild(btn_bl);
-			this.addChild(btn_br);
+			//this.addChild(btn_tl);
+			//this.addChild(btn_tr);
+			//this.addChild(btn_bl);
+			//this.addChild(btn_br);
 			
 			this.btn_tl.x = tl.x;
 			this.btn_tl.y = tl.y;

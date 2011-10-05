@@ -3,9 +3,13 @@ package menus.izquierda.imagina
 	import com.as3joelib.ui.UISwitcher;
 	import com.as3joelib.utils.ObjectUtil;
 	import com.as3joelib.utils.Singleton;
+	import com.greensock.loading.ImageLoader;
+	import com.somerandomdude.coordy.layouts.twodee.HorizontalLine;
+	import com.somerandomdude.coordy.layouts.twodee.VerticalLine;
 	import config.ApplicationConfiguration;
 	import flash.display.Sprite;
 	import flash.events.Event;
+	import menus.izquierda.photogrid.PhotoGridNode;
 	import menus.izquierda.photogrid.PhotoGridPage;
 	import menus.izquierda.photogrid.PhotoGridPaginator;
 	import menus.izquierda.photogrid.PhotoGridPaginatorNode;
@@ -20,16 +24,19 @@ package menus.izquierda.imagina
 		public static const SELECT_NODE:String = 'selectNode';
 		
 		//constantes de diseño
-		private const ELEMENTOS_POR_PAGINA:uint = 9;
+		//private const ELEMENTOS_POR_PAGINA:uint = 9;
 		
 		private var _data:Object;
 		private var items:Vector.<Object>;
-		private var selected_item_index:uint;
+		//private var selected_item_index:uint;
 		
-		private var pages:Vector.<PhotoGridPage>;
-		private var pages_switcher:UISwitcher;
+		//private var pages:Vector.<PhotoGridPage>;
+		//private var pages_switcher:UISwitcher;
 		
-		private var paginator:PhotoGridPaginator;
+		//private var paginator:PhotoGridPaginator;
+		
+		private var nodes:Vector.<PhotoGridNode>;
+		private var colums:Vector.<Sprite>;
 		
 		public function TextureGrid(data:Object)
 		{
@@ -45,17 +52,20 @@ package menus.izquierda.imagina
 		{
 			this.items = new Vector.<Object>;
 			
-			this.pages = new Vector.<PhotoGridPage>;
+			//this.pages = new Vector.<PhotoGridPage>;
 			
-			this.pages_switcher = new UISwitcher();
-			this.pages_switcher.animation_in_object = {duration: 0.3, alpha: 1};
-			this.pages_switcher.animation_out_object = {duration: 0.3, alpha: 0};
+			//this.pages_switcher = new UISwitcher();
+			//this.pages_switcher.animation_in_object = {duration: 0.3, alpha: 1};
+			//this.pages_switcher.animation_out_object = {duration: 0.3, alpha: 0};
+			
+			this.nodes = new Vector.<PhotoGridNode>;
+			this.colums = new Vector.<Sprite>;
 		}
 		
 		private function setupItems():void
 		{
 			trace('PhotoGrid.setupItems');
-			var index:uint = 0;
+			/*var index:uint = 0;
 			for each (var h:Object in this._data)
 			{
 				for each (var t:Object in h.textures)
@@ -68,8 +78,28 @@ package menus.izquierda.imagina
 					this.items.push(t);
 					index++;
 				}
-			}
+			}*/
 			
+			/*//cortar los primeros 9, pues solo se dibujaran 9
+			this.items = this.items.slice(0, 9);
+			
+			//reordenar para que se dibujen por columnas en el grid
+			var v:Vector.<Object> = new Vector.<Object>;
+			
+			v.push(this.items[0]);
+			v.push(this.items[3]);
+			v.push(this.items[6]);
+			v.push(this.items[1]);
+			v.push(this.items[4]);
+			v.push(this.items[7]);
+			v.push(this.items[2]);
+			v.push(this.items[5]);
+			v.push(this.items[8]);
+			
+			//reasignacion de los items reordenados a la lista de items final
+			this.items = v;*/
+			
+			/*
 			//determinar cuantas paginas tengo
 			var n_pages:uint = Math.ceil(this.items.length / ELEMENTOS_POR_PAGINA);
 			
@@ -80,24 +110,53 @@ package menus.izquierda.imagina
 				
 				this.pages.push(p);
 			}
-			
 			this.paginator = new PhotoGridPaginator(n_pages);
+			*/
+			
+			//crear las columnas
+			for each (var h:Object in this._data)
+			{
+				//por cada hotspot crear una columna:
+				var vl:VerticalLine = new VerticalLine(10);
+				var col:Sprite = new Sprite();
+				
+				for each (var t:Object in h.textures)
+				{
+					//agregar puntos al objeto de textura
+					t.tl = h.tl;
+					t.tr = h.tr;
+					t.bl = h.bl;
+					t.br = h.br;
+					
+					var pgn:PhotoGridNode = new PhotoGridNode(t);
+					this.nodes.push(pgn);
+					col.addChild(pgn);
+					vl.addNode(pgn);
+				}
+				this.colums.push(col);
+			}
 		}
 		
 		private function agregarListeners():void
 		{
-			this.addEventListener(PhotoGridPaginatorNode.CLICK_PAGINATOR_NODE, onClickPaginatorNode);
+			this.addEventListener(PhotoGridNode.CLICK_PHOTO_GRID_NODE, onClickPhotoGridNode);
 		}
 		
-		private function onClickPaginatorNode(e:Event):void
+		private function onClickPhotoGridNode(e:Event):void
 		{
-			trace('pagina ' + PhotoGridPaginatorNode(e.target).page_number);
-			this.pages_switcher.switchToIndex(PhotoGridPaginatorNode(e.target).page_number);
+			this.deseleccionarTodosExcepto(PhotoGridNode(e.target));
+		}
+		
+		private function deseleccionarTodosExcepto(n:PhotoGridNode):void {
+			for each(var i:PhotoGridNode in this.nodes) {
+				if(n != i)
+					i.selected = false;
+			}
 		}
 		
 		private function dibujar():void
 		{
-			for each (var p:PhotoGridPage in this.pages)
+			/*for each (var p:PhotoGridPage in this.pages)
 			{
 				this.addChild(p);
 				this.pages_switcher.addItem(p);
@@ -110,7 +169,13 @@ package menus.izquierda.imagina
 			
 			this.addChild(this.paginator);
 			this.paginator.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH - 20 - this.paginator.width;
-			this.paginator.y = ApplicationConfiguration.MENU_IZQUIERDA_HEIGHT - 20;
+			this.paginator.y = ApplicationConfiguration.MENU_IZQUIERDA_HEIGHT - 20;*/
+			
+			var hl:HorizontalLine = new HorizontalLine(10);
+			for each(var c:Sprite in this.colums) {
+				this.addChild(c);
+				hl.addNode(c);
+			}			
 		}
 		
 		public function selectNodeByIndex(index:uint):void

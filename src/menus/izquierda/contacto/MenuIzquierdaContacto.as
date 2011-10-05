@@ -1,8 +1,11 @@
 package menus.izquierda.contacto
 {
+	import com.as3joelib.generators.TextFieldGenerator;
+	import com.as3joelib.utils.Singleton;
 	import config.ApplicationConfiguration;
 	import contenidos.MenuContent;
 	import contenidos.MenuContentNode;
+	import flash.text.TextField;
 	import form.ContactoForm;
 	import menus.izquierda.MenuIzquierdaBlackTemplate;
 	import menus.izquierda.MenuIzquierdaTextNode;
@@ -19,6 +22,9 @@ package menus.izquierda.contacto
 		//form
 		private var formulario:ContactoForm;
 		
+		//info
+		private var txt_info:TextField;
+		
 		public function MenuIzquierdaContacto()
 		{
 			this.setup();
@@ -31,6 +37,11 @@ package menus.izquierda.contacto
 			this.formulario = new ContactoForm();
 			
 			this.text_node_cotiza = new MenuIzquierdaTextNode(ApplicationConfiguration.STR_COTIZA.toUpperCase());
+			
+			
+			//info
+			var opciones:Object = {size: 12, border: false, align: TextFieldGenerator.TEXTFORMAT_ALIGN_RIGHT, autosize: TextFieldGenerator.AUTOSIZE_NONE, color: 0xffffff, width: ApplicationConfiguration.MENU_IZQUIERDA_WIDTH, height:150, multiline:true, wordwrap:true};
+			this.txt_info = TextFieldGenerator.crearTextField(Singleton.getInstance().data.json.data.secciones.contacto.info, opciones);
 		}
 		
 		private function agregarListeners():void
@@ -45,6 +56,11 @@ package menus.izquierda.contacto
 			this.addChild(this.text_node_cotiza);
 			this.text_node_cotiza.y = 100;
 			
+			//info
+			this.addChild(this.txt_info);
+			this.txt_info.y = 150;
+			
+			//form
 			this.addChild(this.formulario);
 			this.formulario.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH + 5;
 			this.formulario.y = 120;

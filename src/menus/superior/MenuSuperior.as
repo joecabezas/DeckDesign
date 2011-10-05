@@ -45,7 +45,7 @@ package menus.superior
 			this.botones.push(new BotonMenuSuperior(ApplicationConfiguration.STR_INICIO.toUpperCase(), ApplicationConfiguration.COLOR_INICIO, Main.SECCION_HOME));
 			this.botones.push(new BotonMenuSuperior(ApplicationConfiguration.STR_QUIENES_SOMOS.toUpperCase(), ApplicationConfiguration.COLOR_QUIENES_SOMOS, Main.SECCION_QUIENES_SOMOS));
 			this.botones.push(new BotonMenuSuperior(ApplicationConfiguration.STR_IMAGINA_TUS_ESPACIOS.toUpperCase(), ApplicationConfiguration.COLOR_IMAGINA_TUS_ESPACIOS, Main.SECCION_IMAGINA_TUS_ESPACIOS));
-			this.botones.push(new BotonMenuSuperior(ApplicationConfiguration.STR_NUESTROS_PROYECTOS.toUpperCase(), ApplicationConfiguration.COLOR_NUESTROS_PROYECTOS, Main.SECCION_NUESTROS_PROYECTOS));
+			//this.botones.push(new BotonMenuSuperior(ApplicationConfiguration.STR_NUESTROS_PROYECTOS.toUpperCase(), ApplicationConfiguration.COLOR_NUESTROS_PROYECTOS, Main.SECCION_NUESTROS_PROYECTOS));
 			this.botones.push(new BotonMenuSuperior(ApplicationConfiguration.STR_GALERIA.toUpperCase(), ApplicationConfiguration.COLOR_GALERIA_DE_IMAGENES, Main.SECCION_GALERIA));
 			this.botones.push(new BotonMenuSuperior(ApplicationConfiguration.STR_CONTACTO.toUpperCase(), ApplicationConfiguration.COLOR_CONTACTO, Main.SECCION_CONTACTO));
 		}

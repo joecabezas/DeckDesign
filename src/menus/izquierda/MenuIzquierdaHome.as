@@ -47,7 +47,7 @@ package menus.izquierda
 			var secciones:Vector.<String> = new Vector.<String>;
 			
 			secciones.push(Main.SECCION_IMAGINA_TUS_ESPACIOS);
-			secciones.push(Main.SECCION_NUESTRA_DIFERENCIA);
+			secciones.push(Main.SECCION_GALERIA);
 			secciones.push(Main.SECCION_CONTACTO);
 			
 			secciones.reverse();

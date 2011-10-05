@@ -14,7 +14,7 @@ package menus.izquierda.imagina
 	public class TextureSelector extends Sprite
 	{
 		private var data:Object;
-		private var photo_grid:TextureGrid;
+		private var texture_grid:TextureGrid;
 		private var btn_ok:Sprite;
 		
 		private var switcher:UISwitcher;
@@ -30,14 +30,14 @@ package menus.izquierda.imagina
 		
 		private function setup():void
 		{
-			this.photo_grid = new TextureGrid(this.data);
+			this.texture_grid = new TextureGrid(this.data);
 			this.btn_ok = new BtnOk();
 			
 			this.switcher = new UISwitcher();
-			this.switcher.addItem(this.photo_grid);
+			this.switcher.addItem(this.texture_grid);
 			this.switcher.addItem(this.btn_ok);
 			this.switcher.hideAllItems();
-			this.switcher.switchTo(this.photo_grid);
+			this.switcher.switchTo(this.texture_grid);
 		}
 		
 		private function agregarListeners():void
@@ -58,7 +58,11 @@ package menus.izquierda.imagina
 		
 		private function dibujar():void
 		{
-			this.addChild(this.photo_grid);
+			this.addChild(this.texture_grid);
+			
+			this.texture_grid.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH * 0.1;
+			this.texture_grid.y = ApplicationConfiguration.MENU_IZQUIERDA_HEIGHT * 0.55;
+			
 			this.addChild(this.btn_ok);
 			this.btn_ok.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH * 0.9 - this.btn_ok.width;
 			this.btn_ok.y = ApplicationConfiguration.MENU_IZQUIERDA_HEIGHT * 0.9;
