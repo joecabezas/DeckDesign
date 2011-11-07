@@ -6,6 +6,7 @@ package menus.superior
 	import com.somerandomdude.coordy.layouts.twodee.Layout2d;
 	import config.ApplicationConfiguration;
 	import flash.display.Sprite;
+	import flash.events.Event;
 	import flash.geom.Point;
 	
 	/**
@@ -30,7 +31,15 @@ package menus.superior
 		
 		private function agregarListeners():void 
 		{
-			
+			//cuando hagan click resetear botones para dejarlos no seleccionados
+			this.addEventListener(BotonMenuSuperior.CLICK_BOTON_MENU_SUPERIOR, onClickButton);
+		}
+		
+		private function onClickButton(e:Event):void 
+		{
+			for each(var btn:BotonMenuSuperior in this.botones) {
+				btn.reset();
+			}
 		}
 		
 		private function setup():void 
@@ -45,7 +54,7 @@ package menus.superior
 			this.botones.push(new BotonMenuSuperior(ApplicationConfiguration.STR_INICIO.toUpperCase(), ApplicationConfiguration.COLOR_INICIO, Main.SECCION_HOME));
 			this.botones.push(new BotonMenuSuperior(ApplicationConfiguration.STR_QUIENES_SOMOS.toUpperCase(), ApplicationConfiguration.COLOR_QUIENES_SOMOS, Main.SECCION_QUIENES_SOMOS));
 			this.botones.push(new BotonMenuSuperior(ApplicationConfiguration.STR_IMAGINA_TUS_ESPACIOS.toUpperCase(), ApplicationConfiguration.COLOR_IMAGINA_TUS_ESPACIOS, Main.SECCION_IMAGINA_TUS_ESPACIOS));
-			//this.botones.push(new BotonMenuSuperior(ApplicationConfiguration.STR_NUESTROS_PROYECTOS.toUpperCase(), ApplicationConfiguration.COLOR_NUESTROS_PROYECTOS, Main.SECCION_NUESTROS_PROYECTOS));
+			this.botones.push(new BotonMenuSuperior(ApplicationConfiguration.STR_NUESTROS_PROYECTOS.toUpperCase(), ApplicationConfiguration.COLOR_NUESTROS_PROYECTOS, Main.SECCION_NUESTROS_PROYECTOS));
 			this.botones.push(new BotonMenuSuperior(ApplicationConfiguration.STR_GALERIA.toUpperCase(), ApplicationConfiguration.COLOR_GALERIA_DE_IMAGENES, Main.SECCION_GALERIA));
 			this.botones.push(new BotonMenuSuperior(ApplicationConfiguration.STR_CONTACTO.toUpperCase(), ApplicationConfiguration.COLOR_CONTACTO, Main.SECCION_CONTACTO));
 		}

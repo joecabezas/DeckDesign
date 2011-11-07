@@ -62,7 +62,7 @@ package menus.izquierda.contacto
 			
 			//form
 			this.addChild(this.formulario);
-			this.formulario.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH + 5;
+			this.formulario.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH + ApplicationConfiguration.MENU_IZQUIERDA_SEPARACION;
 			this.formulario.y = 120;
 		}
 	

@@ -55,8 +55,11 @@ package menus.izquierda
 			for each(var i:Object in this._data) {
 				var min:MenuIzquierdaHomeNode = new MenuIzquierdaHomeNode(i.img, i.texto, secciones.pop());
 				this.items.push(min);
-				this.layout.addNode(min,false);
-				this.addChild(min);
+				this.layout.addNode(min, false);
+				
+				//update del 7 nov
+				//no debe verse el menu del home
+				//this.addChild(min);
 			}
 			this.layout.updateAndRender();
 		}

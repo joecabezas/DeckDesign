@@ -61,10 +61,10 @@ package menus.izquierda
 			this.addChild(this.grid);
 			
 			this.addChild(this.proyectos_content);
-			this.proyectos_content.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH + 5;
+			this.proyectos_content.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH + ApplicationConfiguration.MENU_IZQUIERDA_SEPARACION;
 			
 			this.addChild(this.slide_panel);
-			this.slide_panel.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH + 5;
+			this.slide_panel.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH + ApplicationConfiguration.MENU_IZQUIERDA_SEPARACION;
 			this.slide_panel.y = ApplicationConfiguration.MAIN_CONTENT_HEIGHT - 150;
 		}
 	

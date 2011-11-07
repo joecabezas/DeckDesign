@@ -196,7 +196,7 @@ package menus.izquierda.imagina
 		
 		private function onTexLoaded(e:LoaderEvent):void
 		{
-			this.bmpd_texture = new BitmapData(this.imgl_texture.content.width, this.imgl_texture.content.height);
+			this.bmpd_texture = new BitmapData(this.imgl_texture.content.width, this.imgl_texture.content.height, false, 0xff0000);
 			this.bmpd_texture.draw(imgl_texture.content);
 			
 			//puntos

@@ -110,7 +110,7 @@ package menus.izquierda.galeria
 					this.galeria = new MenuIzquierdaGaleriaContent(TreeNavigatorNode(e.target).data);
 					
 					this.addChild(this.galeria);
-					this.galeria.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH + 5;
+					this.galeria.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH + ApplicationConfiguration.MENU_IZQUIERDA_SEPARACION;
 					break;
 				
 				case TreeNavigator.TREE_NAVIGATOR_CHANGE_PAGE:
@@ -148,7 +148,7 @@ package menus.izquierda.galeria
 			
 			//content
 			this.addChild(this.galeria);
-			this.galeria.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH + 5;
+			this.galeria.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH + ApplicationConfiguration.MENU_IZQUIERDA_SEPARACION;
 		}
 	
 	}

@@ -34,7 +34,7 @@ package menus.izquierda
 			this.items_menu = new Vector.<MenuIzquierdaTextNode>;
 			
 			this.menu_content = new MenuContent();
-			this.menu_content.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH + 5;
+			this.menu_content.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH + ApplicationConfiguration.MENU_IZQUIERDA_SEPARACION;
 			
 			this.layout = new VerticalLine(5);
 			this.layout.y = 100;

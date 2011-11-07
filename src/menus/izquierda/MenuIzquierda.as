@@ -65,7 +65,7 @@ package menus.izquierda
 			for each (var s:Sprite in this.items)
 			{
 				this.addChild(s);
-				s.y = 110;
+				s.y = 100;
 				
 				this.switcher.addItem(s);
 			}

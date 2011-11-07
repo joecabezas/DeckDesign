@@ -1,5 +1,6 @@
 package
 {
+	import assets.Footer;
 	import assets.Logo;
 	import buttons.BotonMenuSuperior;
 	import com.adobe.serialization.json.JSON;
@@ -20,7 +21,7 @@ package
 	 * ...
 	 * @author Joe Cabezas
 	 */
-	[SWF(backgroundColor="#1D1D1F",width=1280,height=800,frameRate=60)]
+	[SWF(backgroundColor="#1D1D1F",width=1120,height=710,frameRate=60)]
 	[Frame(factoryClass="Preloader")]
 	
 	public class Main extends Sprite
@@ -34,8 +35,9 @@ package
 		public static const SECCION_GALERIA:String = 'seccionGaleria';
 		public static const SECCION_CONTACTO:String = 'seccionContacto';
 		
-		//temps
+		//assets
 		private var logo:Logo;
+		private var footer:Footer;
 		
 		//loaders names
 		private static const LOADER_JSON:String = 'loaderJson';
@@ -103,6 +105,7 @@ package
 			this.contenido = new MainContent();
 			
 			this.logo = new Logo();
+			this.footer = new Footer();
 		}
 		
 		private function agregarLisneters():void {
@@ -144,13 +147,18 @@ package
 		{
 			this.addChild(this.menu_superior);
 			this.menu_superior.x = 265;
-			this.menu_superior.y = 72;
+			this.menu_superior.y = 62;
 			
 			this.addChild(this.contenido);
 			this.contenido.x = 255;
-			this.contenido.y = 110;
+			this.contenido.y = 100;
 			
 			this.addChild(this.logo);
+			
+			this.addChild(this.footer);
+			this.footer.x = this.logo.x;
+			this.footer.y = this.stage.stageHeight - this.footer.height - 20;
+			
 			this.addChild(this.menu_izquierda);
 		}
 	

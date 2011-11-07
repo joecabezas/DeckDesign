@@ -42,27 +42,32 @@ package menus.izquierda.imagina
 			this.addEventListener(BtnOk.CLICK_OK_BUTTON, clickOkButton);
 		}
 		
-		private function clickOkButton(e:Event):void 
+		private function clickOkButton(e:Event):void
 		{
 			this.content_ambientes.merge();
 		}
 		
-		private function onClickPhotoGridNode(e:Event):void 
+		private function onClickPhotoGridNode(e:Event):void
 		{
 			//determinar a que hotspot
 			var h:uint = PhotoGridNode(e.target).data.index / 3;
 			this.content_ambientes.addTex(PhotoGridNode(e.target).data)
 		}
 		
-		private function onClickRoomNode(e:Event):void {
-			if (this.content_ambientes && this.contains(this.content_ambientes)){
+		private function onClickRoomNode(e:Event):void
+		{
+			//trace(e);
+			
+			if (this.content_ambientes && this.contains(this.content_ambientes))
+			{
 				this.removeChild(this.content_ambientes);
 			}
 			this.content_ambientes = new Room(RoomNode(e.target).getData());
 			this.addChild(this.content_ambientes);
-			this.content_ambientes.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH + 5;
+			this.content_ambientes.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH + ApplicationConfiguration.MENU_IZQUIERDA_SEPARACION;
 			
-			if (this.textures_grid && this.contains(this.textures_grid)) {
+			if (this.textures_grid && this.contains(this.textures_grid))
+			{
 				this.removeChild(this.textures_grid);
 			}
 			this.textures_grid = new TextureSelector(RoomNode(e.target).getData().hotspots);
@@ -76,11 +81,11 @@ package menus.izquierda.imagina
 			
 			//fondo
 			this.addChild(this.fondo);
-			this.fondo.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH + 5;
+			this.fondo.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH + ApplicationConfiguration.MENU_IZQUIERDA_SEPARACION;
 			
 			//menu ambientes
 			this.addChild(this.menu_ambientes);
-			this.menu_ambientes.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH;
+			this.menu_ambientes.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH + ApplicationConfiguration.MENU_IZQUIERDA_SEPARACION;
 			this.menu_ambientes.y = 100;
 		}
 	

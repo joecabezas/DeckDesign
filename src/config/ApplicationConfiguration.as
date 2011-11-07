@@ -33,8 +33,13 @@ package config
 		public static const MENU_IZQUIERDA_WIDTH:Number = 250;
 		public static const MENU_IZQUIERDA_HEIGHT:Number = 560;
 		
+		public static const MENU_IZQUIERDA_SEPARACION:Number = 0;
+		
 		public static const MAIN_CONTENT_WIDTH:Number = 950;
 		public static const MAIN_CONTENT_HEIGHT:Number = 560;
+		//public static const MAIN_CONTENT_HEIGHT:Number = 630;
+		
+		public static const HOME_CARROUSEL_WIDTH:Number = MAIN_CONTENT_WIDTH + 160;
 		
 		public static const PHOTO_GRID_NODE_SIZE:Number = 60;
 
