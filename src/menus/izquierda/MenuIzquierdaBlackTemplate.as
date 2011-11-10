@@ -54,7 +54,7 @@ package menus.izquierda
 			
 			this.titulo.y = 20;
 			
-			this.addChild(this.titulo);
+			//this.addChild(this.titulo);
 		}
 	}
 

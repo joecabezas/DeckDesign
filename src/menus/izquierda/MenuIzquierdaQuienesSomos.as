@@ -37,6 +37,7 @@ package menus.izquierda
 			this.menu_content.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH + ApplicationConfiguration.MENU_IZQUIERDA_SEPARACION;
 			
 			this.layout = new VerticalLine(5);
+			this.layout.x = -12;
 			this.layout.y = 100;
 		}
 		

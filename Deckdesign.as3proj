@@ -60,7 +60,7 @@
     <element path="lib\coordy.swc" />
     <element path="..\libs\coordy-0.9.9\swc\coordy.swc" />
     <element path="..\libs\swc\greensock.swc" />
-    <element path="lib\botones.swc" />
+    <element path="lib\menu.swc" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>

@@ -24,7 +24,7 @@ package menus.izquierda.imagina
 		public static const SELECT_NODE:String = 'selectNode';
 		
 		//constantes de diseño
-		//private const ELEMENTOS_POR_PAGINA:uint = 9;
+		private const SEPARACION:uint = 19;
 		
 		private var _data:Object;
 		private var items:Vector.<Object>;
@@ -117,7 +117,7 @@ package menus.izquierda.imagina
 			for each (var h:Object in this._data)
 			{
 				//por cada hotspot crear una columna:
-				var vl:VerticalLine = new VerticalLine(10);
+				var vl:VerticalLine = new VerticalLine(SEPARACION);
 				var col:Sprite = new Sprite();
 				
 				for each (var t:Object in h.textures)
@@ -171,7 +171,7 @@ package menus.izquierda.imagina
 			this.paginator.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH - 20 - this.paginator.width;
 			this.paginator.y = ApplicationConfiguration.MENU_IZQUIERDA_HEIGHT - 20;*/
 			
-			var hl:HorizontalLine = new HorizontalLine(10);
+			var hl:HorizontalLine = new HorizontalLine(SEPARACION);
 			for each(var c:Sprite in this.colums) {
 				this.addChild(c);
 				hl.addNode(c);

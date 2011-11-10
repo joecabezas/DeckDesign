@@ -60,7 +60,7 @@ package menus.izquierda.imagina
 		{
 			this.addChild(this.texture_grid);
 			
-			this.texture_grid.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH * 0.1;
+			this.texture_grid.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH/2 - this.texture_grid.width/2;
 			this.texture_grid.y = ApplicationConfiguration.MENU_IZQUIERDA_HEIGHT * 0.55;
 			
 			this.addChild(this.btn_ok);

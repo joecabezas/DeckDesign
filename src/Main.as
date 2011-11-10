@@ -21,7 +21,7 @@ package
 	 * ...
 	 * @author Joe Cabezas
 	 */
-	[SWF(backgroundColor="#1D1D1F",width=1120,height=710,frameRate=60)]
+	[SWF(backgroundColor="#1D1D1F",width=1120,height=690,frameRate=60)]
 	[Frame(factoryClass="Preloader")]
 	
 	public class Main extends Sprite
@@ -146,20 +146,22 @@ package
 		private function dibujar():void
 		{
 			this.addChild(this.menu_superior);
-			this.menu_superior.x = 265;
-			this.menu_superior.y = 62;
+			this.menu_superior.x = 250;
+			this.menu_superior.y = 52;
 			
 			this.addChild(this.contenido);
 			this.contenido.x = 255;
-			this.contenido.y = 100;
+			this.contenido.y = 84;
 			
 			this.addChild(this.logo);
+			this.logo.x = 15;
 			
 			this.addChild(this.footer);
 			this.footer.x = this.logo.x;
-			this.footer.y = this.stage.stageHeight - this.footer.height - 20;
+			this.footer.y = this.stage.stageHeight - this.footer.height;
 			
 			this.addChild(this.menu_izquierda);
+			this.menu_izquierda.y = -16;
 		}
 	
 	}

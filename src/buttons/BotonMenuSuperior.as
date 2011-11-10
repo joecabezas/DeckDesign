@@ -1,25 +1,30 @@
 package buttons
 {
-	import assets.BtnContactoTxt;
-	import assets.BtnGaleriaDeImagenesTxt;
-	import assets.BtnImaginaTusEspaciosTxt;
-	import assets.BtnInicioTxt;
-	import assets.BtnNuestrosProyectosTxt;
-	import assets.BtnQuienesSomosTxt;
-	import com.as3joelib.generators.TextFieldGenerator;
+	import assets.BtnContactoImg;
+	import assets.BtnContactoImgOver;
+	import assets.BtnGaleriaImg;
+	import assets.BtnGaleriaImgOver;
+	import assets.BtnImaginaImg;
+	import assets.BtnImaginaImgOver;
+	import assets.BtnInicioImg;
+	import assets.BtnInicioImgOver;
+	import assets.BtnProyectosImg;
+	import assets.BtnProyectosImgOver;
+	import assets.BtnSomosImg;
+	import assets.BtnSomosImgOver;
 	import com.as3joelib.ui.Button;
-	import com.greensock.data.TweenLiteVars;
-	import com.greensock.easing.Elastic;
 	import com.greensock.TweenLite;
-	import config.ApplicationConfiguration;
-	import flash.display.Bitmap;
 	import flash.display.Sprite;
 	import flash.events.Event;
 	import flash.events.MouseEvent;
 	import flash.text.TextField;
-	import flash.text.TextFieldAutoSize;
-	import flash.text.TextFormatAlign;
 	import interfaces.ICanChangeSection;
+	//import assets.BtnContactoTxt;
+	//import assets.BtnGaleriaDeImagenesTxt;
+	//import assets.BtnImaginaTusEspaciosTxt;
+	//import assets.BtnInicioTxt;
+	//import assets.BtnNuestrosProyectosTxt;
+	//import assets.BtnQuienesSomosTxt;
 	
 	/**
 	 * ...
@@ -48,45 +53,45 @@ package buttons
 		
 		private var text_asset:Sprite; //TODO: no se usa, pero lo dejo para compatibilidad futura, remover en produccion
 		
-		private var bmp_normal:Bitmap;
-		private var bmp_over:Bitmap;
+		private var bmp_normal:Sprite;
+		private var bmp_over:Sprite;
 		
 		//assets
-		[Embed(source = "../../bin/img/botones/bt-contacto-1.gif")]
-		private var BtnContactoImg:Class;
+		//[Embed(source = "../../bin/img/botones/bt-contacto-1.gif")]
+		//private var BtnContactoImg:Class;
+		//
+		//[Embed(source = "../../bin/img/botones/bt-contacto-2.gif")]
+		//private var BtnContactoImgOver:Class;
+		//
+		//[Embed(source = "../../bin/img/botones/bt-galeria-1.gif")]
+		//private var BtnGaleriaImg:Class;
+		//
+		//[Embed(source = "../../bin/img/botones/bt-galeria-2.gif")]
+		//private var BtnGaleriaImgOver:Class;
+		//
+		//[Embed(source = "../../bin/img/botones/bt-imagina-1.gif")]
+		//private var BtnImaginaImg:Class;
+		//
+		//[Embed(source = "../../bin/img/botones/bt-imagina-2.gif")]
+		//private var BtnImaginaImgOver:Class;
 		
-		[Embed(source = "../../bin/img/botones/bt-contacto-2.gif")]
-		private var BtnContactoImgOver:Class;
+		//[Embed(source = "../../bin/img/botones/bt-inicio-1.gif")]
+		//private var BtnInicioImg:Class;
 		
-		[Embed(source = "../../bin/img/botones/bt-galeria-1.gif")]
-		private var BtnGaleriaImg:Class;
+		//[Embed(source = "../../bin/img/botones/bt-inicio-2.gif")]
+		//private var BtnInicioImgOver:Class;
 		
-		[Embed(source = "../../bin/img/botones/bt-galeria-2.gif")]
-		private var BtnGaleriaImgOver:Class;
+		//[Embed(source = "../../bin/img/botones/bt-proyectos-1.gif")]
+		//private var BtnProyectosImg:Class;
 		
-		[Embed(source = "../../bin/img/botones/bt-imagina-1.gif")]
-		private var BtnImaginaImg:Class;
-		
-		[Embed(source = "../../bin/img/botones/bt-imagina-2.gif")]
-		private var BtnImaginaImgOver:Class;
-		
-		[Embed(source = "../../bin/img/botones/bt-inicio-1.gif")]
-		private var BtnInicioImg:Class;
-		
-		[Embed(source = "../../bin/img/botones/bt-inicio-2.gif")]
-		private var BtnInicioImgOver:Class;
-		
-		[Embed(source = "../../bin/img/botones/bt-proyectos-1.gif")]
-		private var BtnProyectosImg:Class;
-		
-		[Embed(source = "../../bin/img/botones/bt-proyectos-2.gif")]
-		private var BtnProyectosImgOver:Class;
-		
-		[Embed(source = "../../bin/img/botones/bt-somos-1.gif")]
-		private var BtnSomosImg:Class;
-		
-		[Embed(source = "../../bin/img/botones/bt-somos-2.gif")]
-		private var BtnSomosImgOver:Class;
+		//[Embed(source = "../../bin/img/botones/bt-proyectos-2.gif")]
+		//private var BtnProyectosImgOver:Class;
+		//
+		//[Embed(source = "../../bin/img/botones/bt-somos-1.gif")]
+		//private var BtnSomosImg:Class;
+		//
+		//[Embed(source = "../../bin/img/botones/bt-somos-2.gif")]
+		//private var BtnSomosImgOver:Class;
 		
 		public function BotonMenuSuperior(text:String, color:uint, seccion:String = '')
 		{

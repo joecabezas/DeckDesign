@@ -53,11 +53,13 @@ package menus.izquierda.contacto
 			//set title
 			this.setTitle(ApplicationConfiguration.STR_CONTACTO.toUpperCase(), ApplicationConfiguration.COLOR_QUIENES_SOMOS);
 			
-			this.addChild(this.text_node_cotiza);
+			//this.addChild(this.text_node_cotiza);
+			this.text_node_cotiza.x = -12;
 			this.text_node_cotiza.y = 100;
 			
 			//info
 			this.addChild(this.txt_info);
+			this.txt_info.x = -12;
 			this.txt_info.y = 150;
 			
 			//form

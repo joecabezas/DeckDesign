@@ -85,7 +85,7 @@ package menus.izquierda.imagina
 			
 			//menu ambientes
 			this.addChild(this.menu_ambientes);
-			this.menu_ambientes.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH + ApplicationConfiguration.MENU_IZQUIERDA_SEPARACION;
+			this.menu_ambientes.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH + ApplicationConfiguration.MENU_IZQUIERDA_SEPARACION - 15;
 			this.menu_ambientes.y = 100;
 		}
 	

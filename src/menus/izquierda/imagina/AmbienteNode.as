@@ -28,7 +28,7 @@ package menus.izquierda.imagina
 		
 		private function setup():void
 		{
-			this.txt_name = TextFieldGenerator.crearTextField(this._data.name, { size: 16, color: 0xffffff});
+			this.txt_name = TextFieldGenerator.crearTextField(this._data.name.toUpperCase(), { size: 12, color: 0xffffff});
 			this.items = new Vector.<RoomNode>;
 			
 			var i:uint = 1;
@@ -39,7 +39,7 @@ package menus.izquierda.imagina
 				i++;
 			}
 			
-			this.layout = new HorizontalLine();
+			this.layout = new HorizontalLine(6);
 		}
 		
 		private function agregarListeners():void

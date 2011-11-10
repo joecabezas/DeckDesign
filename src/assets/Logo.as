@@ -28,7 +28,7 @@ package assets
 		private function setup():void
 		{
 			//trace(Singleton.getInstance().data.json.data.logo);
-			this.loader = new SWFLoader(Singleton.getInstance().data.json.data.logo, { width:WIDTH, height:HEIGHT, bgColor:0xff0000, bgAlpha:0, scaleMode:ScaleMode.WIDTH_ONLY } );
+			this.loader = new SWFLoader(Singleton.getInstance().data.json.data.logo, { /*width:WIDTH, height:HEIGHT,*/ bgColor:0xff0000, bgAlpha:0, scaleMode:ScaleMode.NONE } );
 			this.loader.load();
 		}
 		

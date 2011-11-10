@@ -143,8 +143,8 @@ package menus.izquierda.galeria
 			this.back_button.visible = false;
 			
 			this.addChild(this.tree_navigator);
-			this.tree_navigator.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH * 0.1;
-			this.tree_navigator.y = 100;
+			this.tree_navigator.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH * 0.1 + 8;
+			this.tree_navigator.y = 95;
 			
 			//content
 			this.addChild(this.galeria);
