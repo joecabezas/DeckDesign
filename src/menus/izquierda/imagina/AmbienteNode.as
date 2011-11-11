@@ -1,8 +1,10 @@
 package menus.izquierda.imagina
 {
 	import com.as3joelib.generators.TextFieldGenerator;
+	import com.as3joelib.utils.StringUtil;
 	import com.somerandomdude.coordy.layouts.twodee.HorizontalLine;
 	import com.somerandomdude.coordy.layouts.twodee.ILayout2d;
+	import config.ApplicationConfiguration;
 	import flash.display.Sprite;
 	import flash.text.TextField;
 	
@@ -28,7 +30,7 @@ package menus.izquierda.imagina
 		
 		private function setup():void
 		{
-			this.txt_name = TextFieldGenerator.crearTextField(this._data.name.toUpperCase(), { size: 12, color: 0xffffff});
+			this.txt_name = TextFieldGenerator.crearTextField(StringUtil.firstToUpper(this._data.name), { size: ApplicationConfiguration.SUBMENU_TEXT_SIZE, color: 0xffffff});
 			this.items = new Vector.<RoomNode>;
 			
 			var i:uint = 1;

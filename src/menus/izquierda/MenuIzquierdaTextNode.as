@@ -2,6 +2,7 @@ package menus.izquierda
 {
 	import com.as3joelib.generators.TextFieldGenerator;
 	import com.as3joelib.ui.Button;
+	import com.as3joelib.utils.StringUtil;
 	import config.ApplicationConfiguration;
 	import flash.events.Event;
 	import flash.events.MouseEvent;
@@ -27,7 +28,7 @@ package menus.izquierda
 		
 		public function MenuIzquierdaTextNode(str:String, over_color:uint = ApplicationConfiguration.COLOR_QUIENES_SOMOS, normal_color:uint = 0xffffff)
 		{
-			this.str = str;
+			this.str = StringUtil.firstToUpper(str);
 			this.over_color = over_color;
 			this.normal_color = normal_color;
 			
@@ -38,7 +39,7 @@ package menus.izquierda
 		
 		private function setup():void
 		{
-			var opciones:Object = {size: 12, border: false, align: TextFieldGenerator.TEXTFORMAT_ALIGN_RIGHT, autosize: TextFieldGenerator.AUTOSIZE_NONE, color: this.normal_color, width: ApplicationConfiguration.MENU_IZQUIERDA_WIDTH, height:20};
+			var opciones:Object = {size: ApplicationConfiguration.SUBMENU_TEXT_SIZE, border: false, align: TextFieldGenerator.TEXTFORMAT_ALIGN_RIGHT, autosize: TextFieldGenerator.AUTOSIZE_NONE, color: this.normal_color, width: ApplicationConfiguration.MENU_IZQUIERDA_WIDTH, height:20};
 			this.textfield = TextFieldGenerator.crearTextField(this.str, opciones);
 		}
 		

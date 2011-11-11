@@ -40,7 +40,7 @@ package menus.izquierda.contacto
 			
 			
 			//info
-			var opciones:Object = {size: 12, border: false, align: TextFieldGenerator.TEXTFORMAT_ALIGN_RIGHT, autosize: TextFieldGenerator.AUTOSIZE_NONE, color: 0xffffff, width: ApplicationConfiguration.MENU_IZQUIERDA_WIDTH, height:150, multiline:true, wordwrap:true};
+			var opciones:Object = {size: ApplicationConfiguration.SUBMENU_TEXT_SIZE, border: false, align: TextFieldGenerator.TEXTFORMAT_ALIGN_RIGHT, autosize: TextFieldGenerator.AUTOSIZE_NONE, color: 0xffffff, width: ApplicationConfiguration.MENU_IZQUIERDA_WIDTH, height:150, multiline:true, wordwrap:true};
 			this.txt_info = TextFieldGenerator.crearTextField(Singleton.getInstance().data.json.data.secciones.contacto.info, opciones);
 		}
 		

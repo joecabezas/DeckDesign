@@ -50,7 +50,7 @@ package menus.izquierda.imagina
 			this.fondo_over.graphics.drawRect(0, 0, ApplicationConfiguration.ROOM_NODE_SIZE * 0.7, ApplicationConfiguration.ROOM_NODE_SIZE * 0.7);
 			this.fondo_over.graphics.endFill();
 			
-			this.txt_number = TextFieldGenerator.crearTextField(String(this.number), {size: 12, color: 0xffffff});
+			this.txt_number = TextFieldGenerator.crearTextField(String(this.number), {size: ApplicationConfiguration.SUBMENU_TEXT_SIZE, color: 0xffffff});
 		}
 		
 		private function agregarListeners():void

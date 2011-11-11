@@ -19,7 +19,7 @@ package config
 		public static const COLOR_GALERIA_DE_IMAGENES:uint = 0xFF1615;
 		public static const COLOR_CONTACTO:uint = 0x55248D;
 		
-		//nombres de las seccione
+		//nombres de las secciones
 		public static const STR_INICIO:String = 'Inicio';
 		public static const STR_QUIENES_SOMOS:String = 'Quienes Somos';
 		public static const STR_IMAGINA_TUS_ESPACIOS:String = 'Imagina tus Espacios';
@@ -44,6 +44,8 @@ package config
 		public static const PHOTO_GRID_NODE_SIZE:Number = 60;
 
 		public static const ROOM_NODE_SIZE:Number = 25;
+		
+		public static const SUBMENU_TEXT_SIZE:Number = 16;
 		
 		public function ApplicationConfiguration()
 		{

@@ -44,7 +44,7 @@ package menus.izquierda.galeria
 			this.fondo_hover.graphics.drawRect(0, 0, ApplicationConfiguration.MENU_IZQUIERDA_WIDTH*0.8, 30);
 			this.fondo_hover.graphics.endFill();
 			
-			this.tf = TextFieldGenerator.crearTextField('Volver', { size: 12, color: 0xffffff, align: TextFieldGenerator.TEXTFORMAT_ALIGN_RIGHT, autosize: TextFieldGenerator.AUTOSIZE_NONE, width:ApplicationConfiguration.MENU_IZQUIERDA_WIDTH * 0.8, height:30 - 5 } );
+			this.tf = TextFieldGenerator.crearTextField('Volver', { size: ApplicationConfiguration.SUBMENU_TEXT_SIZE, color: 0xffffff, align: TextFieldGenerator.TEXTFORMAT_ALIGN_RIGHT, autosize: TextFieldGenerator.AUTOSIZE_NONE, width:ApplicationConfiguration.MENU_IZQUIERDA_WIDTH * 0.8, height:30 - 5 } );
 			
 			this.switcher = new UISwitcher();
 			this.switcher.addItem(this.fondo_normal);

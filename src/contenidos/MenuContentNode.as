@@ -78,7 +78,7 @@ package contenidos
 		
 		public function setContent(texto:String, color:uint = 0xffffff):void {
 			var opciones:Object = {
-				size: 12,
+				size: ApplicationConfiguration.SUBMENU_TEXT_SIZE,
 				//border: true,
 				//align: TextFieldGenerator.TEXTFORMAT_ALIGN_LEFT,
 				//autosize: TextFieldGenerator.AUTOSIZE_LEFT,

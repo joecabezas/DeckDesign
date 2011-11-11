@@ -1,5 +1,7 @@
 package
 {
+	import assets.BtnFacebook;
+	import assets.BtnTwitter;
 	import assets.Footer;
 	import assets.Logo;
 	import buttons.BotonMenuSuperior;
@@ -12,6 +14,9 @@ package
 	import flash.display.BitmapData;
 	import flash.display.Sprite;
 	import flash.events.Event;
+	import flash.events.MouseEvent;
+	import flash.net.navigateToURL;
+	import flash.net.URLRequest;
 	import interfaces.ICanChangeSection;
 	import menus.izquierda.MenuIzquierda;
 	import menus.izquierda.MenuIzquierdaHomeNode;
@@ -35,6 +40,10 @@ package
 		public static const SECCION_GALERIA:String = 'seccionGaleria';
 		public static const SECCION_CONTACTO:String = 'seccionContacto';
 		
+		//botones facebook y twitter
+		public static const SECCION_FACEBOOK:String = 'seccionFacebook';
+		public static const SECCION_TWITTER:String = 'seccionTwitter';
+		
 		//assets
 		private var logo:Logo;
 		private var footer:Footer;
@@ -48,6 +57,10 @@ package
 		//menus
 		private var menu_izquierda:MenuIzquierda;
 		private var menu_superior:MenuSuperior;
+		
+		//botones de facebook y twitter
+		private var btn_facebook:BtnFacebook;
+		private var btn_twitter:BtnTwitter;
 		
 		//contenido
 		private var contenido:MainContent;
@@ -77,7 +90,7 @@ package
 		}
 		
 		private function onDataLoaderComplete(e:LoaderEvent):void
-		{			
+		{
 			//parsear el JSON y darselo al singleton
 			Singleton.getInstance().data = {json: JSON.decode(DataLoader(e.target).content, false)};
 			
@@ -104,40 +117,71 @@ package
 			
 			this.contenido = new MainContent();
 			
+			//botones de facebook y twitter
+			this.btn_facebook = new BtnFacebook();
+			this.btn_twitter = new BtnTwitter();
+			
 			this.logo = new Logo();
 			this.footer = new Footer();
 		}
 		
-		private function agregarLisneters():void {
+		private function agregarLisneters():void
+		{
 			this.addEventListener(MenuIzquierdaHomeNode.CLICK_HOME_NODE, onClickSection);
 			this.addEventListener(BotonMenuSuperior.CLICK_BOTON_MENU_SUPERIOR, onClickSection);
+			
+			this.btn_facebook.addEventListener(MouseEvent.CLICK, onClickFacebook);
+			this.btn_twitter.addEventListener(MouseEvent.CLICK, onClickTwitter);
 		}
 		
-		private function onClickSection(e:Event):void 
+		private function onClickFacebook(e:MouseEvent):void
+		{
+			this.goToUrl(Singleton.getInstance().data.json.data.facebook_url);
+		}
+		
+		private function onClickTwitter(e:MouseEvent):void
+		{
+			this.goToUrl(Singleton.getInstance().data.json.data.twitter_url);
+		}
+		
+		private function goToUrl(url:String):void
+		{
+			try
+			{
+				navigateToURL(new URLRequest(url), '_blank');
+			}
+			catch (e:Error)
+			{
+				trace('ERROR: no se puede abrir el sitio: '+ url);
+			}
+		}
+		
+		private function onClickSection(e:Event):void
 		{
 			trace(ICanChangeSection(e.target).seccion);
 			
 			var seccion:String = ICanChangeSection(e.target).seccion;
-			switch(seccion) {
-				case Main.SECCION_HOME:
+			switch (seccion)
+			{
+				case Main.SECCION_HOME: 
 					this.menu_izquierda.switchTo(seccion);
 					break;
-				case Main.SECCION_QUIENES_SOMOS:
+				case Main.SECCION_QUIENES_SOMOS: 
 					this.menu_izquierda.switchTo(seccion);
 					break;
-				case Main.SECCION_IMAGINA_TUS_ESPACIOS:
+				case Main.SECCION_IMAGINA_TUS_ESPACIOS: 
 					this.menu_izquierda.switchTo(seccion);
 					break;
-				case Main.SECCION_NUESTROS_PROYECTOS:
+				case Main.SECCION_NUESTROS_PROYECTOS: 
 					this.menu_izquierda.switchTo(seccion);
 					break;
-				case Main.SECCION_NUESTROS_PROYECTOS:
+				case Main.SECCION_NUESTROS_PROYECTOS: 
 					this.menu_izquierda.switchTo(seccion);
 					break;
-				case Main.SECCION_GALERIA:
+				case Main.SECCION_GALERIA: 
 					this.menu_izquierda.switchTo(seccion);
 					break;
-				case Main.SECCION_CONTACTO:
+				case Main.SECCION_CONTACTO: 
 					this.menu_izquierda.switchTo(seccion);
 					break;
 			}
@@ -148,6 +192,15 @@ package
 			this.addChild(this.menu_superior);
 			this.menu_superior.x = 250;
 			this.menu_superior.y = 52;
+			
+			//nuevos botones del 10 nov de 2011
+			this.addChild(this.btn_facebook);
+			this.btn_facebook.x = this.stage.stageWidth - 2 * this.btn_facebook.width - 25 - 10;
+			this.btn_facebook.y = 10;
+
+			this.addChild(this.btn_twitter);
+			this.btn_twitter.x = this.stage.stageWidth - this.btn_twitter.width - 25;
+			this.btn_twitter.y = 10;
 			
 			this.addChild(this.contenido);
 			this.contenido.x = 255;

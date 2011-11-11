@@ -2,6 +2,7 @@ package buttons
 {
 	import assets.BtnContactoImg;
 	import assets.BtnContactoImgOver;
+	import assets.BtnFacebook;
 	import assets.BtnGaleriaImg;
 	import assets.BtnGaleriaImgOver;
 	import assets.BtnImaginaImg;
@@ -12,6 +13,7 @@ package buttons
 	import assets.BtnProyectosImgOver;
 	import assets.BtnSomosImg;
 	import assets.BtnSomosImgOver;
+	import assets.BtnTwitter;
 	import com.as3joelib.ui.Button;
 	import com.greensock.TweenLite;
 	import flash.display.Sprite;
@@ -149,6 +151,17 @@ package buttons
 					//this.text_asset = new BtnContactoTxt();
 					this.bmp_normal = new BtnContactoImg();
 					this.bmp_over = new BtnContactoImgOver();
+					break;
+					
+				//botones facebook y twitter
+				
+				case Main.SECCION_FACEBOOK:
+					this.bmp_normal = new BtnFacebook();
+					this.bmp_over = new BtnFacebook();
+					break;
+				case Main.SECCION_TWITTER:
+					this.bmp_normal = new BtnTwitter();
+					this.bmp_over = new BtnTwitter();
 					break;
 			}
 			
