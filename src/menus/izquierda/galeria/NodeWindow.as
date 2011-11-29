@@ -37,7 +37,7 @@ package menus.izquierda.galeria
 		
 		private function setup():void
 		{
-			this.imgl = new ImageLoader(this.img_url, {width: 500, height: 500, scaleMode: ScaleMode.PROPORTIONAL_INSIDE, centerRegistration: false});
+			this.imgl = new ImageLoader(this.img_url, {bgAlpha: 0,width: 500, height: 500, scaleMode: ScaleMode.PROPORTIONAL_INSIDE, centerRegistration: false});
 			imgl.load();
 			
 			this.txt_title = TextFieldGenerator.crearTextField(this.str_title, {color:0xffffff } );
@@ -53,12 +53,12 @@ package menus.izquierda.galeria
 		private function dibujar():void
 		{
 			this.addChild(this.imgl.content);
-			this.addChild(this.txt_title);
-			this.addChild(this.txt_text);
+			//this.addChild(this.txt_title);
+			//this.addChild(this.txt_text);
 			
 			this.layout.addNode(this.imgl.content, false);
-			this.layout.addNode(this.txt_title, false);
-			this.layout.addNode(this.txt_text, false);
+			//this.layout.addNode(this.txt_title, false);
+			//this.layout.addNode(this.txt_text, false);
 			this.layout.updateAndRender();
 		}
 	}

@@ -20,10 +20,10 @@ package menus.izquierda.galeria
 		//ui
 		private var back_button:BackButton;
 		private var tree_navigator:TreeNavigator;
-		private var galeria:MenuIzquierdaGaleriaContent;
+		private var galeria:MenuIzquierdaGaleriaContent2;
 		
 		//modal window
-		private var modal_window:ModalWindow;
+		//private var modal_window:ModalWindow;
 		
 		public function MenuIzquierdaGaleria()
 		{
@@ -36,8 +36,8 @@ package menus.izquierda.galeria
 		private function setup():void
 		{
 			this.back_button = new BackButton();
-			this.tree_navigator = new TreeNavigator(Singleton.getInstance().data.json.data.secciones.galeria, ApplicationConfiguration.MENU_IZQUIERDA_WIDTH * 0.8, 300);
-			this.galeria = new MenuIzquierdaGaleriaContent();
+			this.tree_navigator = new TreeNavigator(Singleton.getInstance().data.json.data.secciones.galeria, ApplicationConfiguration.MENU_IZQUIERDA_WIDTH * 0.8, 450);
+			this.galeria = new MenuIzquierdaGaleriaContent2();
 		}
 		
 		private function agregarListeners():void
@@ -56,38 +56,41 @@ package menus.izquierda.galeria
 			switch (e.type)
 			{
 				case GaleriaImageNode.CLICK_GALERIA_IMAGE_NODE: 
-					this.addModalView(e);
+					//this.addModalView(e);
+					this.galeria.removeWindow();
+					this.galeria.addWindow(GaleriaImageNode(e.target));
 					break;
 				
 				case ModalWindow.MODAL_WINDOW_CLICK_BACKGROUND: 
-					this.removeModalView();
+					//this.removeModalView();
+					this.galeria.removeWindow();
 					break;
 			}
 		}
 		
-		private function addModalView(e:Event):void
-		{
-			var window:NodeWindow = new NodeWindow(GaleriaImageNode(e.target).getUrlBig(), GaleriaImageNode(e.target).getTitle(), GaleriaImageNode(e.target).getText());
-			
-			this.modal_window = new ModalWindow(window, 0x000000);
-			
-			this.modal_window.animation_window_duration = 0.4;
-			this.modal_window.animation_window_in = {y: this.stage.stageHeight / 2 - window.height / 2, alpha: 1, rotation: 0};
-			this.modal_window.animation_window_out = {y: this.stage.stageHeight / 2 - window.height / 2 + 100, alpha: 0, rotation: 0};
-			
-			this.addChild(this.modal_window);
-			this.modal_window.y = -110;
-			
-			this.modal_window.fadeIn();
-		}
+		/*private function addModalView(e:Event):void
+		   {
+		   var window:NodeWindow = new NodeWindow(GaleriaImageNode(e.target).getUrlBig(), GaleriaImageNode(e.target).getTitle(), GaleriaImageNode(e.target).getText());
 		
-		private function removeModalView():void
-		{
-			if (this.modal_window && this.contains(this.modal_window))
-			{
-				this.removeChild(this.modal_window);
-			}
-		}
+		   this.modal_window = new ModalWindow(window, 0x000000);
+		
+		   this.modal_window.animation_window_duration = 0.4;
+		   this.modal_window.animation_window_in = {y: this.stage.stageHeight / 2 - window.height / 2, alpha: 1, rotation: 0};
+		   this.modal_window.animation_window_out = {y: this.stage.stageHeight / 2 - window.height / 2 + 100, alpha: 0, rotation: 0};
+		
+		   this.addChild(this.modal_window);
+		   this.modal_window.y = -110;
+		
+		   this.modal_window.fadeIn();
+		   }
+		
+		   private function removeModalView():void
+		   {
+		   if (this.modal_window && this.contains(this.modal_window))
+		   {
+		   this.removeChild(this.modal_window);
+		   }
+		 }*/
 		
 		private function onClickBackButton(e:Event):void
 		{
@@ -107,7 +110,7 @@ package menus.izquierda.galeria
 						this.removeChild(this.galeria);
 					}
 					
-					this.galeria = new MenuIzquierdaGaleriaContent(TreeNavigatorNode(e.target).data);
+					this.galeria = new MenuIzquierdaGaleriaContent2(TreeNavigatorNode(e.target).data);
 					
 					this.addChild(this.galeria);
 					this.galeria.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH + ApplicationConfiguration.MENU_IZQUIERDA_SEPARACION;

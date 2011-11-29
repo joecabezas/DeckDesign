@@ -36,7 +36,7 @@ package menus.izquierda.galeria
 		
 		private function setup():void
 		{
-			this.imgl = new ImageLoader(this.url_chica, { width:70, height:110, scaleMode:ScaleMode.PROPORTIONAL_INSIDE } );
+			this.imgl = new ImageLoader(this.url_chica, { width:500/LinearCarrousel.CANTIDAD_ELEMENTOS_A_MOSTRAR, height:500/LinearCarrousel.CANTIDAD_ELEMENTOS_A_MOSTRAR, scaleMode:ScaleMode.STRETCH } );
 			this.imgl.load();
 		}
 		
@@ -66,11 +66,11 @@ package menus.izquierda.galeria
 		}
 		
 		override protected function onRollOver(e:MouseEvent):void {
-			TweenLite.to(this.imgl.content, 0.2, { scaleX:1.1, scaleY:1.1 } );
+			//TweenLite.to(this.imgl.content, 0.2, { scaleX:1.1, scaleY:1.1 } );
 		}
 		
 		override protected function onRollOut(e:MouseEvent):void {
-			TweenLite.to(this.imgl.content, 0.2, { scaleX:1, scaleY:1 } );
+			//TweenLite.to(this.imgl.content, 0.2, { scaleX:1, scaleY:1 } );
 		}
 	}
 
