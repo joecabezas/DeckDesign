@@ -1,0 +1,446 @@
+{
+    "data":{
+        "logo":"img/logo.swf",
+        "footer":"img/franja-footer.gif",
+		"facebook_url":"http://www.facebook.com",
+		"twitter_url":"http://www.twitter.com",
+        "secciones":{
+            "home":{
+                "seccion":[
+                    {
+                        "img":"data/imagina.png",
+                        "texto":"Imagina tus Espacios"
+                    },
+                    {
+                        "img":"data/nuestra_diferencia.png",
+                        "texto":"Nuestra Diferencia"
+                    },
+                    {
+                        "img":"data/nuestros_proyectos.png",
+                        "texto":"Nuestros Proyectos"
+                    }
+                ],
+				"contenido":[
+					{
+						"img":"http://cdn.home-designing.com/wp-content/uploads/2009/04/kids-study-room-skylight.jpg"
+					},
+					{
+						"img":"http://www.sttudwalsinn.co.uk/resources/room+3+right.JPG"
+					},
+					{
+						"img":"http://www.desktopwallpaperhd.com/wallpapers/10/3092.jpg"
+					},
+					{
+						"img":"http://kidsroomdecoratingideas.co/wp-content/uploads/2011/07/Decorating-Kids-Rooms.jpg"
+					},
+					{
+						"img":"http://www.housemaintain.com/wp-content/uploads/2010/04/Elegant-modern-formal-and-stylish-living-rooms-1.jpg"
+					}
+				]
+            },
+			"quienes_somos":{
+				"items":[
+					{
+						"menu_title":"DeskDesign",
+						"content_title":"DeskDesign",
+						"content_text":"imprime tus ideas
+
+Somos una empresa creada para Diseñadores, Arquitectos, Decoradores, Innovadores, Creativos y todas las personas que estén dispuestos a hacer del diseño de ambientes algo único y personalizado con la mejor calidad.
+
+Nosotros podemos imprimir todo tipo de superficies con una altura máxima de 6cm. tales como puertas, mesas, muebles, melaminas, plástico, acrílico, cerámicas, papel mural, acero y mas.
+
+Ven a conocernos y crea con nosotros ambientes con identidad propia y diferénciate del resto."
+					},
+					{
+						"menu_title":"Nuestra Diferencia",
+						"content_title":"Nuestra Diferencia",
+						"content_text":"Nuestras tintas son UV y NO son toxicas por ende son especiales para niños y para el medio ambiente.
+
+Puedes imprimir una superficie de hasta 2,40 mt. de ancho por infinito de largo y si lo que necesitas es algo más grande lo hacemos en paños
+También podemos imprimir superficies irregulares.
+
+Nuestro producto a diferencia de los vinilos o stickers no se engloba ni se salen y siempre van a quedar perfectos."
+					},
+				]
+			},
+			"nuestros_proyectos":{
+				"items":[
+					{
+						"imagen_chica":"http://3.bp.blogspot.com/_3EuPj0S9r34/TSE1S1-lbSI/AAAAAAAAiVM/3nLCR9fujJ8/s1600/number_one_smooth.jpg",
+						"imagen_grande":"http://3.bp.blogspot.com/_3EuPj0S9r34/TSE1S1-lbSI/AAAAAAAAiVM/3nLCR9fujJ8/s1600/number_one_smooth.jpg",
+						"content_title":"titulo del item 1",
+						"content_text":"contenido acá del item 1"
+					},
+					{
+						"imagen_chica":"http://www.staticmiss.com/imgs/normal/2009/10/13/cifra-gigante-de-metal-numero-2.jpg",
+						"imagen_grande":"http://www.staticmiss.com/imgs/normal/2009/10/13/cifra-gigante-de-metal-numero-2.jpg",
+						"content_title":"titulo dos",
+						"content_text":"contenido acá dos"
+					},
+					{
+						"imagen_chica":"http://www.arquitectronica.com.mx/images/stories/arqui%20moderna.jpg",
+						"imagen_grande":"http://www.arquitectronica.com.mx/images/stories/arqui%20moderna.jpg",
+						"content_title":"titulo",
+						"content_text":"contenido acá"
+					},
+					{
+						"imagen_chica":"http://www.arquitectronica.com.mx/images/stories/arqui%20minimalista.jpg",
+						"imagen_grande":"http://www.arquitectronica.com.mx/images/stories/arqui%20minimalista.jpg",
+						"content_title":"titulo",
+						"content_text":"contenido acá"
+					},
+					{
+						"imagen_chica":"http://architecturehomedesigns.com/wp-content/uploads/2011/05/minimalist-hous-design-black-interior.jpg",
+						"imagen_grande":"http://architecturehomedesigns.com/wp-content/uploads/2011/05/minimalist-hous-design-black-interior.jpg",
+						"content_title":"titulo",
+						"content_text":"contenido acá"
+					},
+					{
+						"imagen_chica":"http://architecturehomedesigns.com/wp-content/uploads/2011/05/minimalist-house-design-in-miami.jpg",
+						"imagen_grande":"http://architecturehomedesigns.com/wp-content/uploads/2011/05/minimalist-house-design-in-miami.jpg",
+						"content_title":"titulo",
+						"content_text":"contenido acá"
+					},
+					{
+						"imagen_chica":"http://architecturehomedesigns.com/wp-content/uploads/2011/05/White-minimalist-house-design.jpg",
+						"imagen_grande":"http://architecturehomedesigns.com/wp-content/uploads/2011/05/White-minimalist-house-design.jpg",
+						"content_title":"titulo",
+						"content_text":"contenido acá"
+					},
+					{
+						"imagen_chica":"http://www.alldoing.com/wp-content/uploads/2011/04/minimalist-house-design-1.jpg",
+						"imagen_grande":"http://www.alldoing.com/wp-content/uploads/2011/04/minimalist-house-design-1.jpg",
+						"content_title":"titulo",
+						"content_text":"contenido acá"
+					},
+					{
+						"imagen_chica":"http://www.alldoing.com/wp-content/uploads/2011/04/minimalist-house-design-5.jpg",
+						"imagen_grande":"http://www.alldoing.com/wp-content/uploads/2011/04/minimalist-house-design-5.jpg",
+						"content_title":"titulo",
+						"content_text":"contenido acá"
+					},
+					{
+						"imagen_chica":"http://www.roomsorganizer.com/wp-content/uploads/2011/03/Modern-Minimalist-House-Interior-Design6.jpg",
+						"imagen_grande":"http://www.roomsorganizer.com/wp-content/uploads/2011/03/Modern-Minimalist-House-Interior-Design6.jpg",
+						"content_title":"titulo",
+						"content_text":"contenido acá"
+					},
+					{
+						"imagen_chica":"http://www.roomsorganizer.com/wp-content/uploads/2011/03/Modern-Minimalist-House-Interior-Design5.jpg",
+						"imagen_grande":"http://www.roomsorganizer.com/wp-content/uploads/2011/03/Modern-Minimalist-House-Interior-Design5.jpg",
+						"content_title":"titulo",
+						"content_text":"contenido acá"
+					},
+					{
+						"imagen_chica":"http://www.juvandesign.com/wp-content/uploads/2009/05/rectangular-plates-modern-minimalist-house-ideas2.jpg",
+						"imagen_grande":"http://www.juvandesign.com/wp-content/uploads/2009/05/rectangular-plates-modern-minimalist-house-ideas2.jpg",
+						"content_title":"titulo",
+						"content_text":"contenido acá"
+					},
+					{
+						"imagen_chica":"http://www.solarnovo.com/wp-content/uploads/2011/06/minimalist-house-lighting-design-3.jpg",
+						"imagen_grande":"http://www.solarnovo.com/wp-content/uploads/2011/06/minimalist-house-lighting-design-3.jpg",
+						"content_title":"titulo",
+						"content_text":"contenido acá"
+					},
+					{
+						"imagen_chica":"http://3.bp.blogspot.com/_FbuVZUkzguE/SRmhk7VMaEI/AAAAAAAABFM/pnfjbSB2Osw/s400/NUMERO_14%5B1%5D.JPG",
+						"imagen_grande":"http://3.bp.blogspot.com/_FbuVZUkzguE/SRmhk7VMaEI/AAAAAAAABFM/pnfjbSB2Osw/s400/NUMERO_14%5B1%5D.JPG",
+						"content_title":"titulo",
+						"content_text":"contenido acá"
+					},
+					{
+						"imagen_chica":"http://i.imgur.com/QdqqR.jpg",
+						"imagen_grande":"http://i.imgur.com/QdqqR.jpg",
+						"content_title":"titulo",
+						"content_text":"contenido acá"
+					}
+				]
+			},
+			"galeria":{
+				"categories":[
+					{
+						"name":"Ciudades",
+						"items":
+						[
+							{
+								"imagen_chica":"http://3.bp.blogspot.com/_3EuPj0S9r34/TSE1S1-lbSI/AAAAAAAAiVM/3nLCR9fujJ8/s1600/number_one_smooth.jpg",
+								"imagen_grande":"http://3.bp.blogspot.com/_3EuPj0S9r34/TSE1S1-lbSI/AAAAAAAAiVM/3nLCR9fujJ8/s1600/number_one_smooth.jpg",
+								"content_title":"titulo del item 1",
+								"content_text":"contenido acá del item 1"
+							},
+							{
+								"imagen_chica":"http://www.staticmiss.com/imgs/normal/2009/10/13/cifra-gigante-de-metal-numero-2.jpg",
+								"imagen_grande":"http://www.staticmiss.com/imgs/normal/2009/10/13/cifra-gigante-de-metal-numero-2.jpg",
+								"content_title":"titulo dos",
+								"content_text":"contenido acá dos"
+							},
+							{
+								"imagen_chica":"http://www.arquitectronica.com.mx/images/stories/arqui%20moderna.jpg",
+								"imagen_grande":"http://www.arquitectronica.com.mx/images/stories/arqui%20moderna.jpg",
+								"content_title":"titulo",
+								"content_text":"contenido acá"
+							},
+							{
+								"imagen_chica":"http://www.arquitectronica.com.mx/images/stories/arqui%20minimalista.jpg",
+								"imagen_grande":"http://www.arquitectronica.com.mx/images/stories/arqui%20minimalista.jpg",
+								"content_title":"titulo",
+								"content_text":"contenido acá"
+							},
+							{
+								"imagen_chica":"http://architecturehomedesigns.com/wp-content/uploads/2011/05/minimalist-hous-design-black-interior.jpg",
+								"imagen_grande":"http://architecturehomedesigns.com/wp-content/uploads/2011/05/minimalist-hous-design-black-interior.jpg",
+								"content_title":"titulo",
+								"content_text":"contenido acá"
+							},
+							{
+								"imagen_chica":"http://architecturehomedesigns.com/wp-content/uploads/2011/05/minimalist-house-design-in-miami.jpg",
+								"imagen_grande":"http://architecturehomedesigns.com/wp-content/uploads/2011/05/minimalist-house-design-in-miami.jpg",
+								"content_title":"titulo",
+								"content_text":"contenido acá"
+							},
+							{
+								"imagen_chica":"http://architecturehomedesigns.com/wp-content/uploads/2011/05/White-minimalist-house-design.jpg",
+								"imagen_grande":"http://architecturehomedesigns.com/wp-content/uploads/2011/05/White-minimalist-house-design.jpg",
+								"content_title":"titulo",
+								"content_text":"contenido acá"
+							},
+							{
+								"imagen_chica":"http://www.alldoing.com/wp-content/uploads/2011/04/minimalist-house-design-1.jpg",
+								"imagen_grande":"http://www.alldoing.com/wp-content/uploads/2011/04/minimalist-house-design-1.jpg",
+								"content_title":"titulo",
+								"content_text":"contenido acá"
+							},
+							{
+								"imagen_chica":"http://www.alldoing.com/wp-content/uploads/2011/04/minimalist-house-design-5.jpg",
+								"imagen_grande":"http://www.alldoing.com/wp-content/uploads/2011/04/minimalist-house-design-5.jpg",
+								"content_title":"titulo",
+								"content_text":"contenido acá"
+							},
+							{
+								"imagen_chica":"http://www.roomsorganizer.com/wp-content/uploads/2011/03/Modern-Minimalist-House-Interior-Design6.jpg",
+								"imagen_grande":"http://www.roomsorganizer.com/wp-content/uploads/2011/03/Modern-Minimalist-House-Interior-Design6.jpg",
+								"content_title":"titulo",
+								"content_text":"contenido acá"
+							},
+							{
+								"imagen_chica":"http://www.roomsorganizer.com/wp-content/uploads/2011/03/Modern-Minimalist-House-Interior-Design5.jpg",
+								"imagen_grande":"http://www.roomsorganizer.com/wp-content/uploads/2011/03/Modern-Minimalist-House-Interior-Design5.jpg",
+								"content_title":"titulo",
+								"content_text":"contenido acá"
+							},
+							{
+								"imagen_chica":"http://www.juvandesign.com/wp-content/uploads/2009/05/rectangular-plates-modern-minimalist-house-ideas2.jpg",
+								"imagen_grande":"http://www.juvandesign.com/wp-content/uploads/2009/05/rectangular-plates-modern-minimalist-house-ideas2.jpg",
+								"content_title":"titulo",
+								"content_text":"contenido acá"
+							},
+							{
+								"imagen_chica":"http://www.solarnovo.com/wp-content/uploads/2011/06/minimalist-house-lighting-design-3.jpg",
+								"imagen_grande":"http://www.solarnovo.com/wp-content/uploads/2011/06/minimalist-house-lighting-design-3.jpg",
+								"content_title":"titulo",
+								"content_text":"contenido acá"
+							},
+							{
+								"imagen_chica":"http://3.bp.blogspot.com/_FbuVZUkzguE/SRmhk7VMaEI/AAAAAAAABFM/pnfjbSB2Osw/s400/NUMERO_14%5B1%5D.JPG",
+								"imagen_grande":"http://3.bp.blogspot.com/_FbuVZUkzguE/SRmhk7VMaEI/AAAAAAAABFM/pnfjbSB2Osw/s400/NUMERO_14%5B1%5D.JPG",
+								"content_title":"titulo",
+								"content_text":"contenido acá"
+							},
+							{
+								"imagen_chica":"http://i.imgur.com/QdqqR.jpg",
+								"imagen_grande":"http://i.imgur.com/QdqqR.jpg",
+								"content_title":"titulo",
+								"content_text":"contenido acá"
+							}
+						]
+					}
+				]
+			},
+			"imagina_tus_espacios":{
+				"debug":1,
+				"ambientes":[
+					{
+						"name":"Cocina",
+						"items":[
+							{
+								"name":"Americana (este campo al parecer no es utilizado, pero es conveniente siempre tener un 'name' en la data",
+								"image":"img.jpg",
+								"mask":"mask.png",
+								"hotspots":[
+									{
+										"tl":{"x":250,"y":274},
+										"tr":{"x":375,"y":277},
+										"bl":{"x":27,"y":453},
+										"br":{"x":317,"y":462},
+										"textures":[
+											{
+												"name":"text1",
+												"imagen_grande":"tex.jpg",
+												"imagen_chica":"tex.jpg"
+											},
+											{
+												"name":"text1",
+												"imagen_grande":"tex.jpg",
+												"imagen_chica":"tex.jpg"
+											},
+											{
+												"name":"text1",
+												"imagen_grande":"tex.jpg",
+												"imagen_chica":"tex.jpg"
+											}
+										]
+									},
+									{
+										"tl":{"x":618,"y":246},
+										"tr":{"x":899,"y":383},
+										"bl":{"x":616,"y":358},
+										"br":{"x":899,"y":700},
+										"textures":[
+											{
+												"name":"text1",
+												"imagen_grande":"tex.jpg",
+												"imagen_chica":"tex.jpg"
+											},
+											{
+												"name":"text1",
+												"imagen_grande":"tex.jpg",
+												"imagen_chica":"tex.jpg"
+											},
+											{
+												"name":"text1",
+												"imagen_grande":"tex.jpg",
+												"imagen_chica":"tex.jpg"
+											}
+										]
+									},
+									{
+										"tl":{"x":618,"y":246},
+										"tr":{"x":899,"y":383},
+										"bl":{"x":616,"y":358},
+										"br":{"x":899,"y":700},
+										"textures":[
+											{
+												"name":"text1",
+												"imagen_grande":"tex.jpg",
+												"imagen_chica":"tex.jpg"
+											},
+											{
+												"name":"text1",
+												"imagen_grande":"tex.jpg",
+												"imagen_chica":"tex.jpg"
+											},
+											{
+												"name":"text1",
+												"imagen_grande":"tex.jpg",
+												"imagen_chica":"tex.jpg"
+											}
+										]
+									}
+								]
+							},
+							{
+								"name":"Americana2",
+								"image":"img.jpg",
+								"mask":"mask.png",
+								"hotspots":[
+									{
+										"tl":{"x":100,"y":100},
+										"tr":{"x":100,"y":100},
+										"bl":{"x":100,"y":100},
+										"br":{"x":100,"y":100},
+										"textures":[
+											{
+												"name":"text1",
+												"imagen_grande":"tex.jpg",
+												"imagen_chica":"tex.jpg"
+											},
+											{
+												"name":"text1",
+												"imagen_grande":"tex.jpg",
+												"imagen_chica":"tex.jpg"
+											},
+											{
+												"name":"text1",
+												"imagen_grande":"tex.jpg",
+												"imagen_chica":"tex.jpg"
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"name":"Dormitorio",
+						"items":[
+							{
+								"name":"Principal",
+								"image":"img.jpg",
+								"mask":"mask.png",
+								"hotspots":[
+									{
+										"tl":{"x":100,"y":100},
+										"tr":{"x":100,"y":100},
+										"bl":{"x":100,"y":100},
+										"br":{"x":100,"y":100},
+										"textures":[
+											{
+												"name":"text1",
+												"imagen_grande":"tex.jpg",
+												"imagen_chica":"tex.jpg"
+											},
+											{
+												"name":"text1",
+												"imagen_grande":"tex.jpg",
+												"imagen_chica":"tex.jpg"
+											},
+											{
+												"name":"text1",
+												"imagen_grande":"tex.jpg",
+												"imagen_chica":"tex.jpg"
+											}
+										]
+									}
+								]
+							},
+							{
+								"name":"Principal2",
+								"image":"img.jpg",
+								"mask":"mask.png",
+								"hotspots":[
+									{
+										"tl":{"x":100,"y":100},
+										"tr":{"x":100,"y":100},
+										"bl":{"x":100,"y":100},
+										"br":{"x":100,"y":100},
+										"textures":[
+											{
+												"name":"text1",
+												"imagen_grande":"tex.jpg",
+												"imagen_chica":"tex.jpg"
+											},
+											{
+												"name":"text1",
+												"imagen_grande":"tex.jpg",
+												"imagen_chica":"tex.jpg"
+											},
+											{
+												"name":"text1",
+												"imagen_grande":"tex.jpg",
+												"imagen_chica":"tex.jpg"
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"contacto":{
+				"info":"asasdasd\nasdasda\nasdasda@asd.com"
+			}
+        }
+    }
+}
