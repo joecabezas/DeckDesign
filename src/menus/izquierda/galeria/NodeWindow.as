@@ -22,7 +22,7 @@ package menus.izquierda.galeria
 		private var str_title:String;
 		private var str_text:String;
 		
-		private var layout:ILayout2d;
+		//private var layout:ILayout2d;
 		
 		public function NodeWindow(image_url:String, title:String, text:String)
 		{
@@ -37,13 +37,13 @@ package menus.izquierda.galeria
 		
 		private function setup():void
 		{
-			this.imgl = new ImageLoader(this.img_url, {bgAlpha: 0,width: 500, height: 500, scaleMode: ScaleMode.PROPORTIONAL_INSIDE, centerRegistration: false});
+			this.imgl = new ImageLoader(this.img_url, {bgAlpha: 0,width: 500, height: 500*3/4, scaleMode: ScaleMode.PROPORTIONAL_INSIDE, centerRegistration: false});
 			imgl.load();
 			
 			this.txt_title = TextFieldGenerator.crearTextField(this.str_title, {color:0xffffff } );
 			this.txt_text = TextFieldGenerator.crearTextField(this.str_text, {color:0xffffff, multiline:true, wordwrap:true, width:500 } );
 			
-			this.layout = new VerticalLine(5);
+			//this.layout = new VerticalLine(0);
 		}
 		
 		private function agregarListeners():void
@@ -53,13 +53,15 @@ package menus.izquierda.galeria
 		private function dibujar():void
 		{
 			this.addChild(this.imgl.content);
-			//this.addChild(this.txt_title);
+			this.addChild(this.txt_title);
+			this.txt_title.y = 500*3/4 + 5;
+			
 			//this.addChild(this.txt_text);
 			
-			this.layout.addNode(this.imgl.content, false);
+			//this.layout.addNode(this.imgl.content, false);
 			//this.layout.addNode(this.txt_title, false);
 			//this.layout.addNode(this.txt_text, false);
-			this.layout.updateAndRender();
+			//this.layout.updateAndRender();
 		}
 	}
 

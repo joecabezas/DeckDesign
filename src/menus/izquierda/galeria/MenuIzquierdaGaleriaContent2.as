@@ -69,6 +69,7 @@ package menus.izquierda.galeria
 			this.addChild(this.window);
 			
 			this.window.x = 155;
+			this.window.y = 35;
 			
 			this.swapChildren(this.window, this.linear_carrousel);
 		}
@@ -89,7 +90,8 @@ package menus.izquierda.galeria
 			{
 				this.addChild(this.linear_carrousel);
 				
-				this.linear_carrousel.x = ApplicationConfiguration.MAIN_CONTENT_WIDTH / 2 - this.linear_carrousel.width / 2 - 70;
+				//this.linear_carrousel.x = ApplicationConfiguration.MAIN_CONTENT_WIDTH / 2 - this.linear_carrousel.width / 2 - 70;
+				this.linear_carrousel.x = 155;
 				this.linear_carrousel.y = 450;
 				
 				var item:Object = this.data[0];
