@@ -66,11 +66,11 @@ package menus.izquierda.galeria
 			for (var i:int = 0; i < this.data.length; i++)
 			{
 				var item:Object = this.data[i];
-				this.items.push(new GaleriaImageNode(item.imagen_chica, item.imagen_grande, item.content_title, item.content_text));
+				this.items.push(new GaleriaImageNode(i, item.imagen_chica, item.imagen_grande, item.content_title, item.content_text));
 				
-					//TODO: permitir mas de 9
-					//if (i >= 5)
-					//	break;
+				//TODO: permitir mas de 9
+				//if (i >= 5)
+				//	break;
 			}
 			
 			var triangle_params:Object = {fillColor: 0x555555, lineAlpha: 0};
@@ -197,19 +197,19 @@ package menus.izquierda.galeria
 			this.addChild(this._mascara);
 			this._slide.mask = this._mascara;
 			
-			this.addChild(this._left_button);
-			this._left_button.width = this._slide.height * 0.9;
-			this._left_button.height = 20;
-			this._left_button.y = this._mascara.height / 2;
-			this._left_button.x = -this._left_button.height / 2 - 5;
-			this._left_button.rotation = -90;
-			
-			this.addChild(this._right_button);
-			this._right_button.width = this._slide.height * 0.9;
-			this._right_button.height = 20;
-			this._right_button.y = this._mascara.height / 2;
-			this._right_button.x = this._mascara.width + this._right_button.height / 2 + 5;
-			this._right_button.rotation = 90;
+			//this.addChild(this._left_button);
+			//this._left_button.width = this._slide.height * 0.9;
+			//this._left_button.height = 20;
+			//this._left_button.y = this._mascara.height / 2;
+			//this._left_button.x = -this._left_button.height / 2 - 5;
+			//this._left_button.rotation = -90;
+			//
+			//this.addChild(this._right_button);
+			//this._right_button.width = this._slide.height * 0.9;
+			//this._right_button.height = 20;
+			//this._right_button.y = this._mascara.height / 2;
+			//this._right_button.x = this._mascara.width + this._right_button.height / 2 + 5;
+			//this._right_button.rotation = 90;
 		}
 	
 	}

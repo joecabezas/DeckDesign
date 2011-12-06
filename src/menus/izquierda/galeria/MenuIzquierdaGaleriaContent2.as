@@ -65,7 +65,7 @@ package menus.izquierda.galeria
 		
 		public function addWindow(n:GaleriaImageNode):void
 		{
-			this.window = new NodeWindow(n.getUrlBig(), n.getTitle(), n.getText());
+			this.window = new NodeWindow(this.data, n);
 			this.addChild(this.window);
 			
 			this.window.x = 155;
@@ -95,7 +95,7 @@ package menus.izquierda.galeria
 				this.linear_carrousel.y = 450;
 				
 				var item:Object = this.data[0];
-				this.addWindow(new GaleriaImageNode(item.imagen_chica, item.imagen_grande, item.content_title, item.content_text));
+				this.addWindow(new GaleriaImageNode(0, item.imagen_chica, item.imagen_grande, item.content_title, item.content_text));
 			}
 		}
 	

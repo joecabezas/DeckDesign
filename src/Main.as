@@ -45,6 +45,9 @@ package
 		public static const SECCION_FACEBOOK:String = 'seccionFacebook';
 		public static const SECCION_TWITTER:String = 'seccionTwitter';
 		
+		static public const JSON_URL:String = 'data/data.json';
+		//static public const JSON_URL:String = 'http://www.deckdesign.cl/backend/json';
+		
 		//assets
 		private var logo:Logo;
 		private var footer:Footer;
@@ -85,13 +88,15 @@ package
 		private function setupLoaders():void
 		{
 			//loaders
-			this.data_loader = new DataLoader('data/data.json', {name: LOADER_JSON, onComplete: onDataLoaderComplete, onProgress: onDataLoaderProgress, onError: onDataLoaderError});
+			this.data_loader = new DataLoader(JSON_URL, {name: LOADER_JSON, onComplete: onDataLoaderComplete, onProgress: onDataLoaderProgress, onError: onDataLoaderError});
 			
 			this.data_loader.load();
 		}
 		
 		private function onDataLoaderComplete(e:LoaderEvent):void
 		{
+			trace(DataLoader(e.target).content);
+			
 			//parsear el JSON y darselo al singleton
 			Singleton.getInstance().data = {json: JSON.decode(DataLoader(e.target).content, false)};
 			

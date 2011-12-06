@@ -16,14 +16,16 @@ package menus.izquierda.galeria
 		//eventos
 		public static const CLICK_GALERIA_IMAGE_NODE:String = 'galeriaImageNode';
 		
+		private var index:int;
 		private var imgl:ImageLoader;
 		private var url_chica:String;
 		private var url_grande:String;
 		private var content_title:String;
 		private var content_text:String;
 		
-		public function GaleriaImageNode(url_chica:String, url_grande:String, content_title:String, content_text:String)
+		public function GaleriaImageNode(index:int, url_chica:String, url_grande:String, content_title:String, content_text:String)
 		{
+			this.index = index;
 			this.url_chica = url_chica;
 			this.url_grande = url_grande;
 			this.content_title = content_title;
@@ -59,6 +61,10 @@ package menus.izquierda.galeria
 		
 		public function getText():String {
 			return this.content_text;
+		}
+		
+		public function getIndex():uint {
+			return this.index;
 		}
 		
 		override protected function onClick(e:MouseEvent):void {
