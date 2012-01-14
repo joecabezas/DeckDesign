@@ -45,8 +45,8 @@ package
 		public static const SECCION_FACEBOOK:String = 'seccionFacebook';
 		public static const SECCION_TWITTER:String = 'seccionTwitter';
 		
-		static public const JSON_URL:String = 'data/data.json';
-		//static public const JSON_URL:String = 'http://www.deckdesign.cl/backend/json';
+		//static public const JSON_URL:String = 'data/data.json';
+		static public const JSON_URL:String = 'http://www.deckdesign.cl/backend/json';
 		
 		//assets
 		private var logo:Logo;

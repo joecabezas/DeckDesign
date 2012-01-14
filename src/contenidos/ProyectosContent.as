@@ -28,6 +28,9 @@ package contenidos
 			this.fondo.graphics.drawRect(0, 0, ApplicationConfiguration.MAIN_CONTENT_WIDTH, ApplicationConfiguration.MAIN_CONTENT_HEIGHT);
 			this.fondo.graphics.endFill();
 			
+			if (!Singleton.getInstance().data.json.data.secciones.nuestros_proyectos.items[0])
+				return;
+				
 			var url:String = Singleton.getInstance().data.json.data.secciones.nuestros_proyectos.items[0].imagen_grande;
 			this.image_loader = new ImageLoader(url, { width: ApplicationConfiguration.MAIN_CONTENT_WIDTH, height:ApplicationConfiguration.MAIN_CONTENT_HEIGHT } );
 			this.image_loader.load();
@@ -40,7 +43,9 @@ package contenidos
 		private function dibujar():void
 		{
 			this.addChild(this.fondo);
-			this.addChild(this.image_loader.content);
+			
+			if(this.image_loader)
+				this.addChild(this.image_loader.content);
 		}
 		
 		public function loadImageUrl(s:String):void {

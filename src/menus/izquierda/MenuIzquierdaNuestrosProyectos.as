@@ -35,6 +35,10 @@ package menus.izquierda
 			
 			
 			this.slide_panel = new SlidePanel();
+			
+			if (!Singleton.getInstance().data.json.data.secciones.nuestros_proyectos.items[0])
+				return;
+				
 			this.slide_panel.setData(Singleton.getInstance().data.json.data.secciones.nuestros_proyectos.items[0]);
 		}
 		
