@@ -51,7 +51,7 @@ package menus.izquierda.imagina
 		private var hotspot:Object;
 		
 		//debug
-		private var debug:TextField;
+		private var debug:Sprite;
 		
 		private var distorsion:DistortImage;
 		
@@ -137,7 +137,16 @@ package menus.izquierda.imagina
 				if (this.debug && this.contains(this.debug))
 					this.removeChild(this.debug);
 				
-				this.debug = TextFieldGenerator.crearTextField('{"x":' + MouseEvent(e).localX + ',"y":' + MouseEvent(e).localX + '}', {color: 0xffffff, selectable: true});
+				this.debug = new Sprite();
+					
+					
+				var debug_txt_shadow:TextField = TextFieldGenerator.crearTextField('{"x":' + MouseEvent(e).localX + ',"y":' + MouseEvent(e).localY + '}', {color: 0x222222, selectable: true});
+				this.debug.addChild(debug_txt_shadow);
+				debug_txt_shadow.x = debug_txt_shadow.y = 1;
+				
+				var debug_txt:TextField = TextFieldGenerator.crearTextField('{"x":' + MouseEvent(e).localX + ',"y":' + MouseEvent(e).localY + '}', {color: 0xffffff, selectable: true});
+				this.debug.addChild(debug_txt);
+				
 				this.addChild(this.debug);
 			}
 		}
