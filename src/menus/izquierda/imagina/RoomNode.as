@@ -41,7 +41,7 @@ package menus.izquierda.imagina
 		private function setup():void
 		{
 			this.fondo_normal = new Sprite();
-			this.fondo_normal.graphics.beginFill(ApplicationConfiguration.COLOR_QUIENES_SOMOS);
+			this.fondo_normal.graphics.beginFill(0x00add7);
 			this.fondo_normal.graphics.drawRect(0, 0, ApplicationConfiguration.ROOM_NODE_SIZE * 0.7, ApplicationConfiguration.ROOM_NODE_SIZE * 0.7);
 			this.fondo_normal.graphics.endFill();
 			

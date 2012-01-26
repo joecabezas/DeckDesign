@@ -39,7 +39,7 @@ package menus.izquierda
 		
 		private function setup():void
 		{
-			var opciones:Object = {size: ApplicationConfiguration.SUBMENU_TEXT_SIZE, border: false, align: TextFieldGenerator.TEXTFORMAT_ALIGN_RIGHT, autosize: TextFieldGenerator.AUTOSIZE_NONE, color: this.normal_color, width: ApplicationConfiguration.MENU_IZQUIERDA_WIDTH, height:20};
+			var opciones:Object = {size: ApplicationConfiguration.SUBMENU_TEXT_SIZE, border: false, align: TextFieldGenerator.TEXTFORMAT_ALIGN_RIGHT, autosize: TextFieldGenerator.AUTOSIZE_NONE, color: this.normal_color, width: ApplicationConfiguration.MENU_IZQUIERDA_WIDTH, height:50};
 			this.textfield = TextFieldGenerator.crearTextField(this.str, opciones);
 		}
 		
