@@ -1,26 +1,32 @@
+
 {
-    "data":{
-        "logo":"img/logo.swf",
-        "footer":"img/franja-footer.gif",
+	"data":
+	{
+		"logo":"img/logo.swf",
+		"footer":"img/franja-footer.gif",
 		"facebook_url":"http://www.facebook.com",
 		"twitter_url":"http://www.twitter.com",
-        "secciones":{
-            "home":{
-                "seccion":[
-                    {
-                        "img":"data/imagina.png",
-                        "texto":"Imagina tus Espacios"
-                    },
-                    {
-                        "img":"data/nuestra_diferencia.png",
-                        "texto":"Nuestra Diferencia"
-                    },
-                    {
-                        "img":"data/nuestros_proyectos.png",
-                        "texto":"Nuestros Proyectos"
-                    }
-                ],
-				"contenido":[
+		"secciones":
+		{
+			"home":
+			{
+				"seccion":
+				[
+					{
+						"img":"data/imagina.png",
+						"texto":"Imagina tus Espacios"
+					},
+					{
+						"img":"data/nuestra_diferencia.png",
+						"texto":"Nuestra Diferencia"
+					},
+					{
+						"img":"data/nuestros_proyectos.png",
+						"texto":"Nuestros Proyectos"
+					}
+				],
+				"contenido":
+				[
 					{
 						"img":"http://cdn.home-designing.com/wp-content/uploads/2009/04/kids-study-room-skylight.jpg"
 					},
@@ -37,410 +43,1736 @@
 						"img":"http://www.housemaintain.com/wp-content/uploads/2010/04/Elegant-modern-formal-and-stylish-living-rooms-1.jpg"
 					}
 				]
-            },
-			"quienes_somos":{
-				"items":[
-					{
-						"menu_title":"DeskDesign",
-						"content_title":"DeskDesign",
-						"content_text":"imprime tus ideas
+			},
+			"quienes_somos":
+			{
+				"items":
+				[
+										
+										{
+						"menu_title":"DeckDesign",
+						"content_title":"Imprime tus ideas",
+						"content_text":"Somos una empresa pensada (creada) para DiseÃ±adores, Arquitectos, Decoradores, Innovadores, Creativos y todas las personas que estÃ©n dispuestos a hacer del diseÃ±o de ambientes algo Ãºnico y personalizado con la mejor calidad.
 
-Somos una empresa creada para Diseñadores, Arquitectos, Decoradores, Innovadores, Creativos y todas las personas que estén dispuestos a hacer del diseño de ambientes algo único y personalizado con la mejor calidad.
+Nosotros podemos imprimir todo tipo de superficies con una altura mÃ¡xima de 6cm. tales como puertas, mesas, muebles, melaminas, plÃ¡stico, acrÃ­lico, cerÃ¡micas, papel mural, acero y mÃ¡s.
 
-Nosotros podemos imprimir todo tipo de superficies con una altura máxima de 6cm. tales como puertas, mesas, muebles, melaminas, plástico, acrílico, cerámicas, papel mural, acero y mas.
+Ven a conocernos y crea con nosotros ambientes con identidad propia y diferÃ©nciate del resto."
+					}
 
-Ven a conocernos y crea con nosotros ambientes con identidad propia y diferénciate del resto."
-					},
-					{
-						"menu_title":"Nuestra Diferencia",
-						"content_title":"Nuestra Diferencia",
-						"content_text":"Nuestras tintas son UV y NO son toxicas por ende son especiales para niños y para el medio ambiente.
-
-Puedes imprimir una superficie de hasta 2,40 mt. de ancho por infinito de largo y si lo que necesitas es algo más grande lo hacemos en paños
-También podemos imprimir superficies irregulares.
-
-Nuestro producto a diferencia de los vinilos o stickers no se engloba ni se salen y siempre van a quedar perfectos."
-					},
+					
 				]
 			},
-			"nuestros_proyectos":{
-				"items":[
-					{
-						"imagen_chica":"http://3.bp.blogspot.com/_3EuPj0S9r34/TSE1S1-lbSI/AAAAAAAAiVM/3nLCR9fujJ8/s1600/number_one_smooth.jpg",
-						"imagen_grande":"http://3.bp.blogspot.com/_3EuPj0S9r34/TSE1S1-lbSI/AAAAAAAAiVM/3nLCR9fujJ8/s1600/number_one_smooth.jpg",
-						"content_title":"titulo del item 1",
-						"content_text":"contenido acá del item 1"
-					},
-					{
-						"imagen_chica":"http://www.staticmiss.com/imgs/normal/2009/10/13/cifra-gigante-de-metal-numero-2.jpg",
-						"imagen_grande":"http://www.staticmiss.com/imgs/normal/2009/10/13/cifra-gigante-de-metal-numero-2.jpg",
-						"content_title":"titulo dos",
-						"content_text":"contenido acá dos"
-					},
-					{
-						"imagen_chica":"http://www.arquitectronica.com.mx/images/stories/arqui%20moderna.jpg",
-						"imagen_grande":"http://www.arquitectronica.com.mx/images/stories/arqui%20moderna.jpg",
-						"content_title":"titulo",
-						"content_text":"contenido acá"
-					},
-					{
-						"imagen_chica":"http://www.arquitectronica.com.mx/images/stories/arqui%20minimalista.jpg",
-						"imagen_grande":"http://www.arquitectronica.com.mx/images/stories/arqui%20minimalista.jpg",
-						"content_title":"titulo",
-						"content_text":"contenido acá"
-					},
-					{
-						"imagen_chica":"http://architecturehomedesigns.com/wp-content/uploads/2011/05/minimalist-hous-design-black-interior.jpg",
-						"imagen_grande":"http://architecturehomedesigns.com/wp-content/uploads/2011/05/minimalist-hous-design-black-interior.jpg",
-						"content_title":"titulo",
-						"content_text":"contenido acá"
-					},
-					{
-						"imagen_chica":"http://architecturehomedesigns.com/wp-content/uploads/2011/05/minimalist-house-design-in-miami.jpg",
-						"imagen_grande":"http://architecturehomedesigns.com/wp-content/uploads/2011/05/minimalist-house-design-in-miami.jpg",
-						"content_title":"titulo",
-						"content_text":"contenido acá"
-					},
-					{
-						"imagen_chica":"http://architecturehomedesigns.com/wp-content/uploads/2011/05/White-minimalist-house-design.jpg",
-						"imagen_grande":"http://architecturehomedesigns.com/wp-content/uploads/2011/05/White-minimalist-house-design.jpg",
-						"content_title":"titulo",
-						"content_text":"contenido acá"
-					},
-					{
-						"imagen_chica":"http://www.alldoing.com/wp-content/uploads/2011/04/minimalist-house-design-1.jpg",
-						"imagen_grande":"http://www.alldoing.com/wp-content/uploads/2011/04/minimalist-house-design-1.jpg",
-						"content_title":"titulo",
-						"content_text":"contenido acá"
-					},
-					{
-						"imagen_chica":"http://www.alldoing.com/wp-content/uploads/2011/04/minimalist-house-design-5.jpg",
-						"imagen_grande":"http://www.alldoing.com/wp-content/uploads/2011/04/minimalist-house-design-5.jpg",
-						"content_title":"titulo",
-						"content_text":"contenido acá"
-					},
-					{
-						"imagen_chica":"http://www.roomsorganizer.com/wp-content/uploads/2011/03/Modern-Minimalist-House-Interior-Design6.jpg",
-						"imagen_grande":"http://www.roomsorganizer.com/wp-content/uploads/2011/03/Modern-Minimalist-House-Interior-Design6.jpg",
-						"content_title":"titulo",
-						"content_text":"contenido acá"
-					},
-					{
-						"imagen_chica":"http://www.roomsorganizer.com/wp-content/uploads/2011/03/Modern-Minimalist-House-Interior-Design5.jpg",
-						"imagen_grande":"http://www.roomsorganizer.com/wp-content/uploads/2011/03/Modern-Minimalist-House-Interior-Design5.jpg",
-						"content_title":"titulo",
-						"content_text":"contenido acá"
-					},
-					{
-						"imagen_chica":"http://www.juvandesign.com/wp-content/uploads/2009/05/rectangular-plates-modern-minimalist-house-ideas2.jpg",
-						"imagen_grande":"http://www.juvandesign.com/wp-content/uploads/2009/05/rectangular-plates-modern-minimalist-house-ideas2.jpg",
-						"content_title":"titulo",
-						"content_text":"contenido acá"
-					},
-					{
-						"imagen_chica":"http://www.solarnovo.com/wp-content/uploads/2011/06/minimalist-house-lighting-design-3.jpg",
-						"imagen_grande":"http://www.solarnovo.com/wp-content/uploads/2011/06/minimalist-house-lighting-design-3.jpg",
-						"content_title":"titulo",
-						"content_text":"contenido acá"
-					},
-					{
-						"imagen_chica":"http://3.bp.blogspot.com/_FbuVZUkzguE/SRmhk7VMaEI/AAAAAAAABFM/pnfjbSB2Osw/s400/NUMERO_14%5B1%5D.JPG",
-						"imagen_grande":"http://3.bp.blogspot.com/_FbuVZUkzguE/SRmhk7VMaEI/AAAAAAAABFM/pnfjbSB2Osw/s400/NUMERO_14%5B1%5D.JPG",
-						"content_title":"titulo",
-						"content_text":"contenido acá"
-					},
-					{
-						"imagen_chica":"http://i.imgur.com/QdqqR.jpg",
-						"imagen_grande":"http://i.imgur.com/QdqqR.jpg",
-						"content_title":"titulo",
-						"content_text":"contenido acá"
+			"nuestros_proyectos":
+			{
+				"items":
+				[
+										
+										{
+						
+						"imagen_chica":"http://i.imgur.com/MCKiu.png",
+						"imagen_grande":"http://i.imgur.com/MCKiu.png",
+						"content_title":"Nuestros Proyectos",
+						"content_text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed leo a lacus egestas adipiscing vel sed ligula. Praesent pellentesque porttitor neque, ac elementum dolor fringilla ut. Aenean ante sem, consectetur at dictum vel, eleifend non nulla. Sed non auctor odio. Donec nulla neque, posuere a consectetur eu, ultricies in arcu. Donec dapibus mauris nec elit varius vehicula. Donec id pharetra leo. Vivamus faucibus faucibus egestas. Integer vel arcu tellus. Integer blandit malesuada orci semper pretium. Curabitur blandit consectetur augue id fermentum."
 					}
+
+					
 				]
 			},
-			"galeria":{
-				"categories":[
-					{
-						"name":"Ciudades",
-						"items":
-						[
-							{
-								"imagen_chica":"http://3.bp.blogspot.com/_3EuPj0S9r34/TSE1S1-lbSI/AAAAAAAAiVM/3nLCR9fujJ8/s1600/number_one_smooth.jpg",
-								"imagen_grande":"http://3.bp.blogspot.com/_3EuPj0S9r34/TSE1S1-lbSI/AAAAAAAAiVM/3nLCR9fujJ8/s1600/number_one_smooth.jpg",
-								"content_title":"titulo del item 1",
-								"content_text":"contenido acá del item 1"
-							},
-							{
-								"imagen_chica":"http://www.staticmiss.com/imgs/normal/2009/10/13/cifra-gigante-de-metal-numero-2.jpg",
-								"imagen_grande":"http://www.staticmiss.com/imgs/normal/2009/10/13/cifra-gigante-de-metal-numero-2.jpg",
-								"content_title":"titulo dos",
-								"content_text":"contenido acá dos"
-							},
-							{
-								"imagen_chica":"http://www.arquitectronica.com.mx/images/stories/arqui%20moderna.jpg",
-								"imagen_grande":"http://www.arquitectronica.com.mx/images/stories/arqui%20moderna.jpg",
-								"content_title":"titulo",
-								"content_text":"contenido acá"
-							},
-							{
-								"imagen_chica":"http://www.arquitectronica.com.mx/images/stories/arqui%20minimalista.jpg",
-								"imagen_grande":"http://www.arquitectronica.com.mx/images/stories/arqui%20minimalista.jpg",
-								"content_title":"titulo",
-								"content_text":"contenido acá"
-							},
-							{
-								"imagen_chica":"http://architecturehomedesigns.com/wp-content/uploads/2011/05/minimalist-hous-design-black-interior.jpg",
-								"imagen_grande":"http://architecturehomedesigns.com/wp-content/uploads/2011/05/minimalist-hous-design-black-interior.jpg",
-								"content_title":"titulo",
-								"content_text":"contenido acá"
-							},
-							{
-								"imagen_chica":"http://architecturehomedesigns.com/wp-content/uploads/2011/05/minimalist-house-design-in-miami.jpg",
-								"imagen_grande":"http://architecturehomedesigns.com/wp-content/uploads/2011/05/minimalist-house-design-in-miami.jpg",
-								"content_title":"titulo",
-								"content_text":"contenido acá"
-							},
-							{
-								"imagen_chica":"http://architecturehomedesigns.com/wp-content/uploads/2011/05/White-minimalist-house-design.jpg",
-								"imagen_grande":"http://architecturehomedesigns.com/wp-content/uploads/2011/05/White-minimalist-house-design.jpg",
-								"content_title":"titulo",
-								"content_text":"contenido acá"
-							},
-							{
-								"imagen_chica":"http://www.alldoing.com/wp-content/uploads/2011/04/minimalist-house-design-1.jpg",
-								"imagen_grande":"http://www.alldoing.com/wp-content/uploads/2011/04/minimalist-house-design-1.jpg",
-								"content_title":"titulo",
-								"content_text":"contenido acá"
-							},
-							{
-								"imagen_chica":"http://www.alldoing.com/wp-content/uploads/2011/04/minimalist-house-design-5.jpg",
-								"imagen_grande":"http://www.alldoing.com/wp-content/uploads/2011/04/minimalist-house-design-5.jpg",
-								"content_title":"titulo",
-								"content_text":"contenido acá"
-							},
-							{
-								"imagen_chica":"http://www.roomsorganizer.com/wp-content/uploads/2011/03/Modern-Minimalist-House-Interior-Design6.jpg",
-								"imagen_grande":"http://www.roomsorganizer.com/wp-content/uploads/2011/03/Modern-Minimalist-House-Interior-Design6.jpg",
-								"content_title":"titulo",
-								"content_text":"contenido acá"
-							},
-							{
-								"imagen_chica":"http://www.roomsorganizer.com/wp-content/uploads/2011/03/Modern-Minimalist-House-Interior-Design5.jpg",
-								"imagen_grande":"http://www.roomsorganizer.com/wp-content/uploads/2011/03/Modern-Minimalist-House-Interior-Design5.jpg",
-								"content_title":"titulo",
-								"content_text":"contenido acá"
-							},
-							{
-								"imagen_chica":"http://www.juvandesign.com/wp-content/uploads/2009/05/rectangular-plates-modern-minimalist-house-ideas2.jpg",
-								"imagen_grande":"http://www.juvandesign.com/wp-content/uploads/2009/05/rectangular-plates-modern-minimalist-house-ideas2.jpg",
-								"content_title":"titulo",
-								"content_text":"contenido acá"
-							},
-							{
-								"imagen_chica":"http://www.solarnovo.com/wp-content/uploads/2011/06/minimalist-house-lighting-design-3.jpg",
-								"imagen_grande":"http://www.solarnovo.com/wp-content/uploads/2011/06/minimalist-house-lighting-design-3.jpg",
-								"content_title":"titulo",
-								"content_text":"contenido acá"
-							},
-							{
-								"imagen_chica":"http://3.bp.blogspot.com/_FbuVZUkzguE/SRmhk7VMaEI/AAAAAAAABFM/pnfjbSB2Osw/s400/NUMERO_14%5B1%5D.JPG",
-								"imagen_grande":"http://3.bp.blogspot.com/_FbuVZUkzguE/SRmhk7VMaEI/AAAAAAAABFM/pnfjbSB2Osw/s400/NUMERO_14%5B1%5D.JPG",
-								"content_title":"titulo catorce",
-								"content_text":"contenido acá"
-							},
-							{
-								"imagen_chica":"http://i.imgur.com/QdqqR.jpg",
-								"imagen_grande":"http://i.imgur.com/QdqqR.jpg",
-								"content_title":"titulo quince",
-								"content_text":"contenido acá"
-							}
-						]
-					}
-				]
+			"galeria":
+			{
+				"categories":
+				[
+					{"name":"Ciudades","items":[{	"content_title":"Arco del Triunfo",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/2/chica_1 mt Arco-Triunfo-Paris.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/2/grande_1 mt Arco-Triunfo-Paris.jpg"},{	"content_title":"Torre Eiffel",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/3/chica_1 mt Torre eifel Bï€¢N.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/3/grande_1 mt Torre eifel Bï€¢N.jpg"},{	"content_title":"Torre Eiffel",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/4/chica_1 mt Tour Eifel.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/4/grande_1 mt Tour Eifel.jpg"},{	"content_title":"Times Square",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/5/chica_2 mt Nueva york times square noche.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/5/grande_2 mt Nueva york times square noche.jpg"},{	"content_title":"Puerto de Hong Kong",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/6/chica_2 mt Puerto Hong-Kong.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/6/grande_2 mt Puerto Hong-Kong.jpg"},{	"content_title":"Catedral Nuestra SeÃ±ora de ParÃ­s",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/7/chica_3 mt Catedral-Nuestra-Senora-Paris.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/7/grande_3 mt Catedral-Nuestra-Senora-Paris.jpg"},{	"content_title":"Metro de ParÃ­s",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/8/chica_50 cm Paris_metro.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/8/grande_50 cm Paris_metro.jpg"},{	"content_title":"Condominio de Edificios en Europa",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/9/chica_Condominio edificios europa.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/9/grande_Condominio edificios europa.jpg"},{	"content_title":"Nueva York",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/10/chica_Nueva York Bï€¢N.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/10/grande_Nueva York Bï€¢N.jpg"},{	"content_title":"Puerto de San Diego",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/11/chica_Puerto San Diego.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/11/grande_Puerto San Diego.jpg"},{	"content_title":"Templo - India",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/12/chica_Templo India.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/12/grande_Templo India.jpg"},{	"content_title":"Torre Eiffel",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/13/chica_Torre Eifel iluminada.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/13/grande_Torre Eifel iluminada.jpg"},{	"content_title":"Torre Eiffel",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/14/chica_Torre eifel.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/14/grande_Torre eifel.jpg"},{	"content_title":"Castillo",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/20/chica_Castillo.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/20/grande_Castillo.jpg"},{	"content_title":"Castillo al atardecer",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/21/chica_Castillo-atardecer.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/21/grande_Castillo-atardecer.jpg"}],"categories":[]},{"name":"Paisajes","items":[{	"content_title":"Atardecer",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/15/chica_1-mt-Atardecer.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/15/grande_1-mt-Atardecer.jpg"},{	"content_title":"Faro",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/16/chica_1-mt-Faro.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/16/grande_1-mt-Faro.jpg"},{	"content_title":"Barco frente al mar",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/17/chica_50-cm-Barco-antigua-frente-al-mar.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/17/grande_50-cm-Barco-antigua-frente-al-mar.jpg"},{	"content_title":"Barco barado",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/18/chica_50-cm-Barco-barado.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/18/grande_50-cm-Barco-barado.jpg"},{	"content_title":"Luna",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/19/chica_50-cm-Luna.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/19/grande_50-cm-Luna.jpg"}],"categories":[]},{"name":"Luces","items":[{	"content_title":"LÃ­neas azules",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/22/chica_1-mt-Lineas-azules.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/22/grande_1-mt-Lineas-azules.jpg"},{	"content_title":"LÃ­neas azules y amarillas",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/23/chica_1-mt-Lineas-azul-y-amarilla.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/23/grande_1-mt-Lineas-azul-y-amarilla.jpg"},{	"content_title":"LÃ­neas verdes",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/24/chica_1-mt-Lineas-de-luz.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/24/grande_1-mt-Lineas-de-luz.jpg"},{	"content_title":"Carretera - sobreexposiciÃ³n",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/25/chica_2-mt-Carretera-sobreexposiciÃ³n.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/25/grande_2-mt-Carretera-sobreexposiciÃ³n.jpg"},{	"content_title":"LÃ­neas azules y naranjas",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/26/chica_2-mt-Lineas-azul-y-naranjas.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/26/grande_2-mt-Lineas-azul-y-naranjas.jpg"},{	"content_title":"LÃ­neas verdes",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/27/chica_2-mt-Lineas-verdes.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/27/grande_2-mt-Lineas-verdes.jpg"}],"categories":[]},{"name":"Plantas","items":[{	"content_title":"Hojas detalle",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/28/chica_1-mt-Hojas-detalle.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/28/grande_1-mt-Hojas-detalle.jpg"},{	"content_title":"Pasto largo",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/29/chica_1-mt-Pasto-Largo.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/29/grande_1-mt-Pasto-Largo.jpg"},{	"content_title":"Hojas verdes",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/30/chica_2-mt-Hojas-verdes-2.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/30/grande_2-mt-Hojas-verdes-2.jpg"},{	"content_title":"Flores blancas",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/31/chica_50-cm-Flores_Blancas.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/31/grande_50-cm-Flores_Blancas.jpg"},{	"content_title":"Girasol",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/32/chica_50-cm-Girasol.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/32/grande_50-cm-Girasol.jpg"},{	"content_title":"Palo con hojas",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/33/chica_50-cm-Palo-con-hojas.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/33/grande_50-cm-Palo-con-hojas.jpg"},{	"content_title":"TulipÃ¡n blanco",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/34/chica_50-cm-Tulipan-blanco.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/34/grande_50-cm-Tulipan-blanco.jpg"},{	"content_title":"Ãšltima hoja",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/35/chica_50-cm-Ultima-Hoja.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/35/grande_50-cm-Ultima-Hoja.jpg"},{	"content_title":"Hoja de cactus",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/36/chica_Hoja-cactus.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/36/grande_Hoja-cactus.jpg"},{	"content_title":"Hojas verdes",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/37/chica_Hojas-verdes.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/37/grande_Hojas-verdes.jpg"},{	"content_title":"Pasto",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/38/chica_Pasto.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/38/grande_Pasto.jpg"},{	"content_title":"Pasto",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/39/chica_Pasto-2.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/39/grande_Pasto-2.jpg"},{	"content_title":"Piedra con pasto",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/40/chica_Piedra-con-pasto.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/40/grande_Piedra-con-pasto.jpg"},{	"content_title":"Rosa morada",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/41/chica_Rosa-Morada.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/41/grande_Rosa-Morada.jpg"}],"categories":[]},{"name":"Vegetales","items":[{	"content_title":"Ensalada de Frutas",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/42/chica_1-mt-Ensalada-de-frutas.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/42/grande_1-mt-Ensalada-de-frutas.jpg"},{	"content_title":"Fruta en Agua",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/43/chica_1-mt-Fruta-en-agua.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/43/grande_1-mt-Fruta-en-agua.jpg"},{	"content_title":"Guindas",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/44/chica_1-mt-Guindas.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/44/grande_1-mt-Guindas.jpg"},{	"content_title":"MelÃ³n Tuna",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/45/chica_1-mt-melon-Tuna.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/45/grande_1-mt-melon-Tuna.jpg"},{	"content_title":"Tomates en Agua",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/46/chica_1-mt-Tomates-agua.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/46/grande_1-mt-Tomates-agua.jpg"},{	"content_title":"Detalle Frutilla",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/47/chica_2-mt-Frutilla-detalle.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/47/grande_2-mt-Frutilla-detalle.jpg"},{	"content_title":"Frutilla en Agua",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/48/chica_2-mt-Frutilla-en-agua.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/48/grande_2-mt-Frutilla-en-agua.jpg"},{	"content_title":"Frutillas",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/49/chica_2-mt-Frutillas.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/49/grande_2-mt-Frutillas.jpg"},{	"content_title":"Gajos de Kiwis",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/50/chica_2-mt-Gajos-Kiwis-2.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/50/grande_2-mt-Gajos-Kiwis-2.jpg"},{	"content_title":"Gajos de Naranja en Agua",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/51/chica_2-mt-gajos-naranja-en-agua.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/51/grande_2-mt-gajos-naranja-en-agua.jpg"},{	"content_title":"Gajos de Tomate",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/52/chica_2-mt-Gajos-Tomate.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/52/grande_2-mt-Gajos-Tomate.jpg"},{	"content_title":"LimÃ³n",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/53/chica_2-mt-Limon.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/53/grande_2-mt-Limon.jpg"},{	"content_title":"Manzana Verde",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/54/chica_2-mt-Manzana-verde.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/54/grande_2-mt-Manzana-verde.jpg"},{	"content_title":"Tomates",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/55/chica_2-mt-Tomates.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/55/grande_2-mt-Tomates.jpg"},{	"content_title":"Manzanas Rojas",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/56/chica_3-mt-Manzana-Rojas.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/56/grande_3-mt-Manzana-Rojas.jpg"},{	"content_title":"Detalle Frutilla 2",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/57/chica_50-cm-Frutilla-detalle-2.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/57/grande_50-cm-Frutilla-detalle-2.jpg"},{	"content_title":"Gajo de Naranja",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/58/chica_50-cm-Gajo-Naranja.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/58/grande_50-cm-Gajo-Naranja.jpg"},{	"content_title":"Gajos de Kiwis 2",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/59/chica_50-cm-Gajos-Kiwis.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/59/grande_50-cm-Gajos-Kiwis.jpg"},{	"content_title":"Limones",	"content_text":"","imagen_chica":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/60/chica_50-cm-Limones.jpg","imagen_grande":"http://www.deckdesign.cl/backend/files/gallery_category_item/image/60/grande_50-cm-Limones.jpg"}],"categories":[]},{"name":"Urbe","items":[],"categories":[]}				]
 			},
 			"imagina_tus_espacios":{
 				"debug":1,
-				"ambientes":[
+				"ambientes":
+				[
+
+					
+					
+					
 					{
+
 						"name":"Cocina",
-						"items":[
+						"items":
+						[
+
+							
+							
+							
 							{
-								"name":"Americana (este campo al parecer no es utilizado, pero es conveniente siempre tener un 'name' en la data",
-								"image":"img.jpg",
-								"mask":"mask.png",
-								"hotspots":[
+								"name":"Cocina 1",
+
+								
+								"image":"http://www.deckdesign.cl/backend/files/ambient_item/image/4/cocina1.jpg",
+
+								
+								"mask":"http://www.deckdesign.cl/backend/files/ambient_item/mask/4/cocina1-mask2.png",
+
+								"hotspots":
+								[
+
+									
+									
+									
 									{
-										"tl":{"x":250,"y":274},
-										"tr":{"x":375,"y":277},
-										"bl":{"x":27,"y":453},
-										"br":{"x":317,"y":462},
-										"textures":[
+										"tl":{"x":"109","y":"252"},
+										"tr":{"x":"514","y":"202"},
+										"bl":{"x":"109","y":"374"},
+										"br":{"x":"514","y":"296"},
+
+										"textures":
+										[
+
+											
+											
+											
 											{
-												"name":"text1",
-												"imagen_grande":"tex.jpg",
-												"imagen_chica":"tex.jpg"
-											},
-											{
-												"name":"text1",
-												"imagen_grande":"tex.jpg",
-												"imagen_chica":"tex.jpg"
-											},
-											{
-												"name":"text1",
-												"imagen_grande":"tex.jpg",
-												"imagen_chica":"tex.jpg"
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/2/grande_cocina1-a1.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/2/chica_cocina1-a1.jpg"
+
+
 											}
-										]
-									},
-									{
-										"tl":{"x":618,"y":246},
-										"tr":{"x":899,"y":383},
-										"bl":{"x":616,"y":358},
-										"br":{"x":899,"y":700},
-										"textures":[
+
+											
+											,
 											{
-												"name":"text1",
-												"imagen_grande":"tex.jpg",
-												"imagen_chica":"tex.jpg"
-											},
-											{
-												"name":"text1",
-												"imagen_grande":"tex.jpg",
-												"imagen_chica":"tex.jpg"
-											},
-											{
-												"name":"text1",
-												"imagen_grande":"tex.jpg",
-												"imagen_chica":"tex.jpg"
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/3/grande_cocina1-a2.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/3/chica_cocina1-a2.jpg"
+
+
 											}
-										]
-									},
-									{
-										"tl":{"x":618,"y":246},
-										"tr":{"x":899,"y":383},
-										"bl":{"x":616,"y":358},
-										"br":{"x":899,"y":700},
-										"textures":[
+
+											
+											,
 											{
-												"name":"text1",
-												"imagen_grande":"tex.jpg",
-												"imagen_chica":"tex.jpg"
-											},
-											{
-												"name":"text1",
-												"imagen_grande":"tex.jpg",
-												"imagen_chica":"tex.jpg"
-											},
-											{
-												"name":"text1",
-												"imagen_grande":"tex.jpg",
-												"imagen_chica":"tex.jpg"
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/4/grande_cocina1-a3.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/4/chica_cocina1-a3.jpg"
+
+
 											}
+
+											
 										]
 									}
-								]
-							},
-							{
-								"name":"Americana2",
-								"image":"img.jpg",
-								"mask":"mask.png",
-								"hotspots":[
+
+									
+									,
 									{
-										"tl":{"x":100,"y":100},
-										"tr":{"x":100,"y":100},
-										"bl":{"x":100,"y":100},
-										"br":{"x":100,"y":100},
-										"textures":[
+										"tl":{"x":"466","y":"52"},
+										"tr":{"x":"573","y":"49"},
+										"bl":{"x":"468","y":"197"},
+										"br":{"x":"572","y":"210"},
+
+										"textures":
+										[
+
+											
+											
+											
 											{
-												"name":"text1",
-												"imagen_grande":"tex.jpg",
-												"imagen_chica":"tex.jpg"
-											},
-											{
-												"name":"text1",
-												"imagen_grande":"tex.jpg",
-												"imagen_chica":"tex.jpg"
-											},
-											{
-												"name":"text1",
-												"imagen_grande":"tex.jpg",
-												"imagen_chica":"tex.jpg"
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/7/grande_cocina1-b1.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/7/chica_cocina1-b1.jpg"
+
+
 											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/8/grande_cocina1-b2.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/8/chica_cocina1-b2.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/9/grande_cocina1-b3.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/9/chica_cocina1-b3.jpg"
+
+
+											}
+
+											
 										]
 									}
+
+									
+									,
+									{
+										"tl":{"x":"698","y":"43"},
+										"tr":{"x":"863","y":"37"},
+										"bl":{"x":"694","y":"320"},
+										"br":{"x":"863","y":"350"},
+
+										"textures":
+										[
+
+											
+											
+											
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/10/grande_cocina1-b1.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/10/chica_cocina1-b1.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/11/grande_cocina1-a3.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/11/chica_cocina1-a3.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/12/grande_cocina1-b3.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/12/chica_cocina1-b3.jpg"
+
+
+											}
+
+											
+										]
+									}
+
+									
 								]
+
 							}
-						]
-					},
-					{
-						"name":"Dormitorio",
-						"items":[
+
+							
+							,
 							{
-								"name":"Principal",
-								"image":"img.jpg",
-								"mask":"mask.png",
-								"hotspots":[
+								"name":"Cocina 2",
+
+								
+								"image":"http://www.deckdesign.cl/backend/files/ambient_item/image/8/cocina2.jpg",
+
+								
+								"mask":"http://www.deckdesign.cl/backend/files/ambient_item/mask/8/cocina2-mask-nuevo5.png",
+
+								"hotspots":
+								[
+
+									
+									
+									
 									{
-										"tl":{"x":100,"y":100},
-										"tr":{"x":100,"y":100},
-										"bl":{"x":100,"y":100},
-										"br":{"x":100,"y":100},
-										"textures":[
+										"tl":{"x":"4","y":"25"},
+										"tr":{"x":"177","y":"28"},
+										"bl":{"x":"23","y":"293"},
+										"br":{"x":"181","y":"278"},
+
+										"textures":
+										[
+
+											
+											
+											
 											{
-												"name":"text1",
-												"imagen_grande":"tex.jpg",
-												"imagen_chica":"tex.jpg"
-											},
-											{
-												"name":"text1",
-												"imagen_grande":"tex.jpg",
-												"imagen_chica":"tex.jpg"
-											},
-											{
-												"name":"text1",
-												"imagen_grande":"tex.jpg",
-												"imagen_chica":"tex.jpg"
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/13/grande_cocina2-a1.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/13/chica_cocina2-a1.jpg"
+
+
 											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/14/grande_cocina2-a2.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/14/chica_cocina2-a2.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/15/grande_cocina2-a3.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/15/chica_cocina2-a3.jpg"
+
+
+											}
+
+											
 										]
 									}
-								]
-							},
-							{
-								"name":"Principal2",
-								"image":"img.jpg",
-								"mask":"mask.png",
-								"hotspots":[
+
+									
+									,
 									{
-										"tl":{"x":100,"y":100},
-										"tr":{"x":100,"y":100},
-										"bl":{"x":100,"y":100},
-										"br":{"x":100,"y":100},
-										"textures":[
+										"tl":{"x":"261","y":"311"},
+										"tr":{"x":"542","y":"267"},
+										"bl":{"x":"262","y":"483"},
+										"br":{"x":"538","y":"411"},
+
+										"textures":
+										[
+
+											
+											
+											
 											{
-												"name":"text1",
-												"imagen_grande":"tex.jpg",
-												"imagen_chica":"tex.jpg"
-											},
-											{
-												"name":"text1",
-												"imagen_grande":"tex.jpg",
-												"imagen_chica":"tex.jpg"
-											},
-											{
-												"name":"text1",
-												"imagen_grande":"tex.jpg",
-												"imagen_chica":"tex.jpg"
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/16/grande_cocina2-aa1.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/16/chica_cocina2-aa1.jpg"
+
+
 											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/17/grande_cocina2-b2.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/17/chica_cocina2-b2.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/18/grande_cocina2-aa3.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/18/chica_cocina2-aa3.jpg"
+
+
+											}
+
+											
 										]
 									}
+
+									
+									,
+									{
+										"tl":{"x":"647","y":"45"},
+										"tr":{"x":"907","y":"25"},
+										"bl":{"x":"627","y":"437"},
+										"br":{"x":"852","y":"512"},
+
+										"textures":
+										[
+
+											
+											
+											
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/19/grande_cocina2-b1.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/19/chica_cocina2-b1.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/20/grande_cocina2-aa2.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/20/chica_cocina2-aa2.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/21/grande_cocina2-b3.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/21/chica_cocina2-b3.jpg"
+
+
+											}
+
+											
+										]
+									}
+
+									
 								]
+
 							}
+
+							
+							,
+							{
+								"name":"Cocina 3",
+
+								
+								"image":"http://www.deckdesign.cl/backend/files/ambient_item/image/9/cocina3.jpg",
+
+								
+								"mask":"http://www.deckdesign.cl/backend/files/ambient_item/mask/9/cocina3-mask2.png",
+
+								"hotspots":
+								[
+
+									
+									
+									
+									{
+										"tl":{"x":"246","y":"273"},
+										"tr":{"x":"375","y":"275"},
+										"bl":{"x":"26","y":"456"},
+										"br":{"x":"317","y":"462"},
+
+										"textures":
+										[
+
+											
+											
+											
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/22/grande_cocina3-a1.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/22/chica_cocina3-a1.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/23/grande_cocina3-a2.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/23/chica_cocina3-a2.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/24/grande_cocina3-a3.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/24/chica_cocina3-a3.jpg"
+
+
+											}
+
+											
+										]
+									}
+
+									
+									,
+									{
+										"tl":{"x":"615","y":"242"},
+										"tr":{"x":"893","y":"381"},
+										"bl":{"x":"613","y":"358"},
+										"br":{"x":"891","y":"623"},
+
+										"textures":
+										[
+
+											
+											
+											
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/25/grande_cocina3-b1.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/25/chica_cocina3-b1.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/26/grande_cocina3-b2.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/26/chica_cocina3-b2.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/27/grande_cocina3-b3.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/27/chica_cocina3-b3.jpg"
+
+
+											}
+
+											
+										]
+									}
+
+									
+								]
+
+							}
+
+							
 						]
+
 					}
-				]
+
+					
+					,
+					{
+
+						"name":"Dormitorio",
+						"items":
+						[
+
+							
+							
+							
+							{
+								"name":"Dormitorio 1",
+
+								
+								"image":"http://www.deckdesign.cl/backend/files/ambient_item/image/10/dormitorio1-nuevo.jpg",
+
+								
+								"mask":"http://www.deckdesign.cl/backend/files/ambient_item/mask/10/dormitorio1-mask3.png",
+
+								"hotspots":
+								[
+
+									
+									
+									
+									{
+										"tl":{"x":"75","y":"50"},
+										"tr":{"x":"393","y":"105"},
+										"bl":{"x":"74","y":"323"},
+										"br":{"x":"394","y":"293"},
+
+										"textures":
+										[
+
+											
+											
+											
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/28/grande_dormitorio1-a1.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/28/chica_dormitorio1-a1.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/29/grande_dormitorio1-a2.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/29/chica_dormitorio1-a2.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/30/grande_dormitorio1-a3.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/30/chica_dormitorio1-a3.jpg"
+
+
+											}
+
+											
+										]
+									}
+
+									
+									,
+									{
+										"tl":{"x":"845","y":"309"},
+										"tr":{"x":"965","y":"321"},
+										"bl":{"x":"688","y":"447"},
+										"br":{"x":"948","y":"531"},
+
+										"textures":
+										[
+
+											
+											
+											
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/31/grande_dormitorio1-b1.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/31/chica_dormitorio1-b1.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/84/grande_dormitorio1-b2.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/84/chica_dormitorio1-b2.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/85/grande_dormitorio1-b3.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/85/chica_dormitorio1-b3.jpg"
+
+
+											}
+
+											
+										]
+									}
+
+									
+								]
+
+							}
+
+							
+							,
+							{
+								"name":"Dormitorio 2",
+
+								
+								"image":"http://www.deckdesign.cl/backend/files/ambient_item/image/11/dormitorio2-nuevo2.jpg",
+
+								
+								"mask":"http://www.deckdesign.cl/backend/files/ambient_item/mask/11/dormitorio2-mask.png",
+
+								"hotspots":
+								[
+
+									
+									
+									
+									{
+										"tl":{"x":"117","y":"-50"},
+										"tr":{"x":"495","y":"106"},
+										"bl":{"x":"117","y":"478"},
+										"br":{"x":"496","y":"378"},
+
+										"textures":
+										[
+
+											
+											
+											
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/32/grande_dormitorio2-a1.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/32/chica_dormitorio2-a1.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/33/grande_dormitorio2-a2.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/33/chica_dormitorio2-a2.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/34/grande_dormitorio2-a3.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/34/chica_dormitorio2-a3.jpg"
+
+
+											}
+
+											
+										]
+									}
+
+									
+									,
+									{
+										"tl":{"x":"505","y":"121"},
+										"tr":{"x":"798","y":"97"},
+										"bl":{"x":"505","y":"377"},
+										"br":{"x":"798","y":"401"},
+
+										"textures":
+										[
+
+											
+											
+											
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/35/grande_dormitorio2-b1.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/35/chica_dormitorio2-b1.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/36/grande_dormitorio2-b2.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/36/chica_dormitorio2-b2.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/37/grande_dormitorio2-a3.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/37/chica_dormitorio2-a3.jpg"
+
+
+											}
+
+											
+										]
+									}
+
+									
+									,
+									{
+										"tl":{"x":"799","y":"97"},
+										"tr":{"x":"949","y":"87"},
+										"bl":{"x":"799","y":"401"},
+										"br":{"x":"949","y":"407"},
+
+										"textures":
+										[
+
+											
+											
+											
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/38/grande_dormitorio2-c1.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/38/chica_dormitorio2-c1.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/39/grande_dormitorio2-c2.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/39/chica_dormitorio2-c2.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/40/grande_dormitorio2-c3.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/40/chica_dormitorio2-c3.jpg"
+
+
+											}
+
+											
+										]
+									}
+
+									
+								]
+
+							}
+
+							
+						]
+
+					}
+
+					
+					,
+					{
+
+						"name":"Living",
+						"items":
+						[
+
+							
+							
+							
+							{
+								"name":"Living 1",
+
+								
+								"image":"http://www.deckdesign.cl/backend/files/ambient_item/image/15/living1.jpg",
+
+								
+								"mask":"http://www.deckdesign.cl/backend/files/ambient_item/mask/15/living1MASCARA4.png",
+
+								"hotspots":
+								[
+
+									
+									
+									
+									{
+										"tl":{"x":"0","y":"7"},
+										"tr":{"x":"255","y":"7"},
+										"bl":{"x":"0","y":"484"},
+										"br":{"x":"251","y":"484"},
+
+										"textures":
+										[
+
+											
+											
+											
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/41/grande_living1-a1.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/41/chica_living1-a1.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/42/grande_living1-a2.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/42/chica_living1-a2.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/43/grande_living1-a3.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/43/chica_living1-a3.jpg"
+
+
+											}
+
+											
+										]
+									}
+
+									
+									,
+									{
+										"tl":{"x":"256","y":"0"},
+										"tr":{"x":"683","y":"0"},
+										"bl":{"x":"251","y":"462"},
+										"br":{"x":"687","y":"462"},
+
+										"textures":
+										[
+
+											
+											
+											
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/44/grande_living1-b1.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/44/chica_living1-b1.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/45/grande_living1-b2.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/45/chica_living1-b2.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/46/grande_living1-b3.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/46/chica_living1-b3.jpg"
+
+
+											}
+
+											
+										]
+									}
+
+									
+									,
+									{
+										"tl":{"x":"685","y":"8"},
+										"tr":{"x":"848","y":"8"},
+										"bl":{"x":"689","y":"443"},
+										"br":{"x":"848","y":"443"},
+
+										"textures":
+										[
+
+											
+											
+											
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/47/grande_living1-c1.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/47/chica_living1-c1.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/48/grande_living1-c2.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/48/chica_living1-c2.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/49/grande_living1-c3.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/49/chica_living1-c3.jpg"
+
+
+											}
+
+											
+										]
+									}
+
+									
+								]
+
+							}
+
+							
+							,
+							{
+								"name":"Living 2",
+
+								
+								"image":"http://www.deckdesign.cl/backend/files/ambient_item/image/16/living2.jpg",
+
+								
+								"mask":"http://www.deckdesign.cl/backend/files/ambient_item/mask/16/living2-MASCARA3.png",
+
+								"hotspots":
+								[
+
+									
+									
+									
+									{
+										"tl":{"x":"47","y":"88"},
+										"tr":{"x":"704","y":"88"},
+										"bl":{"x":"47","y":"445"},
+										"br":{"x":"704","y":"445"},
+
+										"textures":
+										[
+
+											
+											
+											
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/50/grande_living2-a1.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/50/chica_living2-a1.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/51/grande_living2-a2.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/51/chica_living2-a2.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/52/grande_living2-a3.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/52/chica_living2-a3.jpg"
+
+
+											}
+
+											
+										]
+									}
+
+									
+									,
+									{
+										"tl":{"x":"673","y":"84"},
+										"tr":{"x":"1200","y":"84"},
+										"bl":{"x":"673","y":"434"},
+										"br":{"x":"1200","y":"434"},
+
+										"textures":
+										[
+
+											
+											
+											
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/53/grande_living2-b1.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/53/chica_living2-b1.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/54/grande_living2-b2.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/54/chica_living2-b2.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/55/grande_living2-b3.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/55/chica_living2-b3.jpg"
+
+
+											}
+
+											
+										]
+									}
+
+									
+								]
+
+							}
+
+							
+						]
+
+					}
+
+					
+					,
+					{
+
+						"name":"Oficina",
+						"items":
+						[
+
+							
+							
+							
+							{
+								"name":"Oficina 1",
+
+								
+								"image":"http://www.deckdesign.cl/backend/files/ambient_item/image/19/oficina1.jpg",
+
+								
+								"mask":"http://www.deckdesign.cl/backend/files/ambient_item/mask/19/oficina1MASCARA2.png",
+
+								"hotspots":
+								[
+
+									
+									
+									
+									{
+										"tl":{"x":"139","y":"151"},
+										"tr":{"x":"398","y":"4"},
+										"bl":{"x":"139","y":"429"},
+										"br":{"x":"409","y":"531"},
+
+										"textures":
+										[
+
+											
+											
+											
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/75/grande_oficina1-a1.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/75/chica_oficina1-a1.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/76/grande_oficina1-a2.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/76/chica_oficina1-a2.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/77/grande_oficina1-a3.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/77/chica_oficina1-a3.jpg"
+
+
+											}
+
+											
+										]
+									}
+
+									
+									,
+									{
+										"tl":{"x":"620","y":"76"},
+										"tr":{"x":"849","y":"125"},
+										"bl":{"x":"633","y":"472"},
+										"br":{"x":"862","y":"419"},
+
+										"textures":
+										[
+
+											
+											
+											
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/78/grande_oficina1-b1.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/78/chica_oficina1-b1.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/79/grande_oficina1-b2.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/79/chica_oficina1-b2.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/80/grande_oficina1-b3.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/80/chica_oficina1-b3.jpg"
+
+
+											}
+
+											
+										]
+									}
+
+									
+									,
+									{
+										"tl":{"x":"-40","y":"156"},
+										"tr":{"x":"98","y":"162"},
+										"bl":{"x":"-40","y":"420"},
+										"br":{"x":"97","y":"419"},
+
+										"textures":
+										[
+
+											
+											
+											
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/81/grande_oficina1-c1.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/81/chica_oficina1-c1.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/82/grande_oficina1-c2.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/82/chica_oficina1-c2.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/83/grande_oficina1-c3.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/83/chica_oficina1-c3.jpg"
+
+
+											}
+
+											
+										]
+									}
+
+									
+								]
+
+							}
+
+							
+						]
+
+					}
+
+					
+					,
+					{
+
+						"name":"Dormitorio niÃ±os",
+						"items":
+						[
+
+							
+							
+							
+							{
+								"name":"Dormitorio niÃ±os 1",
+
+								
+								"image":"http://www.deckdesign.cl/backend/files/ambient_item/image/17/ninos1.jpg",
+
+								
+								"mask":"http://www.deckdesign.cl/backend/files/ambient_item/mask/17/ninos1-mask-nuevo.png",
+
+								"hotspots":
+								[
+
+									
+									
+									
+									{
+										"tl":{"x":"0","y":"0"},
+										"tr":{"x":"347","y":"0"},
+										"bl":{"x":"0","y":"561"},
+										"br":{"x":"350","y":"475"},
+
+										"textures":
+										[
+
+											
+											
+											
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/56/grande_ninos1-a1.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/56/chica_ninos1-a1.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/57/grande_ninos1-a2.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/57/chica_ninos1-a2.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/58/grande_ninos1-a3.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/58/chica_ninos1-a3.jpg"
+
+
+											}
+
+											
+										]
+									}
+
+									
+									,
+									{
+										"tl":{"x":"361","y":"467"},
+										"tr":{"x":"550","y":"430"},
+										"bl":{"x":"365","y":"661"},
+										"br":{"x":"550","y":"661"},
+
+										"textures":
+										[
+
+											
+											
+											
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/59/grande_ninos1-b1.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/59/chica_ninos1-b1.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/60/grande_ninos1-b2.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/60/chica_ninos1-b2.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/61/grande_ninos1-b3.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/61/chica_ninos1-b3.jpg"
+
+
+											}
+
+											
+										]
+									}
+
+									
+									,
+									{
+										"tl":{"x":"713","y":"407"},
+										"tr":{"x":"832","y":"412"},
+										"bl":{"x":"713","y":"560"},
+										"br":{"x":"831","y":"560"},
+
+										"textures":
+										[
+
+											
+											
+											
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/62/grande_ninos1-c1.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/62/chica_ninos1-c1.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/63/grande_ninos1-c2.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/63/chica_ninos1-c2.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/64/grande_ninos1-a3-2.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/64/chica_ninos1-a3-2.jpg"
+
+
+											}
+
+											
+										]
+									}
+
+									
+								]
+
+							}
+
+							
+							,
+							{
+								"name":"Dormitorio niÃ±os 2",
+
+								
+								"image":"http://www.deckdesign.cl/backend/files/ambient_item/image/18/ninos2.jpg",
+
+								
+								"mask":"http://www.deckdesign.cl/backend/files/ambient_item/mask/18/ninos2-mascara2.png",
+
+								"hotspots":
+								[
+
+									
+									
+									
+									{
+										"tl":{"x":"410","y":"15"},
+										"tr":{"x":"647","y":"22"},
+										"bl":{"x":"410","y":"288"},
+										"br":{"x":"647","y":"288"},
+
+										"textures":
+										[
+
+											
+											
+											
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/65/grande_ninos2-a1.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/65/chica_ninos2-a1.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/66/grande_ninos2-a2.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/66/chica_ninos2-a2.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/67/grande_ninos2-a3.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/67/chica_ninos2-a3.jpg"
+
+
+											}
+
+											
+										]
+									}
+
+									
+									,
+									{
+										"tl":{"x":"171","y":"67"},
+										"tr":{"x":"384","y":"73"},
+										"bl":{"x":"175","y":"366"},
+										"br":{"x":"385","y":"340"},
+
+										"textures":
+										[
+
+											
+											
+											
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/68/grande_ninos2-b1.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/68/chica_ninos2-b1.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/69/grande_ninos2-b2.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/69/chica_ninos2-b2.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/71/grande_ninos2-a3.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/71/chica_ninos2-a3.jpg"
+
+
+											}
+
+											
+										]
+									}
+
+									
+									,
+									{
+										"tl":{"x":"726","y":"327"},
+										"tr":{"x":"771","y":"341"},
+										"bl":{"x":"724","y":"360"},
+										"br":{"x":"769","y":"377"},
+
+										"textures":
+										[
+
+											
+											
+											
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/72/grande_ninos2-c1.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/72/chica_ninos2-c1.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/73/grande_ninos2-c2.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/73/chica_ninos2-c2.jpg"
+
+
+											}
+
+											
+											,
+											{
+												"name":"0",
+
+												
+												"imagen_grande":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/74/grande_ninos1-c2.jpg",
+												"imagen_chica":"http://www.deckdesign.cl/backend/files/ambient_item_hotspot_texture/image/74/chica_ninos1-c2.jpg"
+
+
+											}
+
+											
+										]
+									}
+
+									
+								]
+
+							}
+
+							
+						]
+
+					}
+
+									]
 			},
 			"contacto":{
-				"info":"asasdasd\nasdasda\nasdasda@asd.com"
+								"info":"Carolina Garcia L.
+
+cgarcia@deckdesign.cl
+
++56 9 7774 9430"
 			}
-        }
-    }
+		}
+	}
 }

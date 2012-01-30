@@ -43,13 +43,13 @@ package form
 			this.fondo.graphics.drawRect(0, 0, ApplicationConfiguration.MAIN_CONTENT_WIDTH / 2, ApplicationConfiguration.MAIN_CONTENT_HEIGHT / 2);
 			this.fondo.graphics.endFill();
 			
-			this.tf_nombre = new TextComponent('NOMBRE');
-			this.tf_mail = new TextComponent('E-MAIL');
-			this.tf_producto = new TextComponent('PRODUCTO');
-			this.tf_mensaje = new TextAreaComponent('MENSAJE');
+			this.tf_nombre = new TextComponent('Nombre');
+			this.tf_mail = new TextComponent('E-Mail');
+			this.tf_producto = new TextComponent('Producto');
+			this.tf_mensaje = new TextAreaComponent('Mensaje');
 			
-			this.btn_borrar = new ButtonComponent('BORRAR');
-			this.btn_enviar = new ButtonComponent('ENVIAR');
+			this.btn_borrar = new ButtonComponent('Borrar');
+			this.btn_enviar = new ButtonComponent('Enviar');
 			
 			this.layout_campos = new VerticalLine();
 		}

@@ -30,7 +30,14 @@ package menus.izquierda.imagina
 		
 		private function setup():void
 		{
-			this.txt_name = TextFieldGenerator.crearTextField(StringUtil.firstToUpper(this._data.name), { size: ApplicationConfiguration.SUBMENU_TEXT_SIZE, color: 0xffffff});
+			this.txt_name = TextFieldGenerator.crearTextField(
+				StringUtil.firstToUpper(this._data.name),
+				{
+					size: ApplicationConfiguration.SUBMENU_TEXT_SIZE,
+					//border: true,
+					color: 0xffffff
+				}
+			);
 			this.items = new Vector.<RoomNode>;
 			
 			var i:uint = 1;
@@ -42,6 +49,7 @@ package menus.izquierda.imagina
 			}
 			
 			this.layout = new HorizontalLine(6);
+			this.layout.x = 155;
 		}
 		
 		private function agregarListeners():void
@@ -52,7 +60,7 @@ package menus.izquierda.imagina
 		{
 			//txt
 			this.addChild(txt_name);
-			this.layout.addNode(this.txt_name, false);
+			//this.layout.addNode(this.txt_name, false);
 			
 			//items
 			for each (var i:RoomNode in this.items)

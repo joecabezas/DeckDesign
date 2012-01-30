@@ -3,6 +3,7 @@ package menus.izquierda.imagina
 	import com.as3joelib.utils.Singleton;
 	import com.somerandomdude.coordy.layouts.twodee.ILayout2d;
 	import com.somerandomdude.coordy.layouts.twodee.VerticalLine;
+	import config.ApplicationConfiguration;
 	import flash.display.Sprite;
 	
 	/**
@@ -43,7 +44,7 @@ package menus.izquierda.imagina
 			var i:uint = 0;
 			for each(var a:AmbienteNode in this.items) {
 				this.addChild(a);
-				a.x = -a.width;
+				a.x = -ApplicationConfiguration.MENU_IZQUIERDA_WIDTH + 30;
 				a.y = i * d;
 				i++;
 				//this.layout.addNode(a, false);
