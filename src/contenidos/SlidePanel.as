@@ -49,19 +49,29 @@ package contenidos
 			
 			this.boton = new SlidePanelButton();
 			
-			this.titulo = TextFieldGenerator.crearTextField('Titulo', {size: 16, 
-				//border: true,
-					align: TextFieldGenerator.TEXTFORMAT_ALIGN_LEFT, autosize: TextFieldGenerator.AUTOSIZE_NONE, color: ApplicationConfiguration.COLOR_QUIENES_SOMOS,
-					
-					width: this.fondo.width - 20});
+			this.titulo = TextFieldGenerator.crearTextField(
+				'Titulo',
+				{
+					size: 16, 
+					//border: true,
+					align: TextFieldGenerator.TEXTFORMAT_ALIGN_LEFT,
+					autosize: TextFieldGenerator.AUTOSIZE_NONE,
+					color: ApplicationConfiguration.COLOR_QUIENES_SOMOS,
+					width: this.fondo.width - 20
+				}
+			);
 			
-			this.contenido = TextFieldGenerator.crearTextField('Contenido', {size: 10, 
-				//border: true,
-				//align: TextFieldGenerator.TEXTFORMAT_ALIGN_LEFT,
-				//autosize: TextFieldGenerator.,
+			this.contenido = TextFieldGenerator.crearTextField(
+				'Contenido',
+				{
+					size: 8.5, 
+					//border: true,
+					//align: TextFieldGenerator.TEXTFORMAT_ALIGN_LEFT,
+					//autosize: TextFieldGenerator.,
 					wordwrap: true, color: 0xffffff,
-					
-					width: this.fondo.width - 20});
+					width: this.fondo.width - 20
+				}
+			);
 		}
 		
 		private function agregarListeners():void
@@ -105,11 +115,11 @@ package contenidos
 			
 			this.addChild(this.titulo);
 			this.titulo.x = 10;
-			this.titulo.y = 10;
+			this.titulo.y = 3;
 			
 			this.addChild(this.contenido);
 			this.contenido.x = 10;
-			this.contenido.y = 35;
+			this.contenido.y = 22;
 			
 			//mask
 			this.addChild(this.mascara);

@@ -32,6 +32,12 @@ package
 	
 	public class Main extends Sprite
 	{
+		[Embed(source = "../lib/logo-facebook.png")]
+		public static var LogoFacebook:Class;
+		
+		[Embed(source="../lib/logo-twitter.png")]
+		public static var LogoTwitter:Class;
+		
 		//constantes de las secciones
 		public static const SECCION_HOME:String = 'seccionHome';
 		public static const SECCION_QUIENES_SOMOS:String = 'seccionQuienesSomos';
@@ -63,8 +69,8 @@ package
 		private var menu_superior:MenuSuperior;
 		
 		//botones de facebook y twitter
-		private var btn_facebook:BtnFacebook;
-		private var btn_twitter:BtnTwitter;
+		private var btn_facebook:Bitmap;
+		private var btn_twitter:Bitmap;
 		
 		//contenido
 		private var contenido:MainContent;
@@ -124,8 +130,8 @@ package
 			this.contenido = new MainContent();
 			
 			//botones de facebook y twitter
-			this.btn_facebook = new BtnFacebook();
-			this.btn_twitter = new BtnTwitter();
+			this.btn_facebook = new LogoFacebook();
+			this.btn_twitter = new LogoTwitter();
 			
 			this.logo = new Logo();
 			this.footer = new Footer();
