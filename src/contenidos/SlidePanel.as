@@ -64,7 +64,7 @@ package contenidos
 			this.contenido = TextFieldGenerator.crearTextField(
 				'Contenido',
 				{
-					size: 8.5, 
+					size: 12, 
 					//border: true,
 					//align: TextFieldGenerator.TEXTFORMAT_ALIGN_LEFT,
 					//autosize: TextFieldGenerator.,

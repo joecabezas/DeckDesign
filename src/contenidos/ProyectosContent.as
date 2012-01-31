@@ -1,6 +1,7 @@
 package contenidos
 {
 	import com.as3joelib.utils.Singleton;
+	import com.greensock.layout.ScaleMode;
 	import com.greensock.loading.ImageLoader;
 	import config.ApplicationConfiguration;
 	import flash.display.Sprite;
@@ -32,7 +33,18 @@ package contenidos
 				return;
 				
 			var url:String = Singleton.getInstance().data.json.data.secciones.nuestros_proyectos.items[0].imagen_grande;
-			this.image_loader = new ImageLoader(url, { width: ApplicationConfiguration.MAIN_CONTENT_WIDTH, height:ApplicationConfiguration.MAIN_CONTENT_HEIGHT } );
+			
+			this.image_loader = new ImageLoader(
+				url,
+				{
+					//bgColor: 0x00ff00,
+					//bgAlpha: 0.5,
+					scaleMode: ScaleMode.PROPORTIONAL_INSIDE,
+					width: ApplicationConfiguration.MAIN_CONTENT_WIDTH,
+					height:ApplicationConfiguration.MAIN_CONTENT_HEIGHT
+				}
+			);
+			
 			this.image_loader.load();
 		}
 		
