@@ -1,6 +1,7 @@
 package menus.izquierda.galeria
 {
 	import com.as3joelib.graphics.primitives.TriangleIcon;
+	import com.as3joelib.utils.ObjectUtil;
 	import com.greensock.TweenLite;
 	import com.somerandomdude.coordy.layouts.twodee.HorizontalLine;
 	import com.somerandomdude.coordy.layouts.twodee.ILayout2d;
@@ -40,6 +41,8 @@ package menus.izquierda.galeria
 		
 		public function LinearCarrousel(data:Object)
 		{
+			//ObjectUtil.pr(data); //ok
+			
 			this.data = data;
 			
 			this.setup();
@@ -120,6 +123,8 @@ package menus.izquierda.galeria
 			
 			this._slide.x += this.direccion * VELOCIDAD;
 			
+			trace('A_indice_primera_imagen_del_slide:', _indice_primera_imagen_del_slide);
+			
 			if (this._slide.x < -500 / CANTIDAD_ELEMENTOS_A_MOSTRAR)
 			{
 				if (this._slide && this.contains(this._slide))
@@ -131,13 +136,15 @@ package menus.izquierda.galeria
 				
 				this._indice_primera_imagen_del_slide = this._indice_primera_imagen_del_slide % this.items.length;
 				
-				//trace('_indice_primera_imagen_del_slide:', _indice_primera_imagen_del_slide);
+				trace('B_indice_primera_imagen_del_slide:', _indice_primera_imagen_del_slide);
 				
 				this._slide = this.crearNuevoSlide(this._indice_primera_imagen_del_slide);
 				this.addChild(this._slide);
 				this._slide.mask = this._mascara;
 				this._slide.x = 0;
 			}
+			
+			trace('C_indice_primera_imagen_del_slide:', _indice_primera_imagen_del_slide);
 			
 			if (this._slide.x > 0)
 			{
@@ -148,6 +155,7 @@ package menus.izquierda.galeria
 				
 				this._indice_primera_imagen_del_slide--;
 				
+				trace('D_indice_primera_imagen_del_slide:', _indice_primera_imagen_del_slide);
 				this._indice_primera_imagen_del_slide = (this._indice_primera_imagen_del_slide < 0) ? this.items.length - 1 : this._indice_primera_imagen_del_slide;
 				
 				//trace('this._indice_primera_imagen_del_slide', this._indice_primera_imagen_del_slide);
@@ -191,25 +199,14 @@ package menus.izquierda.galeria
 		private function dibujar():void
 		{
 			this._slide = this.crearNuevoSlide(this._indice_primera_imagen_del_slide);
+			
+			//trace('this._slide.numChildren', this._slide.numChildren);
+			
 			this.addChild(this._slide);
-			this._slide.x = -500 / CANTIDAD_ELEMENTOS_A_MOSTRAR;
+			this._slide.x = 0;
 			
 			this.addChild(this._mascara);
 			this._slide.mask = this._mascara;
-			
-			//this.addChild(this._left_button);
-			//this._left_button.width = this._slide.height * 0.9;
-			//this._left_button.height = 20;
-			//this._left_button.y = this._mascara.height / 2;
-			//this._left_button.x = -this._left_button.height / 2 - 5;
-			//this._left_button.rotation = -90;
-			//
-			//this.addChild(this._right_button);
-			//this._right_button.width = this._slide.height * 0.9;
-			//this._right_button.height = 20;
-			//this._right_button.y = this._mascara.height / 2;
-			//this._right_button.x = this._mascara.width + this._right_button.height / 2 + 5;
-			//this._right_button.rotation = 90;
 		}
 	
 	}

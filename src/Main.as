@@ -101,7 +101,7 @@ package
 		
 		private function onDataLoaderComplete(e:LoaderEvent):void
 		{
-			trace(DataLoader(e.target).content);
+			//trace(DataLoader(e.target).content);
 			
 			//parsear el JSON y darselo al singleton
 			Singleton.getInstance().data = {json: JSON.decode(DataLoader(e.target).content, false)};
