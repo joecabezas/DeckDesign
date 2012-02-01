@@ -43,7 +43,7 @@ package assets
 			this.img = new ImageLoader(Singleton.getInstance().data.json.data.footer, { width: WIDTH, height: HEIGHT, bgColor: 0xff0000, bgAlpha: 1, scaleMode: ScaleMode.WIDTH_ONLY } );
 			this.img.load();
 			
-			this.txt = TextFieldGenerator.crearTextField('Copyright 2011 DeckDesign | +56 9 7774 9430 | cgarcia@deckdesign.cl', { color:0xffffff, size:9 } );
+			this.txt = TextFieldGenerator.crearTextField('Copyright 2011 DeckDesign | +56 9 7774 9430 | cgarcia@deckdesign.cl', { color:0xffffff, size:10 } );
 		}
 		
 		private function agregarListeners():void
