@@ -69,8 +69,11 @@ package
 		private var menu_superior:MenuSuperior;
 		
 		//botones de facebook y twitter
-		private var btn_facebook:Bitmap;
-		private var btn_twitter:Bitmap;
+		private var btn_facebook_bmp:Bitmap;
+		private var btn_twitter_bmp:Bitmap;
+		
+		private var btn_facebook:Sprite;
+		private var btn_twitter:Sprite;
 		
 		//contenido
 		private var contenido:MainContent;
@@ -130,8 +133,14 @@ package
 			this.contenido = new MainContent();
 			
 			//botones de facebook y twitter
-			this.btn_facebook = new LogoFacebook();
-			this.btn_twitter = new LogoTwitter();
+			this.btn_facebook_bmp = new LogoFacebook();
+			this.btn_twitter_bmp = new LogoTwitter();
+			
+			this.btn_facebook = new Sprite();
+			this.btn_twitter = new Sprite();
+			
+			this.btn_facebook.addChild(this.btn_facebook_bmp);
+			this.btn_twitter.addChild(this.btn_twitter_bmp);
 			
 			this.logo = new Logo();
 			this.footer = new Footer();
@@ -167,6 +176,7 @@ package
 		
 		private function onClickFacebook(e:MouseEvent):void
 		{
+			trace('Main.onClickFacebook');
 			this.goToUrl(Singleton.getInstance().data.json.data.facebook_url);
 		}
 		
@@ -177,6 +187,7 @@ package
 		
 		private function goToUrl(url:String):void
 		{
+			trace(this, 'gotourl', url);
 			try
 			{
 				navigateToURL(new URLRequest(url), '_blank');
@@ -229,15 +240,6 @@ package
 			this.menu_superior.x = 250;
 			this.menu_superior.y = 52;
 			
-			//nuevos botones del 10 nov de 2011
-			this.addChild(this.btn_facebook);
-			this.btn_facebook.x = this.stage.stageWidth - 2 * this.btn_facebook.width - 25 - 10;
-			this.btn_facebook.y = 10;
-			
-			this.addChild(this.btn_twitter);
-			this.btn_twitter.x = this.stage.stageWidth - this.btn_twitter.width - 25;
-			this.btn_twitter.y = 10;
-			
 			this.addChild(this.contenido);
 			this.contenido.x = 255;
 			this.contenido.y = 84;
@@ -251,6 +253,15 @@ package
 			
 			this.addChild(this.menu_izquierda);
 			this.menu_izquierda.y = -16;
+			
+			//nuevos botones del 10 nov de 2011
+			this.addChild(this.btn_facebook);
+			this.btn_facebook.x = this.stage.stageWidth - 2 * this.btn_facebook.width - 25 - 10;
+			this.btn_facebook.y = 10;
+			
+			this.addChild(this.btn_twitter);
+			this.btn_twitter.x = this.stage.stageWidth - this.btn_twitter.width - 25;
+			this.btn_twitter.y = 10;
 		}
 	
 	}
