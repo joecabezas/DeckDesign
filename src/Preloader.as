@@ -19,7 +19,7 @@ package
 		public function Preloader() 
 		{
 			if (stage) {
-				stage.scaleMode = StageScaleMode.SHOW_ALL;
+				stage.scaleMode = StageScaleMode.NO_SCALE;
 				stage.align = StageAlign.TOP;
 			}
 			addEventListener(Event.ENTER_FRAME, checkFrame);
