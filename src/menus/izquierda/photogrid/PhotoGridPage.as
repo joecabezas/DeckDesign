@@ -38,7 +38,7 @@ package menus.izquierda.photogrid
 			this.items = new Vector.<PhotoGridNode>;
 			
 			var grid_size:Number = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH * 0.9;
-			this.layout = new Grid(grid_size, grid_size*3, 3, 9, 10, 10, 0, 0);
+			this.layout = new Grid(grid_size, grid_size*3, 2, 9, 10, 10, 0, 0);
 		}
 		
 		private function setupItems():void 

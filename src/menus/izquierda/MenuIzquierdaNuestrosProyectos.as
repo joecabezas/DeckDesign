@@ -3,8 +3,9 @@ package menus.izquierda
 	import com.as3joelib.utils.ObjectUtil;
 	import com.as3joelib.utils.Singleton;
 	import config.ApplicationConfiguration;
+	import contenidos.NuestrosProyectosInfo;
 	import contenidos.ProyectosContent;
-	import contenidos.SlidePanel;
+	import contenidos.NuestrosProyectosInfo;
 	import flash.events.Event;
 	import menus.izquierda.photogrid.PhotoGrid;
 	import menus.izquierda.photogrid.PhotoGridNode;
@@ -18,7 +19,7 @@ package menus.izquierda
 		//ui
 		private var grid:PhotoGrid;
 		private var proyectos_content:ProyectosContent;
-		private var slide_panel:SlidePanel;
+		private var slide_panel:NuestrosProyectosInfo;
 		
 		public function MenuIzquierdaNuestrosProyectos()
 		{
@@ -34,7 +35,7 @@ package menus.izquierda
 			this.proyectos_content = new ProyectosContent();
 			
 			
-			this.slide_panel = new SlidePanel();
+			this.slide_panel = new NuestrosProyectosInfo();
 			
 			if (!Singleton.getInstance().data.json.data.secciones.nuestros_proyectos.items[0])
 				return;
@@ -68,8 +69,8 @@ package menus.izquierda
 			this.proyectos_content.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH + ApplicationConfiguration.MENU_IZQUIERDA_SEPARACION;
 			
 			this.addChild(this.slide_panel);
-			this.slide_panel.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH + ApplicationConfiguration.MENU_IZQUIERDA_SEPARACION;
-			this.slide_panel.y = ApplicationConfiguration.MAIN_CONTENT_HEIGHT - 150;
+			this.slide_panel.x = 12;
+			this.slide_panel.y = 350;
 		}
 	
 	}
