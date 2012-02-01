@@ -139,6 +139,8 @@ package
 		
 		private function agregarLisneters():void
 		{
+			this.logo.addEventListener(MouseEvent.CLICK, onClickLogo);
+			
 			this.addEventListener(MenuIzquierdaHomeNode.CLICK_HOME_NODE, onClickSection);
 			this.addEventListener(BotonMenuSuperior.CLICK_BOTON_MENU_SUPERIOR, onClickSection);
 			
@@ -183,6 +185,11 @@ package
 			{
 				trace('ERROR: no se puede abrir el sitio: ' + url);
 			}
+		}
+		
+		private function onClickLogo(e:MouseEvent):void
+		{
+			this.menu_izquierda.switchTo(Main.SECCION_HOME);
 		}
 		
 		private function onClickSection(e:Event):void
