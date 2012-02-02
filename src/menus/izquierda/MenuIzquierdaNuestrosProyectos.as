@@ -70,7 +70,7 @@ package menus.izquierda
 			
 			this.addChild(this.slide_panel);
 			this.slide_panel.x = 12;
-			this.slide_panel.y = 350;
+			this.slide_panel.y = 280;
 		}
 	
 	}

@@ -17,7 +17,7 @@ package menus.izquierda.photogrid
 		public static const SELECT_NODE:String = 'selectNode';
 		
 		//constantes de diseño
-		private const ELEMENTOS_POR_PAGINA:uint = 12;
+		private const ELEMENTOS_POR_PAGINA:uint = 6;
 		
 		private var _data:Object;
 		private var items:Vector.<Object>;

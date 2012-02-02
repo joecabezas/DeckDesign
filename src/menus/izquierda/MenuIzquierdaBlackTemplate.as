@@ -26,7 +26,7 @@ package menus.izquierda
 		{
 			this.fondo = new Sprite();
 			this.fondo.graphics.beginFill(ApplicationConfiguration.COLOR_BACKGROUND_APPLICATION);
-			this.fondo.graphics.drawRect(0, 0, ApplicationConfiguration.MENU_IZQUIERDA_WIDTH, ApplicationConfiguration.MENU_IZQUIERDA_HEIGHT);
+			this.fondo.graphics.drawRect(0, 0, ApplicationConfiguration.MENU_IZQUIERDA_WIDTH, ApplicationConfiguration.MENU_IZQUIERDA_HEIGHT + 5);
 			this.fondo.graphics.endFill();
 		}
 		
@@ -37,6 +37,7 @@ package menus.izquierda
 		private function dibujar():void
 		{
 			this.addChild(this.fondo);
+			this.fondo.y -= 2;
 		}
 	
 		public function setTitle(texto:String, color:uint = 0xffffff):void {

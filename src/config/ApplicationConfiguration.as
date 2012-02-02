@@ -31,9 +31,9 @@ package config
 		
 		//constantes de diseño
 		public static const MENU_IZQUIERDA_WIDTH:Number = 250;
-		public static const MENU_IZQUIERDA_HEIGHT:Number = 560;
+		public static const MENU_IZQUIERDA_HEIGHT:Number = 560 + 3;
 		
-		public static const MENU_IZQUIERDA_SEPARACION:Number = 0;
+		public static const MENU_IZQUIERDA_SEPARACION:Number = -2;
 		
 		public static const MAIN_CONTENT_WIDTH:Number = 950;
 		public static const MAIN_CONTENT_HEIGHT:Number = 560;

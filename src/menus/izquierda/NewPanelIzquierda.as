@@ -65,7 +65,7 @@ package menus.izquierda
 			opciones = {
 				size: 12,
 				//border: true,
-				//align: TextFieldGenerator.TEXTFORMAT_ALIGN_LEFT,
+				align: TextFieldGenerator.TEXTFORMAT_ALIGN_JUSTIFY,
 				autosize: TextFieldGenerator.AUTOSIZE_RIGHT,
 				//multiline: true,
 				wordwrap: true,

@@ -29,7 +29,7 @@ package menus.izquierda.imagina
 		{
 			this.fondo = new Sprite();
 			this.fondo.graphics.beginFill(ApplicationConfiguration.COLOR_BACKGROUND_APPLICATION);
-			this.fondo.graphics.drawRect(0, 0, ApplicationConfiguration.MAIN_CONTENT_WIDTH, ApplicationConfiguration.MAIN_CONTENT_HEIGHT);
+			this.fondo.graphics.drawRect(0, 0, ApplicationConfiguration.MAIN_CONTENT_WIDTH, ApplicationConfiguration.MAIN_CONTENT_HEIGHT + 5);
 			this.fondo.graphics.endFill();
 			
 			this.menu_ambientes = new MenuAmbientes();

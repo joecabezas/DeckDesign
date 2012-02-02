@@ -26,7 +26,7 @@ package contenidos
 		{
 			this.fondo = new Sprite();
 			this.fondo.graphics.beginFill(ApplicationConfiguration.COLOR_BACKGROUND_APPLICATION);
-			this.fondo.graphics.drawRect(0, 0, ApplicationConfiguration.MAIN_CONTENT_WIDTH, ApplicationConfiguration.MAIN_CONTENT_HEIGHT);
+			this.fondo.graphics.drawRect(0, 0, ApplicationConfiguration.MAIN_CONTENT_WIDTH, ApplicationConfiguration.MAIN_CONTENT_HEIGHT + 5);
 			this.fondo.graphics.endFill();
 			
 			if (!Singleton.getInstance().data.json.data.secciones.nuestros_proyectos.items[0])
@@ -55,6 +55,7 @@ package contenidos
 		private function dibujar():void
 		{
 			this.addChild(this.fondo);
+			this.fondo.y -= 2;
 			
 			if(this.image_loader)
 				this.addChild(this.image_loader.content);

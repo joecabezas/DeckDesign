@@ -48,7 +48,7 @@ package menus.izquierda.galeria
 		{
 			this.fondo = new Sprite();
 			this.fondo.graphics.beginFill(ApplicationConfiguration.COLOR_BACKGROUND_APPLICATION);
-			this.fondo.graphics.drawRect(0, 0, ApplicationConfiguration.MAIN_CONTENT_WIDTH, ApplicationConfiguration.MAIN_CONTENT_HEIGHT);
+			this.fondo.graphics.drawRect(0, 0, ApplicationConfiguration.MAIN_CONTENT_WIDTH + 5, ApplicationConfiguration.MAIN_CONTENT_HEIGHT + 5);
 			this.fondo.graphics.endFill();
 			
 			if (this.data)
@@ -85,6 +85,8 @@ package menus.izquierda.galeria
 		private function dibujar():void
 		{
 			this.addChild(this.fondo);
+			this.fondo.x -= 2;
+			this.fondo.y -= 2;
 			
 			if (this.linear_carrousel)
 			{

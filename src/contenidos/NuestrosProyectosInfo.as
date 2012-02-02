@@ -57,8 +57,7 @@ package contenidos
 				{
 					size: 12, 
 					//border: true,
-					//align: TextFieldGenerator.TEXTFORMAT_ALIGN_LEFT,
-					//autosize: TextFieldGenerator.,
+					align: TextFieldGenerator.TEXTFORMAT_ALIGN_JUSTIFY,
 					wordwrap: true, color: 0xffffff,
 					width: this.fondo.width - 20
 				}
