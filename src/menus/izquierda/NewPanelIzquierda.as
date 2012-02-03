@@ -41,11 +41,11 @@ package menus.izquierda
 			
 			opciones = {
 				size: ApplicationConfiguration.SUBMENU_TEXT_SIZE + 1,
-				border: false,
+				//border: true,
 				//align: TextFieldGenerator.TEXTFORMAT_ALIGN_RIGHT,
 				autosize: TextFieldGenerator.AUTOSIZE_RIGHT,
 				color: ApplicationConfiguration.COLOR_QUIENES_SOMOS,
-				width: ApplicationConfiguration.MENU_IZQUIERDA_WIDTH
+				width: ApplicationConfiguration.MENU_IZQUIERDA_WIDTH - 12*2 - 2
 				//height:50
 			};
 			this._txt_titulo = TextFieldGenerator.crearTextField(this._str_titulo, opciones);
@@ -57,7 +57,7 @@ package menus.izquierda
 				autosize: TextFieldGenerator.AUTOSIZE_RIGHT,
 				color: ApplicationConfiguration.COLOR_QUIENES_SOMOS,
 				
-				width: ApplicationConfiguration.MAIN_CONTENT_WIDTH * 0.4 - 20,
+				width: ApplicationConfiguration.MAIN_CONTENT_WIDTH - 12*2 - 2,
 				height: 50
 			};
 			this._txt_subtitulo = TextFieldGenerator.crearTextField(this._str_subtitulo, opciones);
@@ -72,7 +72,7 @@ package menus.izquierda
 				
 				color: 0xffffff,
 				
-				width: ApplicationConfiguration.MAIN_CONTENT_WIDTH * 0.24
+				width: ApplicationConfiguration.MENU_IZQUIERDA_WIDTH - 12*2 - 2
 			};
 			this._txt_texto = TextFieldGenerator.crearTextField(this._str_texto, opciones);
 			

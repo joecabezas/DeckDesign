@@ -72,6 +72,7 @@ package menus.izquierda.imagina
 			}
 			this.textures_grid = new TextureSelector(RoomNode(e.target).getData().hotspots);
 			this.addChild(this.textures_grid);
+			this.textures_grid.y = 33;
 		}
 		
 		private function dibujar():void
@@ -86,7 +87,7 @@ package menus.izquierda.imagina
 			//menu ambientes
 			this.addChild(this.menu_ambientes);
 			this.menu_ambientes.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH + ApplicationConfiguration.MENU_IZQUIERDA_SEPARACION - 15;
-			this.menu_ambientes.y = 10;
+			this.menu_ambientes.y = 43;
 		}
 	
 	}

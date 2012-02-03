@@ -64,6 +64,7 @@ package menus.izquierda
 			this.setTitle(ApplicationConfiguration.STR_NUESTROS_PROYECTOS.toUpperCase(), ApplicationConfiguration.COLOR_QUIENES_SOMOS);
 			
 			this.addChild(this.grid);
+			this.grid.x = 12;
 			
 			this.addChild(this.proyectos_content);
 			this.proyectos_content.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH + ApplicationConfiguration.MENU_IZQUIERDA_SEPARACION;

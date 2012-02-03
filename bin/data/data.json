@@ -169,10 +169,10 @@ Ven a conocernos y crea con nosotros ambientes con identidad propia y diferÃ©n
 								"name":"Cocina 1",
 
 								
-								"image":"http://www.deckdesign.cl/backend/files/ambient_item/image/4/cocina1.jpg",
+								"image":"img.jpg",
 
 								
-								"mask":"http://www.deckdesign.cl/backend/files/ambient_item/mask/4/cocina1-mask2.png",
+								"mask":"mask.png",
 
 								"hotspots":
 								[

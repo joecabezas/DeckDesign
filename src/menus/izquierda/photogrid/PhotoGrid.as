@@ -89,7 +89,7 @@ package menus.izquierda.photogrid
 				this.addChild(p);
 				this.pages_switcher.addItem(p);
 				
-				p.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH * 0.07;
+				//p.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH * 0.07;
 				p.y = ApplicationConfiguration.MENU_IZQUIERDA_HEIGHT * 0.2;
 			}
 			this.pages_switcher.hideAllItems();
@@ -97,7 +97,7 @@ package menus.izquierda.photogrid
 			
 			this.addChild(this.paginator);
 			this.paginator.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH - 20 - this.paginator.width;
-			this.paginator.y = ApplicationConfiguration.MENU_IZQUIERDA_HEIGHT - 20;
+			this.paginator.y = ApplicationConfiguration.MENU_IZQUIERDA_HEIGHT - 20 + 5;
 		}
 		
 		public function selectNodeByIndex(index:uint):void

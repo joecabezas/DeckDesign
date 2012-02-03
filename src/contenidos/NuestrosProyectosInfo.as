@@ -17,7 +17,7 @@ package contenidos
 	public class NuestrosProyectosInfo extends Sprite
 	{
 		//constantes de diseño
-		private static const WIDTH:Number = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH - 12;
+		private static const WIDTH:Number = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH - 12 - 5;
 		private static const HEIGHT:Number = 180;
 		
 		private var fondo:Sprite;
@@ -48,7 +48,7 @@ package contenidos
 					align: TextFieldGenerator.TEXTFORMAT_ALIGN_LEFT,
 					autosize: TextFieldGenerator.AUTOSIZE_NONE,
 					color: ApplicationConfiguration.COLOR_QUIENES_SOMOS,
-					width: this.fondo.width - 20
+					width: this.fondo.width - 10
 				}
 			);
 			
@@ -59,7 +59,7 @@ package contenidos
 					//border: true,
 					align: TextFieldGenerator.TEXTFORMAT_ALIGN_JUSTIFY,
 					wordwrap: true, color: 0xffffff,
-					width: this.fondo.width - 20
+					width: this.fondo.width - 10
 				}
 			);
 		}
@@ -69,11 +69,11 @@ package contenidos
 			//this.addChild(this.fondo);
 			
 			this.addChild(this.titulo);
-			this.titulo.x = 10;
+			this.titulo.x = 0;
 			this.titulo.y = 3;
 			
 			this.addChild(this.contenido);
-			this.contenido.x = 10;
+			this.contenido.x = 0;
 			this.contenido.y = 22;
 		}
 		

@@ -142,12 +142,13 @@ package menus.izquierda.galeria
 			this.addChild(this.back_button);
 			this.back_button.x = ApplicationConfiguration.MENU_IZQUIERDA_WIDTH * 0.1;
 			this.back_button.y = 70;
+			
 			//no deberia aparecer al comienzo
 			this.back_button.visible = false;
 			
 			this.addChild(this.tree_navigator);
 			this.tree_navigator.x = 12;
-			this.tree_navigator.y = 10;
+			this.tree_navigator.y = 10 + 33 - 5;
 			
 			//content
 			this.addChild(this.galeria);

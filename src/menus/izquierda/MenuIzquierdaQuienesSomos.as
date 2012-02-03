@@ -35,7 +35,7 @@ package menus.izquierda
 			
 			this.layout = new VerticalLine(5);
 			this.layout.x = 12;
-			this.layout.y = 10;
+			this.layout.y = 10 + 33;
 		}
 		
 		private function setupItems():void 
