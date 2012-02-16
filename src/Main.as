@@ -6,7 +6,6 @@ package
 	import assets.Logo;
 	import buttons.BotonMenuSuperior;
 	import com.adobe.serialization.json.JSON;
-	import com.as3joelib.utils.AppBlocker;
 	import com.as3joelib.utils.Singleton;
 	import com.greensock.events.LoaderEvent;
 	import com.greensock.loading.DataLoader;
@@ -155,23 +154,6 @@ package
 			
 			this.btn_facebook.addEventListener(MouseEvent.CLICK, onClickFacebook);
 			this.btn_twitter.addEventListener(MouseEvent.CLICK, onClickTwitter);
-			
-			AppBlocker.FILE_NAME = 'DECKDESIGN';
-			AppBlocker.getInstance().addEventListener(AppBlocker.APP_BLOCKER_ON, block);
-			AppBlocker.check();
-		}
-		
-		private function block(e:Event):void
-		{
-			trace('Main.block');
-			
-			if( this.menu_superior && this.contains(this.menu_superior) ) this.removeChild(this.menu_superior);
-			if( this.btn_facebook && this.contains(this.btn_facebook) ) this.removeChild(this.btn_facebook);
-			if( this.btn_twitter && this.contains(this.btn_twitter) ) this.removeChild(this.btn_twitter);
-			if( this.contenido && this.contains(this.contenido) ) this.removeChild(this.contenido);
-			if( this.logo && this.contains(this.logo) ) this.removeChild(this.logo);
-			if( this.footer && this.contains(this.footer) ) this.removeChild(this.footer);
-			if( this.menu_izquierda && this.contains(this.menu_izquierda) ) this.removeChild(this.menu_izquierda);
 		}
 		
 		private function onClickFacebook(e:MouseEvent):void
