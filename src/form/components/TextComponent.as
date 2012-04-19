@@ -62,9 +62,19 @@ package form.components
 		
 		}
 		
+		public function empty():void
+		{
+			this.textfield_input.text = '';
+		}
+		
 		public function get text():String
 		{
 			return this.textfield_input.text;
+		}
+		
+		public function set text(t:String):void
+		{
+			this.textfield_input.text = t;
 		}
 	
 	}

@@ -38,7 +38,6 @@ package menus.izquierda.contacto
 			
 			this.text_node_cotiza = new MenuIzquierdaTextNode(ApplicationConfiguration.STR_COTIZA.toUpperCase());
 			
-			
 			//info
 			var opciones:Object = {size: ApplicationConfiguration.SUBMENU_TEXT_SIZE, border: false, align: TextFieldGenerator.TEXTFORMAT_ALIGN_RIGHT, autosize: TextFieldGenerator.AUTOSIZE_NONE, color: 0xffffff, width: ApplicationConfiguration.MENU_IZQUIERDA_WIDTH, height:150, multiline:true, wordwrap:true};
 			this.txt_info = TextFieldGenerator.crearTextField(Singleton.getInstance().data.json.data.secciones.contacto.info, opciones);

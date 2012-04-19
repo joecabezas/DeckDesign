@@ -4,6 +4,13 @@ package form
 	import com.somerandomdude.coordy.layouts.twodee.VerticalLine;
 	import config.ApplicationConfiguration;
 	import flash.display.Sprite;
+	import flash.events.Event;
+	import flash.events.MouseEvent;
+	import flash.net.URLLoader;
+	import flash.net.URLLoaderDataFormat;
+	import flash.net.URLRequest;
+	import flash.net.URLRequestMethod;
+	import flash.net.URLVariables;
 	import form.components.ButtonComponent;
 	import form.components.TextAreaComponent;
 	import form.components.TextComponent;
@@ -29,6 +36,11 @@ package form
 		//layout campos
 		private var layout_campos:ILayout2d;
 		
+		//net
+		private var url_request:URLRequest;
+		private var url_vars:URLVariables;
+		private var url_loader:URLLoader;
+		
 		public function ContactoForm()
 		{
 			this.setup();
@@ -52,10 +64,54 @@ package form
 			this.btn_enviar = new ButtonComponent('Enviar');
 			
 			this.layout_campos = new VerticalLine();
+			
+			this.url_vars = new URLVariables(
+				'Message.name=' + this.tf_nombre.text +
+				'&Message.mail=' + this.tf_nombre.text +
+				'&Message.product=' + this.tf_producto.text +
+				'&Message.message=' + this.tf_mensaje.text
+			);
+			this.url_request = new URLRequest('contact');
+			this.url_request.data = this.url_vars;
+			this.url_request.method = URLRequestMethod.POST;
+			
+			this.url_loader = new URLLoader();
+			this.url_loader.dataFormat = URLLoaderDataFormat.VARIABLES;
+			
+			this.url_loader.addEventListener(Event.COMPLETE, this.onLoaderComplete);
+		}
+		
+		private function onLoaderComplete(e:Event):void 
+		{
+			this.empty();
+			this.tf_mensaje.text = 'Mensaje Enviado';
 		}
 		
 		private function agregarListeners():void
 		{
+			this.btn_enviar.addEventListener(MouseEvent.CLICK, this.onBtnEnviar);
+			this.btn_borrar.addEventListener(MouseEvent.CLICK, this.onBtnBorrar);
+		}
+		
+		private function onBtnBorrar(e:MouseEvent):void 
+		{
+			trace('borrar');
+			
+			this.empty();
+		}
+		
+		private function empty():void 
+		{
+			this.tf_nombre.empty();
+			this.tf_mail.empty();
+			this.tf_producto.empty();
+			this.tf_mensaje.empty();
+		}
+		
+		private function onBtnEnviar(e:MouseEvent):void 
+		{
+			trace('enviar');
+			this.url_loader.load(this.url_request);
 		}
 		
 		private function dibujar():void
