@@ -5,6 +5,7 @@ package form
 	import config.ApplicationConfiguration;
 	import flash.display.Sprite;
 	import flash.events.Event;
+	import flash.events.IOErrorEvent;
 	import flash.events.MouseEvent;
 	import flash.net.URLLoader;
 	import flash.net.URLLoaderDataFormat;
@@ -65,26 +66,33 @@ package form
 			
 			this.layout_campos = new VerticalLine();
 			
-			this.url_vars = new URLVariables(
-				'Message.name=' + this.tf_nombre.text +
-				'&Message.mail=' + this.tf_nombre.text +
-				'&Message.product=' + this.tf_producto.text +
-				'&Message.message=' + this.tf_mensaje.text
-			);
-			this.url_request = new URLRequest('contact');
+			this.url_vars = new URLVariables();
+			
+			this.url_request = new URLRequest('backend/contact');
 			this.url_request.data = this.url_vars;
 			this.url_request.method = URLRequestMethod.POST;
 			
 			this.url_loader = new URLLoader();
-			this.url_loader.dataFormat = URLLoaderDataFormat.VARIABLES;
+			this.url_loader.dataFormat = URLLoaderDataFormat.TEXT;
 			
 			this.url_loader.addEventListener(Event.COMPLETE, this.onLoaderComplete);
+			this.url_loader.addEventListener(IOErrorEvent.IO_ERROR, this.onLoaderIOError);
+		}
+		
+		private function onLoaderIOError(e:IOErrorEvent):void 
+		{
+			this.empty();
+			this.tf_mensaje.text = 'Mensaje Enviado';
+			trace(this.url_loader.data);
+			this.tf_mensaje.text = e.toString();
 		}
 		
 		private function onLoaderComplete(e:Event):void 
 		{
 			this.empty();
 			this.tf_mensaje.text = 'Mensaje Enviado';
+			trace(this.url_loader.data);
+			this.tf_mensaje.text = this.url_loader.data;
 		}
 		
 		private function agregarListeners():void
@@ -111,7 +119,16 @@ package form
 		private function onBtnEnviar(e:MouseEvent):void 
 		{
 			trace('enviar');
+			
+			this.url_vars.name = this.tf_nombre.text;
+			this.url_vars.mail = this.tf_mail.text;
+			this.url_vars.product = this.tf_producto.text;
+			this.url_vars.message = this.tf_mensaje.text;
+			
 			this.url_loader.load(this.url_request);
+			
+			this.empty();
+			this.tf_mensaje.text = 'Enviando Mensaje...';
 		}
 		
 		private function dibujar():void
